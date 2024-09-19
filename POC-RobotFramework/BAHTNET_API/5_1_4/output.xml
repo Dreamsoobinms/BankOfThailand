@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-18T18:11:26.507917" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\AtiwitK\Documents\POC-robotframework\bahtnet_api\5_1_4\test.robot">
+<test id="s1-t1" name="Handle Certificate Pop-Up" line="17">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-18T18:11:26.900818" level="INFO">Opening browser 'edge' to base url 'https://bahtnet-iwt.xtest-bot.or.th/EFSExternalWebUI/faces/home.jsp'.</msg>
+<msg time="2024-09-18T18:11:26.920924" level="INFO">Executing: C:\Users\AtiwitK\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser edge --output json</msg>
+<arg>${URL}</arg>
+<arg>edge</arg>
+<arg>options=add_argument("--remote-debugging-port=0")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-18T18:11:26.900818" elapsed="25.983749"/>
+</kw>
+<status status="PASS" start="2024-09-18T18:11:26.900818" elapsed="25.984746"/>
+</test>
+<status status="PASS" start="2024-09-18T18:11:26.510921" elapsed="26.375642"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

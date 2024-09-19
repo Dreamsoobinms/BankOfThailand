@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-19T11:05:49.482267" rpa="false" schemaversion="5">
+<suite id="s1" name="Poc 5 1 8" source="C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\poc-robotframework\bahtnet_api\5_1_8_newman\poc_5_1_8.robot">
+<test id="s1-t1" name="5.1.8 Verify Run Newman with Postman collection using Robot Framework" line="12">
+<kw name="Run Postman Collection with Newman">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-19T11:05:51.681994" level="INFO">Collection Path: C:/Users/AtiwitK/Documents/Postman/[USER][3-IWT] NEW BAHTNET API TEST.postman_collection.json</msg>
+<arg>Collection Path: ${COLLECTION}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-19T11:05:51.680991" elapsed="0.001003"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-19T11:05:51.681994" level="INFO">Certificate Path: C:/Users/AtiwitK/Documents/Postman/DDG-2-cert.pem</msg>
+<arg>Certificate Path: ${CERTIFICATE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-19T11:05:51.681994" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-19T11:05:51.681994" level="INFO">Key Path: C:/Users/AtiwitK/Documents/Postman/DDG-2-key.pem</msg>
+<arg>Key Path: ${KEY}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-19T11:05:51.681994" elapsed="0.000997"/>
+</kw>
+<kw name="Run Process" owner="Process">
+<msg time="2024-09-19T11:05:51.682991" level="INFO">Starting process:
+cmd /c newman run "C:/Users/AtiwitK/Documents/Postman/[USER][3-IWT] NEW BAHTNET API TEST.postman_collection.json" --ssl-client-cert "C:/Users/AtiwitK/Documents/Postman/DDG-2-cert.pem" --ssl-client-key "C:/Users/AtiwitK/Documents/Postman/DDG-2-key.pem" -r cli,json --reporter-json-export "C:/Users/AtiwitK/Documents/Postman/output.json"</msg>
+<msg time="2024-09-19T11:05:51.709672" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-09-19T11:06:06.400729" level="INFO">Process completed.</msg>
+<arg>cmd /c newman run "${COLLECTION}" --ssl-client-cert "${CERTIFICATE}" --ssl-client-key "${KEY}" -r cli,json --reporter-json-export "${OUTPUT}"</arg>
+<arg>shell=True</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-09-19T11:05:51.682991" elapsed="14.717738"/>
+</kw>
+<doc>Run Postman collection using Newman with client certificate and key</doc>
+<status status="PASS" start="2024-09-19T11:05:51.680991" elapsed="14.719738"/>
+</kw>
+<kw name="Load JSON from output file and get 'run' body value">
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-09-19T11:06:06.413729" level="INFO">${result} = {'collection': {'_': {'postman_id': '4fa65d04-e674-403e-8c63-412eef2ca269'}, 'item': [{'id': 'e43de269-8cb3-4555-ad58-6fd363cf52d7', 'name': 'DDG - ST1 - INQUIRY', 'request': {'url': {'protocol': 'htt...</msg>
+<var>${result}</var>
+<arg>${OUTPUT}</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-09-19T11:06:06.401730" elapsed="0.011999"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-19T11:06:06.414727" level="INFO">result: {'collection': {'_': {'postman_id': '4fa65d04-e674-403e-8c63-412eef2ca269'}, 'item': [{'id': 'e43de269-8cb3-4555-ad58-6fd363cf52d7', 'name': 'DDG - ST1 - INQUIRY', 'request': {'url': {'protocol': 'https', 'path': ['bot-iwt', 'partner-extranet', 'bnapi', 'inquiry-status-tracking'], 'host': ['apixgw2', 'bot', 'or', 'th'], 'query': [], 'variable': []}, 'header': [{'key': 'accept', 'value': 'application/json'}, {'key': 'content-type', 'value': 'application/json'}, {'key': 'X-IBM-Client-Id', 'value': 'a7f05458-6cc3-45bd-b912-f974218d9277'}, {'key': 'X-IBM-Client-Secret', 'value': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'}], 'method': 'POST', 'body': {'mode': 'raw', 'raw': '{\r\n    "inquiry_request": {\r\n        "credit_bic": "BOTHTHB1DDG",\r\n        "settlement_date": "2021-04-28"\r\n    }\r\n}', 'options': {'raw': {'language': 'json'}}}, 'auth': {'type': 'noauth', 'noauth': []}}, 'response': [], 'event': [], 'protocolProfileBehavior': {'disabledSystemHeaders': {'content-type': True, 'accept': True}, 'strictSSL': False, 'followOriginalHttpMethod': False}}, {'id': '7e3ab3db-e603-4ac0-a374-53589ae95b2e', 'name': 'DDG- ST2 - UPDATE', 'request': {'url': {'protocol': 'https', 'path': ['bot-iwt', 'partner-extranet', 'bnapi', 'update-status-tracking'], 'host': ['apixgw2', 'bot', 'or', 'th'], 'query': [], 'variable': []}, 'header': [{'key': 'accept', 'value': 'application/json'}, {'key': 'content-type', 'value': 'application/json'}, {'key': 'X-IBM-Client-Id', 'value': 'a7f05458-6cc3-45bd-b912-f974218d9277'}, {'key': 'X-IBM-Client-Secret', 'value': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'}], 'method': 'POST', 'body': {'mode': 'raw', 'raw': '\r\n{\r\n    "payment_status_request": {\r\n        "from": "BOTHTHB1DDG",\r\n        "update_payment_scenario": "CCTR",\r\n        "instruction_identification": "210222000072002",\r\n        "payment_status": {\r\n            "originator": "BOTHTHB1DDG",\r\n            "transaction_status": {\r\n                "status": "ACSP",\r\n                "reason" : "G002"\r\n            },\r\n            "return": false,\r\n            "charge_bearer" : "SHAR",\r\n            "charge_amount": [{\r\n            "currency":"THB",\r\n            "amount":"0.00"\r\n         }]\r\n        }\r\n    }\r\n}', 'options': {'raw': {'language': 'json'}}}, 'auth': {'type': 'noauth', 'noauth': []}}, 'response': [], 'event': [], 'protocolProfileBehavior': {'disabledSystemHeaders': {'accept': True, 'content-type': True}, 'strictSSL': False, 'followOriginalHttpMethod': False}}, {'id': '725d7136-7696-4bb8-9423-5c872b8f3604', 'name': 'DDG - ST3 - CONNECTION', 'request': {'url': {'protocol': 'https', 'path': ['bot-iwt', 'partner-extranet', 'bnapi', 'inquiry-status-tracking'], 'host': ['apixgw2', 'bot', 'or', 'th'], 'query': [], 'variable': []}, 'header': [{'key': 'accept', 'value': 'application/json'}, {'key': 'content-type', 'value': 'application/json'}, {'key': 'X-IBM-Client-Id', 'value': 'a7f05458-6cc3-45bd-b912-f974218d9277'}, {'key': 'X-IBM-Client-Secret', 'value': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'}], 'method': 'POST', 'body': {'mode': 'raw', 'raw': '{}', 'options': {'raw': {'language': 'json'}}}, 'auth': {'type': 'noauth', 'noauth': []}}, 'response': [], 'event': [], 'protocolProfileBehavior': {'disabledSystemHeaders': {'accept': True, 'content-type': True}, 'followOriginalHttpMethod': False, 'strictSSL': False}}], 'event': [{'listen': 'prerequest', 'script': {'id': '18ba5ecc-ebae-421d-a7bd-3f70e2c7f6d7', 'type': 'text/javascript', 'exec': [''], '_lastExecutionId': '38a8bc05-ee9f-4f91-8f83-7f0507e71ee4'}}, {'listen': 'test', 'script': {'id': '881247c8-57e3-47ac-a177-69c43aec566d', 'type': 'text/javascript', 'exec': [''], '_lastExecutionId': '28b0f609-a49d-408b-aad7-f06e294b6abe'}}], 'variable': [], 'info': {'_postman_id': '4fa65d04-e674-403e-8c63-412eef2ca269', 'name': '[USER][3-IWT] NEW BAHTNET API TEST', 'schema': 'https://schema.getpostman.com/json/collection/v2.1.0/collection.json'}}, 'environment': {'id': '3ed2a1c9-689a-47bc-9a8b-d1a8ac915a7e', 'values': []}, 'globals': {'id': '0c0824dc-d35e-4dd1-8f22-9f5f0cf2343b', 'values': []}, 'run': {'stats': {'iterations': {'total': 1, 'pending': 0, 'failed': 0}, 'items': {'total': 3, 'pending': 0, 'failed': 0}, 'scripts': {'total': 6, 'pending': 0, 'failed': 0}, 'prerequests': {'total': 3, 'pending': 0, 'failed': 0}, 'requests': {'total': 3, 'pending': 0, 'failed': 0}, 'tests': {'total': 3, 'pending': 0, 'failed': 0}, 'assertions': {'total': 0, 'pending': 0, 'failed': 0}, 'testScripts': {'total': 3, 'pending': 0, 'failed': 0}, 'prerequestScripts': {'total': 3, 'pending': 0, 'failed': 0}}, 'timings': {'responseAverage': 1128, 'responseMin': 655, 'responseMax': 1713, 'responseSd': 439.12716457384715, 'dnsAverage': 0, 'dnsMin': 0, 'dnsMax': 0, 'dnsSd': 0, 'firstByteAverage': 0, 'firstByteMin': 0, 'firstByteMax': 0, 'firstByteSd': 0, 'started': 1726718762195, 'completed': 1726718766260}, 'executions': [{'cursor': {'position': 0, 'iteration': 0, 'length': 3, 'cycles': 1, 'empty': False, 'eof': False, 'bof': True, 'cr': False, 'ref': '9cef327f-51c0-4bd9-a3fd-0d44d951492a', 'httpRequestId': '79ec3048-f905-47f8-82af-b899e3f21a83'}, 'item': {'id': 'e43de269-8cb3-4555-ad58-6fd363cf52d7', 'name': 'DDG - ST1 - INQUIRY', 'request': {'url': {'protocol': 'https', 'path': ['bot-iwt', 'partner-extranet', 'bnapi', 'inquiry-status-tracking'], 'host': ['apixgw2', 'bot', 'or', 'th'], 'query': [], 'variable': []}, 'header': [{'key': 'accept', 'value': 'application/json'}, {'key': 'content-type', 'value': 'application/json'}, {'key': 'X-IBM-Client-Id', 'value': 'a7f05458-6cc3-45bd-b912-f974218d9277'}, {'key': 'X-IBM-Client-Secret', 'value': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'}], 'method': 'POST', 'body': {'mode': 'raw', 'raw': '{\r\n    "inquiry_request": {\r\n        "credit_bic": "BOTHTHB1DDG",\r\n        "settlement_date": "2021-04-28"\r\n    }\r\n}', 'options': {'raw': {'language': 'json'}}}, 'auth': {'type': 'noauth', 'noauth': []}}, 'response': [], 'event': [], 'protocolProfileBehavior': {'disabledSystemHeaders': {'content-type': True, 'accept': True}, 'strictSSL': False, 'followOriginalHttpMethod': False}}, 'request': {'url': {'protocol': 'https', 'path': ['bot-iwt', 'partner-extranet', 'bnapi', 'inquiry-status-tracking'], 'host': ['apixgw2', 'bot', 'or', 'th'], 'query': [], 'variable': []}, 'header': [{'key': 'accept', 'value': 'application/json'}, {'key': 'content-type', 'value': 'application/json'}, {'key': 'X-IBM-Client-Id', 'value': 'a7f05458-6cc3-45bd-b912-f974218d9277'}, {'key': 'X-IBM-Client-Secret', 'value': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'}, {'key': 'User-Agent', 'value': 'PostmanRuntime/7.29.0', 'system': True}, {'key': 'Cache-Control', 'value': 'no-cache', 'system': True}, {'key': 'Postman-Token', 'value': '99024388-e7e9-48d1-884f-2765601e4b0b', 'system': True}, {'key': 'Host', 'value': 'apixgw2.bot.or.th', 'system': True}, {'key': 'Accept-Encoding', 'value': 'gzip, deflate, br', 'system': True}, {'key': 'Connection', 'value': 'keep-alive', 'system': True}, {'key': 'Content-Length', 'value': '116', 'system': True}], 'method': 'POST', 'body': {'mode': 'raw', 'raw': '{\r\n    "inquiry_request": {\r\n        "credit_bic": "BOTHTHB1DDG",\r\n        "settlement_date": "2021-04-28"\r\n    }\r\n}', 'options': {'raw': {'language': 'json'}}}, 'auth': {'type': 'noauth', 'noauth': []}, 'certificate': {'id': 'dedb8480-e2e6-4e24-89e0-b27b789fab09', 'name': 'client-cert', 'matches': [{'pattern': '&lt;all_urls&gt;'}], 'key': {'src': 'C:/Users/AtiwitK/Documents/Postman/DDG-2-key.pem'}, 'cert': {'src': 'C:/Users/AtiwitK/Documents/Postman/DDG-2-cert.pem'}, 'pfx': {}}}, 'response': {'id': '34e2190b-5db4-4a2b-b8b1-e62c9a749bac', 'status': 'Bad Request', 'code': 400, 'header': [{'key': 'X-Backside-Transport', 'value': 'FAIL FAIL'}, {'key': 'Connection', 'value': 'Keep-Alive'}, {'key': 'Transfer-Encoding', 'value': 'chunked'}, {'key': 'Cache-Control', 'value': 'no-cache'}, {'key': 'Pragma', 'value': 'no-cache'}, {'key': 'Content-Type', 'value': 'application/json'}, {'key': 'Content-Language', 'value': 'en-US'}, {'key': 'Expires', 'value': '-1'}, {'key': 'Server', 'value': 'Microsoft-IIS/10.0,IBM,App,Connect,Enterprise'}, {'key': 'Strict-Transport-Security', 'value': 'max-age=31536000; includeSubDomains; preload'}, {'key': 'X-Original-HTTP-Status-Code', 'value': '400'}, {'key': 'X-Powered-By', 'value': 'Servlet/3.1,ASP.NET'}, {'key': 'X-AspNet-Version', 'value': '4.0.30319'}, {'key': 'Date', 'value': 'Thu, 19 Sep 2024 04:06:03 GMT'}, {'key': 'X-Global-Transaction-ID', 'value': '196c556566eba32a06695013'}, {'key': 'X-RateLimit-Limit', 'value': 'name=rate-limit-1,50;'}, {'key': 'X-RateLimit-Remaining', 'value': 'name=rate-limit-1,49;'}, {'key': 'Content-Encoding', 'value': 'gzip'}], 'stream': {'type': 'Buffer', 'data': [123, 34, 105, 110, 113, 117, 105, 114, 121, 95, 114, 101, 115, 112, 111, 110, 115, 101, 34, 58, 123, 34, 114, 101, 115, 112, 111, 110, 115, 101, 95, 99, 111, 100, 101, 34, 58, 34, 69, 34, 44, 34, 114, 101, 97, 115, 111, 110, 34, 58, 34, 84, 104, 101, 32, 115, 101, 116, 116, 108, 101, 109, 101, 110, 116, 32, 100, 97, 116, 101, 32, 111, 102, 32, 116, 104, 105, 115, 32, 116, 114, 97, 110, 115, 97, 99, 116, 105, 111, 110, 32, 105, 115, 32, 101, 120, 99, 101, 101, 100, 115, 32, 116, 104, 97, 110, 32, 49, 56, 48, 32, 100, 97, 121, 115, 46, 34, 44, 34, 114, 101, 116, 117, 114, 110, 95, 114, 101, 115, 117, 108, 116, 34, 58, 91, 93, 125, 125]}, 'cookie': [], 'responseTime': 1713, 'responseSize': 138}, 'id': 'e43de269-8cb3-4555-ad58-6fd363cf52d7'}, {'cursor': {'ref': 'd6fb5dbc-99a2-4ec7-80e0-e84f870330ef', 'length': 3, 'cycles': 1, 'position': 1, 'iteration': 0, 'httpRequestId': 'aac03466-8a9e-4f39-947f-c9a3f610b02b'}, 'item': {'id': '7e3ab3db-e603-4ac0-a374-53589ae95b2e', 'name': 'DDG- ST2 - UPDATE', 'request': {'url': {'protocol': 'https', 'path': ['bot-iwt', 'partner-extranet', 'bnapi', 'update-status-tracking'], 'host': ['apixgw2', 'bot', 'or', 'th'], 'query': [], 'variable': []}, 'header': [{'key': 'accept', 'value': 'application/json'}, {'key': 'content-type', 'value': 'application/json'}, {'key': 'X-IBM-Client-Id', 'value': 'a7f05458-6cc3-45bd-b912-f974218d9277'}, {'key': 'X-IBM-Client-Secret', 'value': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'}], 'method': 'POST', 'body': {'mode': 'raw', 'raw': '\r\n{\r\n    "payment_status_request": {\r\n        "from": "BOTHTHB1DDG",\r\n        "update_payment_scenario": "CCTR",\r\n        "instruction_identification": "210222000072002",\r\n        "payment_status": {\r\n            "originator": "BOTHTHB1DDG",\r\n            "transaction_status": {\r\n                "status": "ACSP",\r\n                "reason" : "G002"\r\n            },\r\n            "return": false,\r\n            "charge_bearer" : "SHAR",\r\n            "charge_amount": [{\r\n            "currency":"THB",\r\n            "amount":"0.00"\r\n         }]\r\n        }\r\n    }\r\n}', 'options': {'raw': {'language': 'json'}}}, 'auth': {'type': 'noauth', 'noauth': []}}, 'response': [], 'event': [], 'protocolProfileBehavior': {'disabledSystemHeaders': {'accept': True, 'content-type': True}, 'strictSSL': False, 'followOriginalHttpMethod': False}}, 'request': {'url': {'protocol': 'https', 'path': ['bot-iwt', 'partner-extranet', 'bnapi', 'update-status-tracking'], 'host': ['apixgw2', 'bot', 'or', 'th'], 'query': [], 'variable': []}, 'header': [{'key': 'accept', 'value': 'application/json'}, {'key': 'content-type', 'value': 'application/json'}, {'key': 'X-IBM-Client-Id', 'value': 'a7f05458-6cc3-45bd-b912-f974218d9277'}, {'key': 'X-IBM-Client-Secret', 'value': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'}, {'key': 'User-Agent', 'value': 'PostmanRuntime/7.29.0', 'system': True}, {'key': 'Cache-Control', 'value': 'no-cache', 'system': True}, {'key': 'Postman-Token', 'value': '800d60cf-f13c-450e-af08-95c4e67b0c1a', 'system': True}, {'key': 'Host', 'value': 'apixgw2.bot.or.th', 'system': True}, {'key': 'Accept-Encoding', 'value': 'gzip, deflate, br', 'system': True}, {'key': 'Connection', 'value': 'keep-alive', 'system': True}, {'key': 'Content-Length', 'value': '560', 'system': True}], 'method': 'POST', 'body': {'mode': 'raw', 'raw': '\r\n{\r\n    "payment_status_request": {\r\n        "from": "BOTHTHB1DDG",\r\n        "update_payment_scenario": "CCTR",\r\n        "instruction_identification": "210222000072002",\r\n        "payment_status": {\r\n            "originator": "BOTHTHB1DDG",\r\n            "transaction_status": {\r\n                "status": "ACSP",\r\n                "reason" : "G002"\r\n            },\r\n            "return": false,\r\n            "charge_bearer" : "SHAR",\r\n            "charge_amount": [{\r\n            "currency":"THB",\r\n            "amount":"0.00"\r\n         }]\r\n        }\r\n    }\r\n}', 'options': {'raw': {'language': 'json'}}}, 'auth': {'type': 'noauth', 'noauth': []}, 'certificate': {'id': 'dedb8480-e2e6-4e24-89e0-b27b789fab09', 'name': 'client-cert', 'matches': [{'pattern': '&lt;all_urls&gt;'}], 'key': {'src': 'C:/Users/AtiwitK/Documents/Postman/DDG-2-key.pem'}, 'cert': {'src': 'C:/Users/AtiwitK/Documents/Postman/DDG-2-cert.pem'}, 'pfx': {}}}, 'response': {'id': '4b8cf643-541d-4419-b3db-b098e3ca0c93', 'status': 'OK', 'code': 200, 'header': [{'key': 'X-Backside-Transport', 'value': 'OK OK'}, {'key': 'Connection', 'value': 'Keep-Alive'}, {'key': 'Transfer-Encoding', 'value': 'chunked'}, {'key': 'Cache-Control', 'value': 'no-cache'}, {'key': 'Pragma', 'value': 'no-cache'}, {'key': 'Content-Type', 'value': 'application/json'}, {'key': 'Content-Language', 'value': 'en-US'}, {'key': 'Expires', 'value': '-1'}, {'key': 'Server', 'value': 'Microsoft-IIS/10.0,IBM,App,Connect,Enterprise'}, {'key': 'Strict-Transport-Security', 'value': 'max-age=31536000; includeSubDomains; preload'}, {'key': 'X-Original-HTTP-Status-Code', 'value': '200'}, {'key': 'X-Powered-By', 'value': 'Servlet/3.1,ASP.NET'}, {'key': 'X-AspNet-Version', 'value': '4.0.30319'}, {'key': 'Date', 'value': 'Thu, 19 Sep 2024 04:06:05 GMT'}, {'key': 'X-Global-Transaction-ID', 'value': '196c556566eba32c09caca42'}, {'key': 'X-RateLimit-Limit', 'value': 'name=rate-limit-1,50;'}, {'key': 'X-RateLimit-Remaining', 'value': 'name=rate-limit-1,48;'}, {'key': 'Content-Encoding', 'value': 'gzip'}], 'stream': {'type': 'Buffer', 'data': [123, 34, 112, 97, 121, 109, 101, 110, 116, 95, 115, 116, 97, 116, 117, 115, 95, 114, 101, 115, 112, 111, 110, 115, 101, 34, 58, 123, 34, 105, 110, 115, 116, 114, 117, 99, 116, 105, 111, 110, 95, 105, 100, 101, 110, 116, 105, 102, 105, 99, 97, 116, 105, 111, 110, 34, 58, 34, 50, 49, 48, 50, 50, 50, 48, 48, 48, 48, 55, 50, 48, 48, 50, 34, 44, 34, 114, 101, 115, 112, 111, 110, 115, 101, 95, 99, 111, 100, 101, 34, 58, 34, 69, 34, 44, 34, 114, 101, 97, 115, 111, 110, 34, 58, 34, 78, 111, 32, 112, 101, 114, 109, 105, 115, 115, 105, 111, 110, 32, 102, 111, 114, 32, 117, 115, 105, 110, 103, 32, 102, 117, 110, 99, 116, 105, 111, 110, 32, 66, 78, 85, 112, 100, 97, 116, 101, 83, 116, 97, 116, 117, 115, 84, 114, 97, 99, 107, 105, 110, 103, 46, 34, 125, 125]}, 'cookie': [], 'responseTime': 1016, 'responseSize': 164}, 'id': '7e3ab3db-e603-4ac0-a374-53589ae95b2e'}, {'cursor': {'ref': '7d9ccea6-3353-488e-9211-2a0e9693b2e0', 'length': 3, 'cycles': 1, 'position': 2, 'iteration': 0, 'httpRequestId': '733fa861-4ea2-4ce7-a51d-fe402b6e4811'}, 'item': {'id': '725d7136-7696-4bb8-9423-5c872b8f3604', 'name': 'DDG - ST3 - CONNECTION', 'request': {'url': {'protocol': 'https', 'path': ['bot-iwt', 'partner-extranet', 'bnapi', 'inquiry-status-tracking'], 'host': ['apixgw2', 'bot', 'or', 'th'], 'query': [], 'variable': []}, 'header': [{'key': 'accept', 'value': 'application/json'}, {'key': 'content-type', 'value': 'application/json'}, {'key': 'X-IBM-Client-Id', 'value': 'a7f05458-6cc3-45bd-b912-f974218d9277'}, {'key': 'X-IBM-Client-Secret', 'value': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'}], 'method': 'POST', 'body': {'mode': 'raw', 'raw': '{}', 'options': {'raw': {'language': 'json'}}}, 'auth': {'type': 'noauth', 'noauth': []}}, 'response': [], 'event': [], 'protocolProfileBehavior': {'disabledSystemHeaders': {'accept': True, 'content-type': True}, 'followOriginalHttpMethod': False, 'strictSSL': False}}, 'request': {'url': {'protocol': 'https', 'path': ['bot-iwt', 'partner-extranet', 'bnapi', 'inquiry-status-tracking'], 'host': ['apixgw2', 'bot', 'or', 'th'], 'query': [], 'variable': []}, 'header': [{'key': 'accept', 'value': 'application/json'}, {'key': 'content-type', 'value': 'application/json'}, {'key': 'X-IBM-Client-Id', 'value': 'a7f05458-6cc3-45bd-b912-f974218d9277'}, {'key': 'X-IBM-Client-Secret', 'value': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'}, {'key': 'User-Agent', 'value': 'PostmanRuntime/7.29.0', 'system': True}, {'key': 'Cache-Control', 'value': 'no-cache', 'system': True}, {'key': 'Postman-Token', 'value': 'cec687c8-30f5-4a06-a8e9-a91bbe1559c4', 'system': True}, {'key': 'Host', 'value': 'apixgw2.bot.or.th', 'system': True}, {'key': 'Accept-Encoding', 'value': 'gzip, deflate, br', 'system': True}, {'key': 'Connection', 'value': 'keep-alive', 'system': True}, {'key': 'Content-Length', 'value': '2', 'system': True}], 'method': 'POST', 'body': {'mode': 'raw', 'raw': '{}', 'options': {'raw': {'language': 'json'}}}, 'auth': {'type': 'noauth', 'noauth': []}, 'certificate': {'id': 'dedb8480-e2e6-4e24-89e0-b27b789fab09', 'name': 'client-cert', 'matches': [{'pattern': '&lt;all_urls&gt;'}], 'key': {'src': 'C:/Users/AtiwitK/Documents/Postman/DDG-2-key.pem'}, 'cert': {'src': 'C:/Users/AtiwitK/Documents/Postman/DDG-2-cert.pem'}, 'pfx': {}}}, 'response': {'id': '4f4d3491-da34-43bd-bb52-94e23bdcadba', 'status': 'Bad Request', 'code': 400, 'header': [{'key': 'X-Backside-Transport', 'value': 'FAIL FAIL'}, {'key': 'Connection', 'value': 'Keep-Alive'}, {'key': 'Transfer-Encoding', 'value': 'chunked'}, {'key': 'Cache-Control', 'value': 'no-cache'}, {'key': 'Pragma', 'value': 'no-cache'}, {'key': 'Content-Type', 'value': 'application/json'}, {'key': 'Content-Language', 'value': 'en-US'}, {'key': 'Expires', 'value': '-1'}, {'key': 'Server', 'value': 'Microsoft-IIS/10.0,IBM,App,Connect,Enterprise'}, {'key': 'Strict-Transport-Security', 'value': 'max-age=31536000; includeSubDomains; preload'}, {'key': 'X-Original-HTTP-Status-Code', 'value': '400'}, {'key': 'X-Powered-By', 'value': 'Servlet/3.1,ASP.NET'}, {'key': 'X-AspNet-Version', 'value': '4.0.30319'}, {'key': 'Date', 'value': 'Thu, 19 Sep 2024 04:06:05 GMT'}, {'key': 'X-Global-Transaction-ID', 'value': '196c556566eba32d070df2e0'}, {'key': 'X-RateLimit-Limit', 'value': 'name=rate-limit-1,50;'}, {'key': 'X-RateLimit-Remaining', 'value': 'name=rate-limit-1,47;'}, {'key': 'Content-Encoding', 'value': 'gzip'}], 'stream': {'type': 'Buffer', 'data': [123, 34, 105, 110, 113, 117, 105, 114, 121, 95, 114, 101, 115, 112, 111, 110, 115, 101, 34, 58, 123, 34, 114, 101, 115, 112, 111, 110, 115, 101, 95, 99, 111, 100, 101, 34, 58, 34, 69, 34, 44, 34, 114, 101, 97, 115, 111, 110, 34, 58, 34, 70, 105, 101, 108, 100, 32, 105, 110, 113, 117, 105, 114, 121, 95, 114, 101, 113, 117, 101, 115, 116, 32, 105, 115, 32, 114, 101, 113, 117, 105, 114, 101, 100, 46, 34, 44, 34, 114, 101, 116, 117, 114, 110, 95, 114, 101, 115, 117, 108, 116, 34, 58, 91, 93, 125, 125]}, 'cookie': [], 'responseTime': 655, 'responseSize': 107}, 'id': '725d7136-7696-4bb8-9423-5c872b8f3604'}], 'transfers': {'responseTotal': 409}, 'failures': [], 'error': None}}</msg>
+<arg>result: ${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-19T11:06:06.413729" elapsed="0.000998"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-09-19T11:06:06.416729" level="INFO">${result_body} = {'collection': {'_': {'postman_id': '4fa65d04-e674-403e-8c63-412eef2ca269'}, 'item': [{'id': 'e43de269-8cb3-4555-ad58-6fd363cf52d7', 'name': 'DDG - ST1 - INQUIRY', 'request': {'url': {'protocol': 'htt...</msg>
+<arg>${result_body}</arg>
+<arg>${result}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-09-19T11:06:06.414727" elapsed="0.002002"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-09-19T11:06:06.717939" level="INFO">${run} = [{'stats': {'iterations': {'total': 1, 'pending': 0, 'failed': 0}, 'items': {'total': 3, 'pending': 0, 'failed': 0}, 'scripts': {'total': 6, 'pending': 0, 'failed': 0}, 'prerequests': {'total': 3, 'pe...</msg>
+<var>${run}</var>
+<arg>${result}</arg>
+<arg>run</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-09-19T11:06:06.416729" elapsed="0.301210"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-19T11:06:06.718937" level="INFO">run: [{'stats': {'iterations': {'total': 1, 'pending': 0, 'failed': 0}, 'items': {'total': 3, 'pending': 0, 'failed': 0}, 'scripts': {'total': 6, 'pending': 0, 'failed': 0}, 'prerequests': {'total': 3, 'pending': 0, 'failed': 0}, 'requests': {'total': 3, 'pending': 0, 'failed': 0}, 'tests': {'total': 3, 'pending': 0, 'failed': 0}, 'assertions': {'total': 0, 'pending': 0, 'failed': 0}, 'testScripts': {'total': 3, 'pending': 0, 'failed': 0}, 'prerequestScripts': {'total': 3, 'pending': 0, 'failed': 0}}, 'timings': {'responseAverage': 1128, 'responseMin': 655, 'responseMax': 1713, 'responseSd': 439.12716457384715, 'dnsAverage': 0, 'dnsMin': 0, 'dnsMax': 0, 'dnsSd': 0, 'firstByteAverage': 0, 'firstByteMin': 0, 'firstByteMax': 0, 'firstByteSd': 0, 'started': 1726718762195, 'completed': 1726718766260}, 'executions': [{'cursor': {'position': 0, 'iteration': 0, 'length': 3, 'cycles': 1, 'empty': False, 'eof': False, 'bof': True, 'cr': False, 'ref': '9cef327f-51c0-4bd9-a3fd-0d44d951492a', 'httpRequestId': '79ec3048-f905-47f8-82af-b899e3f21a83'}, 'item': {'id': 'e43de269-8cb3-4555-ad58-6fd363cf52d7', 'name': 'DDG - ST1 - INQUIRY', 'request': {'url': {'protocol': 'https', 'path': ['bot-iwt', 'partner-extranet', 'bnapi', 'inquiry-status-tracking'], 'host': ['apixgw2', 'bot', 'or', 'th'], 'query': [], 'variable': []}, 'header': [{'key': 'accept', 'value': 'application/json'}, {'key': 'content-type', 'value': 'application/json'}, {'key': 'X-IBM-Client-Id', 'value': 'a7f05458-6cc3-45bd-b912-f974218d9277'}, {'key': 'X-IBM-Client-Secret', 'value': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'}], 'method': 'POST', 'body': {'mode': 'raw', 'raw': '{\r\n    "inquiry_request": {\r\n        "credit_bic": "BOTHTHB1DDG",\r\n        "settlement_date": "2021-04-28"\r\n    }\r\n}', 'options': {'raw': {'language': 'json'}}}, 'auth': {'type': 'noauth', 'noauth': []}}, 'response': [], 'event': [], 'protocolProfileBehavior': {'disabledSystemHeaders': {'content-type': True, 'accept': True}, 'strictSSL': False, 'followOriginalHttpMethod': False}}, 'request': {'url': {'protocol': 'https', 'path': ['bot-iwt', 'partner-extranet', 'bnapi', 'inquiry-status-tracking'], 'host': ['apixgw2', 'bot', 'or', 'th'], 'query': [], 'variable': []}, 'header': [{'key': 'accept', 'value': 'application/json'}, {'key': 'content-type', 'value': 'application/json'}, {'key': 'X-IBM-Client-Id', 'value': 'a7f05458-6cc3-45bd-b912-f974218d9277'}, {'key': 'X-IBM-Client-Secret', 'value': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'}, {'key': 'User-Agent', 'value': 'PostmanRuntime/7.29.0', 'system': True}, {'key': 'Cache-Control', 'value': 'no-cache', 'system': True}, {'key': 'Postman-Token', 'value': '99024388-e7e9-48d1-884f-2765601e4b0b', 'system': True}, {'key': 'Host', 'value': 'apixgw2.bot.or.th', 'system': True}, {'key': 'Accept-Encoding', 'value': 'gzip, deflate, br', 'system': True}, {'key': 'Connection', 'value': 'keep-alive', 'system': True}, {'key': 'Content-Length', 'value': '116', 'system': True}], 'method': 'POST', 'body': {'mode': 'raw', 'raw': '{\r\n    "inquiry_request": {\r\n        "credit_bic": "BOTHTHB1DDG",\r\n        "settlement_date": "2021-04-28"\r\n    }\r\n}', 'options': {'raw': {'language': 'json'}}}, 'auth': {'type': 'noauth', 'noauth': []}, 'certificate': {'id': 'dedb8480-e2e6-4e24-89e0-b27b789fab09', 'name': 'client-cert', 'matches': [{'pattern': '&lt;all_urls&gt;'}], 'key': {'src': 'C:/Users/AtiwitK/Documents/Postman/DDG-2-key.pem'}, 'cert': {'src': 'C:/Users/AtiwitK/Documents/Postman/DDG-2-cert.pem'}, 'pfx': {}}}, 'response': {'id': '34e2190b-5db4-4a2b-b8b1-e62c9a749bac', 'status': 'Bad Request', 'code': 400, 'header': [{'key': 'X-Backside-Transport', 'value': 'FAIL FAIL'}, {'key': 'Connection', 'value': 'Keep-Alive'}, {'key': 'Transfer-Encoding', 'value': 'chunked'}, {'key': 'Cache-Control', 'value': 'no-cache'}, {'key': 'Pragma', 'value': 'no-cache'}, {'key': 'Content-Type', 'value': 'application/json'}, {'key': 'Content-Language', 'value': 'en-US'}, {'key': 'Expires', 'value': '-1'}, {'key': 'Server', 'value': 'Microsoft-IIS/10.0,IBM,App,Connect,Enterprise'}, {'key': 'Strict-Transport-Security', 'value': 'max-age=31536000; includeSubDomains; preload'}, {'key': 'X-Original-HTTP-Status-Code', 'value': '400'}, {'key': 'X-Powered-By', 'value': 'Servlet/3.1,ASP.NET'}, {'key': 'X-AspNet-Version', 'value': '4.0.30319'}, {'key': 'Date', 'value': 'Thu, 19 Sep 2024 04:06:03 GMT'}, {'key': 'X-Global-Transaction-ID', 'value': '196c556566eba32a06695013'}, {'key': 'X-RateLimit-Limit', 'value': 'name=rate-limit-1,50;'}, {'key': 'X-RateLimit-Remaining', 'value': 'name=rate-limit-1,49;'}, {'key': 'Content-Encoding', 'value': 'gzip'}], 'stream': {'type': 'Buffer', 'data': [123, 34, 105, 110, 113, 117, 105, 114, 121, 95, 114, 101, 115, 112, 111, 110, 115, 101, 34, 58, 123, 34, 114, 101, 115, 112, 111, 110, 115, 101, 95, 99, 111, 100, 101, 34, 58, 34, 69, 34, 44, 34, 114, 101, 97, 115, 111, 110, 34, 58, 34, 84, 104, 101, 32, 115, 101, 116, 116, 108, 101, 109, 101, 110, 116, 32, 100, 97, 116, 101, 32, 111, 102, 32, 116, 104, 105, 115, 32, 116, 114, 97, 110, 115, 97, 99, 116, 105, 111, 110, 32, 105, 115, 32, 101, 120, 99, 101, 101, 100, 115, 32, 116, 104, 97, 110, 32, 49, 56, 48, 32, 100, 97, 121, 115, 46, 34, 44, 34, 114, 101, 116, 117, 114, 110, 95, 114, 101, 115, 117, 108, 116, 34, 58, 91, 93, 125, 125]}, 'cookie': [], 'responseTime': 1713, 'responseSize': 138}, 'id': 'e43de269-8cb3-4555-ad58-6fd363cf52d7'}, {'cursor': {'ref': 'd6fb5dbc-99a2-4ec7-80e0-e84f870330ef', 'length': 3, 'cycles': 1, 'position': 1, 'iteration': 0, 'httpRequestId': 'aac03466-8a9e-4f39-947f-c9a3f610b02b'}, 'item': {'id': '7e3ab3db-e603-4ac0-a374-53589ae95b2e', 'name': 'DDG- ST2 - UPDATE', 'request': {'url': {'protocol': 'https', 'path': ['bot-iwt', 'partner-extranet', 'bnapi', 'update-status-tracking'], 'host': ['apixgw2', 'bot', 'or', 'th'], 'query': [], 'variable': []}, 'header': [{'key': 'accept', 'value': 'application/json'}, {'key': 'content-type', 'value': 'application/json'}, {'key': 'X-IBM-Client-Id', 'value': 'a7f05458-6cc3-45bd-b912-f974218d9277'}, {'key': 'X-IBM-Client-Secret', 'value': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'}], 'method': 'POST', 'body': {'mode': 'raw', 'raw': '\r\n{\r\n    "payment_status_request": {\r\n        "from": "BOTHTHB1DDG",\r\n        "update_payment_scenario": "CCTR",\r\n        "instruction_identification": "210222000072002",\r\n        "payment_status": {\r\n            "originator": "BOTHTHB1DDG",\r\n            "transaction_status": {\r\n                "status": "ACSP",\r\n                "reason" : "G002"\r\n            },\r\n            "return": false,\r\n            "charge_bearer" : "SHAR",\r\n            "charge_amount": [{\r\n            "currency":"THB",\r\n            "amount":"0.00"\r\n         }]\r\n        }\r\n    }\r\n}', 'options': {'raw': {'language': 'json'}}}, 'auth': {'type': 'noauth', 'noauth': []}}, 'response': [], 'event': [], 'protocolProfileBehavior': {'disabledSystemHeaders': {'accept': True, 'content-type': True}, 'strictSSL': False, 'followOriginalHttpMethod': False}}, 'request': {'url': {'protocol': 'https', 'path': ['bot-iwt', 'partner-extranet', 'bnapi', 'update-status-tracking'], 'host': ['apixgw2', 'bot', 'or', 'th'], 'query': [], 'variable': []}, 'header': [{'key': 'accept', 'value': 'application/json'}, {'key': 'content-type', 'value': 'application/json'}, {'key': 'X-IBM-Client-Id', 'value': 'a7f05458-6cc3-45bd-b912-f974218d9277'}, {'key': 'X-IBM-Client-Secret', 'value': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'}, {'key': 'User-Agent', 'value': 'PostmanRuntime/7.29.0', 'system': True}, {'key': 'Cache-Control', 'value': 'no-cache', 'system': True}, {'key': 'Postman-Token', 'value': '800d60cf-f13c-450e-af08-95c4e67b0c1a', 'system': True}, {'key': 'Host', 'value': 'apixgw2.bot.or.th', 'system': True}, {'key': 'Accept-Encoding', 'value': 'gzip, deflate, br', 'system': True}, {'key': 'Connection', 'value': 'keep-alive', 'system': True}, {'key': 'Content-Length', 'value': '560', 'system': True}], 'method': 'POST', 'body': {'mode': 'raw', 'raw': '\r\n{\r\n    "payment_status_request": {\r\n        "from": "BOTHTHB1DDG",\r\n        "update_payment_scenario": "CCTR",\r\n        "instruction_identification": "210222000072002",\r\n        "payment_status": {\r\n            "originator": "BOTHTHB1DDG",\r\n            "transaction_status": {\r\n                "status": "ACSP",\r\n                "reason" : "G002"\r\n            },\r\n            "return": false,\r\n            "charge_bearer" : "SHAR",\r\n            "charge_amount": [{\r\n            "currency":"THB",\r\n            "amount":"0.00"\r\n         }]\r\n        }\r\n    }\r\n}', 'options': {'raw': {'language': 'json'}}}, 'auth': {'type': 'noauth', 'noauth': []}, 'certificate': {'id': 'dedb8480-e2e6-4e24-89e0-b27b789fab09', 'name': 'client-cert', 'matches': [{'pattern': '&lt;all_urls&gt;'}], 'key': {'src': 'C:/Users/AtiwitK/Documents/Postman/DDG-2-key.pem'}, 'cert': {'src': 'C:/Users/AtiwitK/Documents/Postman/DDG-2-cert.pem'}, 'pfx': {}}}, 'response': {'id': '4b8cf643-541d-4419-b3db-b098e3ca0c93', 'status': 'OK', 'code': 200, 'header': [{'key': 'X-Backside-Transport', 'value': 'OK OK'}, {'key': 'Connection', 'value': 'Keep-Alive'}, {'key': 'Transfer-Encoding', 'value': 'chunked'}, {'key': 'Cache-Control', 'value': 'no-cache'}, {'key': 'Pragma', 'value': 'no-cache'}, {'key': 'Content-Type', 'value': 'application/json'}, {'key': 'Content-Language', 'value': 'en-US'}, {'key': 'Expires', 'value': '-1'}, {'key': 'Server', 'value': 'Microsoft-IIS/10.0,IBM,App,Connect,Enterprise'}, {'key': 'Strict-Transport-Security', 'value': 'max-age=31536000; includeSubDomains; preload'}, {'key': 'X-Original-HTTP-Status-Code', 'value': '200'}, {'key': 'X-Powered-By', 'value': 'Servlet/3.1,ASP.NET'}, {'key': 'X-AspNet-Version', 'value': '4.0.30319'}, {'key': 'Date', 'value': 'Thu, 19 Sep 2024 04:06:05 GMT'}, {'key': 'X-Global-Transaction-ID', 'value': '196c556566eba32c09caca42'}, {'key': 'X-RateLimit-Limit', 'value': 'name=rate-limit-1,50;'}, {'key': 'X-RateLimit-Remaining', 'value': 'name=rate-limit-1,48;'}, {'key': 'Content-Encoding', 'value': 'gzip'}], 'stream': {'type': 'Buffer', 'data': [123, 34, 112, 97, 121, 109, 101, 110, 116, 95, 115, 116, 97, 116, 117, 115, 95, 114, 101, 115, 112, 111, 110, 115, 101, 34, 58, 123, 34, 105, 110, 115, 116, 114, 117, 99, 116, 105, 111, 110, 95, 105, 100, 101, 110, 116, 105, 102, 105, 99, 97, 116, 105, 111, 110, 34, 58, 34, 50, 49, 48, 50, 50, 50, 48, 48, 48, 48, 55, 50, 48, 48, 50, 34, 44, 34, 114, 101, 115, 112, 111, 110, 115, 101, 95, 99, 111, 100, 101, 34, 58, 34, 69, 34, 44, 34, 114, 101, 97, 115, 111, 110, 34, 58, 34, 78, 111, 32, 112, 101, 114, 109, 105, 115, 115, 105, 111, 110, 32, 102, 111, 114, 32, 117, 115, 105, 110, 103, 32, 102, 117, 110, 99, 116, 105, 111, 110, 32, 66, 78, 85, 112, 100, 97, 116, 101, 83, 116, 97, 116, 117, 115, 84, 114, 97, 99, 107, 105, 110, 103, 46, 34, 125, 125]}, 'cookie': [], 'responseTime': 1016, 'responseSize': 164}, 'id': '7e3ab3db-e603-4ac0-a374-53589ae95b2e'}, {'cursor': {'ref': '7d9ccea6-3353-488e-9211-2a0e9693b2e0', 'length': 3, 'cycles': 1, 'position': 2, 'iteration': 0, 'httpRequestId': '733fa861-4ea2-4ce7-a51d-fe402b6e4811'}, 'item': {'id': '725d7136-7696-4bb8-9423-5c872b8f3604', 'name': 'DDG - ST3 - CONNECTION', 'request': {'url': {'protocol': 'https', 'path': ['bot-iwt', 'partner-extranet', 'bnapi', 'inquiry-status-tracking'], 'host': ['apixgw2', 'bot', 'or', 'th'], 'query': [], 'variable': []}, 'header': [{'key': 'accept', 'value': 'application/json'}, {'key': 'content-type', 'value': 'application/json'}, {'key': 'X-IBM-Client-Id', 'value': 'a7f05458-6cc3-45bd-b912-f974218d9277'}, {'key': 'X-IBM-Client-Secret', 'value': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'}], 'method': 'POST', 'body': {'mode': 'raw', 'raw': '{}', 'options': {'raw': {'language': 'json'}}}, 'auth': {'type': 'noauth', 'noauth': []}}, 'response': [], 'event': [], 'protocolProfileBehavior': {'disabledSystemHeaders': {'accept': True, 'content-type': True}, 'followOriginalHttpMethod': False, 'strictSSL': False}}, 'request': {'url': {'protocol': 'https', 'path': ['bot-iwt', 'partner-extranet', 'bnapi', 'inquiry-status-tracking'], 'host': ['apixgw2', 'bot', 'or', 'th'], 'query': [], 'variable': []}, 'header': [{'key': 'accept', 'value': 'application/json'}, {'key': 'content-type', 'value': 'application/json'}, {'key': 'X-IBM-Client-Id', 'value': 'a7f05458-6cc3-45bd-b912-f974218d9277'}, {'key': 'X-IBM-Client-Secret', 'value': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'}, {'key': 'User-Agent', 'value': 'PostmanRuntime/7.29.0', 'system': True}, {'key': 'Cache-Control', 'value': 'no-cache', 'system': True}, {'key': 'Postman-Token', 'value': 'cec687c8-30f5-4a06-a8e9-a91bbe1559c4', 'system': True}, {'key': 'Host', 'value': 'apixgw2.bot.or.th', 'system': True}, {'key': 'Accept-Encoding', 'value': 'gzip, deflate, br', 'system': True}, {'key': 'Connection', 'value': 'keep-alive', 'system': True}, {'key': 'Content-Length', 'value': '2', 'system': True}], 'method': 'POST', 'body': {'mode': 'raw', 'raw': '{}', 'options': {'raw': {'language': 'json'}}}, 'auth': {'type': 'noauth', 'noauth': []}, 'certificate': {'id': 'dedb8480-e2e6-4e24-89e0-b27b789fab09', 'name': 'client-cert', 'matches': [{'pattern': '&lt;all_urls&gt;'}], 'key': {'src': 'C:/Users/AtiwitK/Documents/Postman/DDG-2-key.pem'}, 'cert': {'src': 'C:/Users/AtiwitK/Documents/Postman/DDG-2-cert.pem'}, 'pfx': {}}}, 'response': {'id': '4f4d3491-da34-43bd-bb52-94e23bdcadba', 'status': 'Bad Request', 'code': 400, 'header': [{'key': 'X-Backside-Transport', 'value': 'FAIL FAIL'}, {'key': 'Connection', 'value': 'Keep-Alive'}, {'key': 'Transfer-Encoding', 'value': 'chunked'}, {'key': 'Cache-Control', 'value': 'no-cache'}, {'key': 'Pragma', 'value': 'no-cache'}, {'key': 'Content-Type', 'value': 'application/json'}, {'key': 'Content-Language', 'value': 'en-US'}, {'key': 'Expires', 'value': '-1'}, {'key': 'Server', 'value': 'Microsoft-IIS/10.0,IBM,App,Connect,Enterprise'}, {'key': 'Strict-Transport-Security', 'value': 'max-age=31536000; includeSubDomains; preload'}, {'key': 'X-Original-HTTP-Status-Code', 'value': '400'}, {'key': 'X-Powered-By', 'value': 'Servlet/3.1,ASP.NET'}, {'key': 'X-AspNet-Version', 'value': '4.0.30319'}, {'key': 'Date', 'value': 'Thu, 19 Sep 2024 04:06:05 GMT'}, {'key': 'X-Global-Transaction-ID', 'value': '196c556566eba32d070df2e0'}, {'key': 'X-RateLimit-Limit', 'value': 'name=rate-limit-1,50;'}, {'key': 'X-RateLimit-Remaining', 'value': 'name=rate-limit-1,47;'}, {'key': 'Content-Encoding', 'value': 'gzip'}], 'stream': {'type': 'Buffer', 'data': [123, 34, 105, 110, 113, 117, 105, 114, 121, 95, 114, 101, 115, 112, 111, 110, 115, 101, 34, 58, 123, 34, 114, 101, 115, 112, 111, 110, 115, 101, 95, 99, 111, 100, 101, 34, 58, 34, 69, 34, 44, 34, 114, 101, 97, 115, 111, 110, 34, 58, 34, 70, 105, 101, 108, 100, 32, 105, 110, 113, 117, 105, 114, 121, 95, 114, 101, 113, 117, 101, 115, 116, 32, 105, 115, 32, 114, 101, 113, 117, 105, 114, 101, 100, 46, 34, 44, 34, 114, 101, 116, 117, 114, 110, 95, 114, 101, 115, 117, 108, 116, 34, 58, 91, 93, 125, 125]}, 'cookie': [], 'responseTime': 655, 'responseSize': 107}, 'id': '725d7136-7696-4bb8-9423-5c872b8f3604'}], 'transfers': {'responseTotal': 409}, 'failures': [], 'error': None}]</msg>
+<arg>run: ${run}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-19T11:06:06.717939" elapsed="0.000998"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-09-19T11:06:06.719939" level="INFO">${stats} = [{'stats': {'iterations': {'total': 1, 'pending': 0, 'failed': 0}, 'items': {'total': 3, 'pending': 0, 'failed': 0}, 'scripts': {'total': 6, 'pending': 0, 'failed': 0}, 'prerequests': {'total': 3, 'pe...</msg>
+<arg>${stats}</arg>
+<arg>${run}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-09-19T11:06:06.718937" elapsed="0.001002"/>
+</kw>
+<status status="PASS" start="2024-09-19T11:06:06.401730" elapsed="0.318209"/>
+</kw>
+<kw name="Get 'Executed' and 'Failed' status from 'iterations, requests, test-scripts, prerequest-scripts and assertions'">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T11:06:06.722938" level="INFO">${status} = ['iterations', 'requests', 'testScripts', 'prerequestScripts', 'assertions']</msg>
+<var>${status}</var>
+<arg>iterations</arg>
+<arg>requests</arg>
+<arg>testScripts</arg>
+<arg>prerequestScripts</arg>
+<arg>assertions</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T11:06:06.722938" elapsed="0.000000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-09-19T11:06:06.748477" level="INFO">${executed} = [1]</msg>
+<var>${executed}</var>
+<arg>${stats}</arg>
+<arg>$..${status_key}.total</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-09-19T11:06:06.722938" elapsed="0.025539"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-09-19T11:06:06.951477" level="INFO">${failed} = [0]</msg>
+<var>${failed}</var>
+<arg>${stats}</arg>
+<arg>$..${status_key}.failed</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-09-19T11:06:06.749476" elapsed="0.202001"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-09-19T11:06:06.952478" level="INFO">${executed_str} = 1</msg>
+<var>${executed_str}</var>
+<arg>${executed}[0]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-09-19T11:06:06.952478" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-09-19T11:06:06.953480" level="INFO">${failed_str} = 0</msg>
+<var>${failed_str}</var>
+<arg>${failed}[0]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-09-19T11:06:06.952478" elapsed="0.001002"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-09-19T11:06:06.954327" level="INFO">${iterations_executed_value} = 1</msg>
+<arg>${${status_key}_executed_value}</arg>
+<arg>${executed_str}[0]</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-09-19T11:06:06.953661" elapsed="0.000666"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-09-19T11:06:06.955333" level="INFO">${iterations_failed_value} = 0</msg>
+<arg>${${status_key}_failed_value}</arg>
+<arg>${failed_str}[0]</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-09-19T11:06:06.954327" elapsed="0.001006"/>
+</kw>
+<var name="${status_key}">iterations</var>
+<status status="PASS" start="2024-09-19T11:06:06.722938" elapsed="0.232395"/>
+</iter>
+<iter>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-09-19T11:06:06.965330" level="INFO">${executed} = [3]</msg>
+<var>${executed}</var>
+<arg>${stats}</arg>
+<arg>$..${status_key}.total</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-09-19T11:06:06.955333" elapsed="0.009997"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-09-19T11:06:07.121235" level="INFO">${failed} = [0]</msg>
+<var>${failed}</var>
+<arg>${stats}</arg>
+<arg>$..${status_key}.failed</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-09-19T11:06:06.965330" elapsed="0.155905"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.122234" level="INFO">${executed_str} = 3</msg>
+<var>${executed_str}</var>
+<arg>${executed}[0]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.122234" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.122234" level="INFO">${failed_str} = 0</msg>
+<var>${failed_str}</var>
+<arg>${failed}[0]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.122234" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.123235" level="INFO">${requests_executed_value} = 3</msg>
+<arg>${${status_key}_executed_value}</arg>
+<arg>${executed_str}[0]</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.122234" elapsed="0.001001"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.124235" level="INFO">${requests_failed_value} = 0</msg>
+<arg>${${status_key}_failed_value}</arg>
+<arg>${failed_str}[0]</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.123235" elapsed="0.001000"/>
+</kw>
+<var name="${status_key}">requests</var>
+<status status="PASS" start="2024-09-19T11:06:06.955333" elapsed="0.168902"/>
+</iter>
+<iter>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-09-19T11:06:07.138291" level="INFO">${executed} = [3]</msg>
+<var>${executed}</var>
+<arg>${stats}</arg>
+<arg>$..${status_key}.total</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-09-19T11:06:07.124235" elapsed="0.014056"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-09-19T11:06:07.309985" level="INFO">${failed} = [0]</msg>
+<var>${failed}</var>
+<arg>${stats}</arg>
+<arg>$..${status_key}.failed</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-09-19T11:06:07.138291" elapsed="0.171694"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.309985" level="INFO">${executed_str} = 3</msg>
+<var>${executed_str}</var>
+<arg>${executed}[0]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.309985" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.309985" level="INFO">${failed_str} = 0</msg>
+<var>${failed_str}</var>
+<arg>${failed}[0]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.309985" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.309985" level="INFO">${testScripts_executed_value} = 3</msg>
+<arg>${${status_key}_executed_value}</arg>
+<arg>${executed_str}[0]</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.309985" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.309985" level="INFO">${testScripts_failed_value} = 0</msg>
+<arg>${${status_key}_failed_value}</arg>
+<arg>${failed_str}[0]</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.309985" elapsed="0.000000"/>
+</kw>
+<var name="${status_key}">testScripts</var>
+<status status="PASS" start="2024-09-19T11:06:07.124235" elapsed="0.185750"/>
+</iter>
+<iter>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-09-19T11:06:07.404392" level="INFO">${executed} = [3]</msg>
+<var>${executed}</var>
+<arg>${stats}</arg>
+<arg>$..${status_key}.total</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-09-19T11:06:07.309985" elapsed="0.094407"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-09-19T11:06:07.533634" level="INFO">${failed} = [0]</msg>
+<var>${failed}</var>
+<arg>${stats}</arg>
+<arg>$..${status_key}.failed</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-09-19T11:06:07.404392" elapsed="0.129242"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.533634" level="INFO">${executed_str} = 3</msg>
+<var>${executed_str}</var>
+<arg>${executed}[0]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.533634" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.533634" level="INFO">${failed_str} = 0</msg>
+<var>${failed_str}</var>
+<arg>${failed}[0]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.533634" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.534632" level="INFO">${prerequestScripts_executed_value} = 3</msg>
+<arg>${${status_key}_executed_value}</arg>
+<arg>${executed_str}[0]</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.533634" elapsed="0.000998"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.535657" level="INFO">${prerequestScripts_failed_value} = 0</msg>
+<arg>${${status_key}_failed_value}</arg>
+<arg>${failed_str}[0]</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.534632" elapsed="0.001025"/>
+</kw>
+<var name="${status_key}">prerequestScripts</var>
+<status status="PASS" start="2024-09-19T11:06:07.309985" elapsed="0.225672"/>
+</iter>
+<iter>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-09-19T11:06:07.554058" level="INFO">${executed} = [0]</msg>
+<var>${executed}</var>
+<arg>${stats}</arg>
+<arg>$..${status_key}.total</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-09-19T11:06:07.535657" elapsed="0.018401"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-09-19T11:06:07.574061" level="INFO">${failed} = [0]</msg>
+<var>${failed}</var>
+<arg>${stats}</arg>
+<arg>$..${status_key}.failed</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-09-19T11:06:07.554058" elapsed="0.020003"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.575329" level="INFO">${executed_str} = 0</msg>
+<var>${executed_str}</var>
+<arg>${executed}[0]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.575064" elapsed="0.000265"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.575329" level="INFO">${failed_str} = 0</msg>
+<var>${failed_str}</var>
+<arg>${failed}[0]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.575329" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.575329" level="INFO">${assertions_executed_value} = 0</msg>
+<arg>${${status_key}_executed_value}</arg>
+<arg>${executed_str}[0]</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.575329" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.575329" level="INFO">${assertions_failed_value} = 0</msg>
+<arg>${${status_key}_failed_value}</arg>
+<arg>${failed_str}[0]</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.575329" elapsed="0.000000"/>
+</kw>
+<var name="${status_key}">assertions</var>
+<status status="PASS" start="2024-09-19T11:06:07.535657" elapsed="0.039672"/>
+</iter>
+<var>${status_key}</var>
+<value>@{status}</value>
+<status status="PASS" start="2024-09-19T11:06:06.722938" elapsed="0.852391"/>
+</for>
+<status status="PASS" start="2024-09-19T11:06:06.722938" elapsed="0.852391"/>
+</kw>
+<kw name="Verification of 'Executed' status from 'iterations, requests, testScripts, prerequest_scripts and assertions'">
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${iterations_executed_value}</arg>
+<arg>1</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.575329" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${requests_executed_value}</arg>
+<arg>3</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.575329" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${testScripts_executed_value}</arg>
+<arg>3</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.575329" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${prerequestScripts_executed_value}</arg>
+<arg>3</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.575329" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${assertions_executed_value}</arg>
+<arg>0</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.575329" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-19T11:06:07.575329" elapsed="0.000000"/>
+</kw>
+<kw name="Verification of 'Passed' status from 'iterations, requests, testScripts, prerequest_scripts and assertions'">
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${iterations_failed_value}</arg>
+<arg>0</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.575329" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${requests_failed_value}</arg>
+<arg>0</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.575329" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${testScripts_failed_value}</arg>
+<arg>0</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.575329" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${prerequestScripts_failed_value}</arg>
+<arg>0</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.575329" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${assertions_failed_value}</arg>
+<arg>0</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.575329" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-19T11:06:07.575329" elapsed="0.000000"/>
+</kw>
+<kw name="Extract 'inquiry_request' and compare 'request_value' from 'DDG-ST1-INQUIRY' file">
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-09-19T11:06:07.748866" level="INFO">${body_list} = ['{\r\n    "inquiry_request": {\r\n        "credit_bic": "BOTHTHB1DDG",\r\n        "settlement_date": "2021-04-28"\r\n    }\r\n}']</msg>
+<var>${body_list}</var>
+<arg>${result_body}</arg>
+<arg>$.collection.item[0].request.body.raw</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-09-19T11:06:07.738068" elapsed="0.010798"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.748866" level="INFO">${body} = {
+    "inquiry_request": {
+        "credit_bic": "BOTHTHB1DDG",
+        "settlement_date": "2021-04-28"
+    }
+}</msg>
+<var>${body}</var>
+<arg>${body_list[0]}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.748866" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.748866" level="INFO">${parsed_body} = {'inquiry_request': {'credit_bic': 'BOTHTHB1DDG', 'settlement_date': '2021-04-28'}}</msg>
+<var>${parsed_body}</var>
+<arg>json.loads('''${body}''')</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.748866" elapsed="0.000000"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-09-19T11:06:07.886807" level="INFO">${credit_bic} = ['BOTHTHB1DDG']</msg>
+<var>${credit_bic}</var>
+<arg>${parsed_body}</arg>
+<arg>$.inquiry_request.credit_bic</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-09-19T11:06:07.748866" elapsed="0.137941"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.886807" level="INFO">${credit_bic} = BOTHTHB1DDG</msg>
+<var>${credit_bic}</var>
+<arg>${credit_bic}[0]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.886807" elapsed="0.000000"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2024-09-19T11:06:07.906123" level="INFO">${settlement_date} = ['2021-04-28']</msg>
+<var>${settlement_date}</var>
+<arg>${parsed_body}</arg>
+<arg>$.inquiry_request.settlement_date</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2024-09-19T11:06:07.888150" elapsed="0.017973"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.906123" level="INFO">${settlement_date} = 2021-04-28</msg>
+<var>${settlement_date}</var>
+<arg>${settlement_date}[0]</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.906123" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.906123" level="INFO">Credit BIC: BOTHTHB1DDG</msg>
+<arg>Credit BIC: ${credit_bic}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.906123" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-19T11:06:07.906123" level="INFO">Settlement Date: 2021-04-28</msg>
+<arg>Settlement Date: ${settlement_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.906123" elapsed="0.001002"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${credit_bic}</arg>
+<arg>BOTHTHB1DDG</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.907125" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${settlement_date}</arg>
+<arg>2021-04-28</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T11:06:07.907125" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-19T11:06:07.737559" elapsed="0.169566"/>
+</kw>
+<status status="PASS" start="2024-09-19T11:05:51.678995" elapsed="16.308485"/>
+</test>
+<status status="PASS" start="2024-09-19T11:05:49.482267" elapsed="18.506219"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Poc 5 1 8">Poc 5 1 8</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

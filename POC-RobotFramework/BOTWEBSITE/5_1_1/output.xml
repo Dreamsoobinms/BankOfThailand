@@ -1,0 +1,1715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-19T10:46:51.411489" rpa="false" schemaversion="5">
+<suite id="s1" name="Poc 5 1 1" source="C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\poc-robotframework\botwebsite\5_1_1\poc_5_1_1.robot">
+<test id="s1-t1" name="5.1.1 การดึงข้อมูลตารางจาก Web ที่เป็นตาราง (in memory ,File)" line="12">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-09-19T10:46:53.335519" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\AtiwitK\\Documents\\GitHub\\BankOfThailand\\poc-robotframework\\botwebsite\\5_1_1\\browser\\traces\\d014f2b5-2729-4677-a603-2f54c403faea"}</msg>
+<msg time="2024-09-19T10:46:53.837646" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\AtiwitK\\Documents\\GitHub\\BankOfThailand\\poc-robotframework\\botwebsite\\5_1_1\\browser\\traces\\d014f2b5-2729-4677-a603-2f54c403faea"}</msg>
+<arg>chromium</arg>
+<arg>headless=True</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-09-19T10:46:53.333518" elapsed="0.504128"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<msg time="2024-09-19T10:46:53.868963" level="INFO">No context open.</msg>
+<arg>30 seconds</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2024-09-19T10:46:53.865419" elapsed="0.004541"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-09-19T10:47:01.808773" level="INFO">Successfully initialized new page object and opened url: https://www.bot.or.th/th/statistics/exchange-rate.html</msg>
+<msg time="2024-09-19T10:47:01.808773" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-09-19T10:46:53.877954" elapsed="7.930819"/>
+</kw>
+<kw name="Accept Cookies">
+<kw name="Click" owner="Browser">
+<msg time="2024-09-19T10:47:01.811014" level="INFO">Clicks the element 'xpath=//*[@id="container-b1d85c058c"]/div/div[3]/div/div[1]/div/div/table/tbody/tr[3]/td[3]/button/span[@class="necessary-cookie-button"]'.</msg>
+<arg>xpath=//*[@id="container-b1d85c058c"]/div/div[3]/div/div[1]/div/div/table/tbody/tr[3]/td[3]/button/span[@class="necessary-cookie-button"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:01.810005" elapsed="1.207341"/>
+</kw>
+<status status="PASS" start="2024-09-19T10:47:01.810005" elapsed="1.208342"/>
+</kw>
+<kw name="Select Date">
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-09-19T10:47:03.026351" level="INFO">Fills the text '2023-12-21' in the given field.</msg>
+<arg>input[type="date"]</arg>
+<arg>${year}-${month}-${day}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:03.026351" elapsed="0.033999"/>
+</kw>
+<arg>${YEAR}</arg>
+<arg>${MONTH}</arg>
+<arg>${DAY}</arg>
+<status status="PASS" start="2024-09-19T10:47:03.025349" elapsed="0.035001"/>
+</kw>
+<kw name="Get Exchange Rates From Website">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:03.062350" level="INFO">${dataTable} = []</msg>
+<var>${dataTable}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:03.062350" elapsed="0.000000"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:03.063350" level="INFO">${header} = ['ประเทศ', 'สกุลเงิน', 'อัตราซื้อถัวเฉลี่ย ซื้อตั๋วเงิน', 'อัตราซื้อถัวเฉลี่ย ซื้อเงินโอน', 'อัตราขายถัวเฉลี่ย']</msg>
+<var>${header}</var>
+<arg>ประเทศ</arg>
+<arg>สกุลเงิน</arg>
+<arg>อัตราซื้อถัวเฉลี่ย ซื้อตั๋วเงิน</arg>
+<arg>อัตราซื้อถัวเฉลี่ย ซื้อเงินโอน</arg>
+<arg>อัตราขายถัวเฉลี่ย</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:03.063350" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${header}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:03.063350" elapsed="0.000000"/>
+</kw>
+<kw name="Get Elements" owner="Browser">
+<msg time="2024-09-19T10:47:03.092348" level="INFO">Found locator('//table/tbody[@class="table_first_content"]/tr').first(),locator('//table/tbody[@class="table_first_content"]/tr').nth(1),locator('//table/tbody[@class="table_first_content"]/tr').nth(2),locator('//table/tbody[@class="table_first_content"]/tr').nth(3),locator('//table/tbody[@class="table_first_content"]/tr').nth(4),locator('//table/tbody[@class="table_first_content"]/tr').nth(5),locator('//table/tbody[@class="table_first_content"]/tr').nth(6),locator('//table/tbody[@class="table_first_content"]/tr').nth(7),locator('//table/tbody[@class="table_first_content"]/tr').nth(8),locator('//table/tbody[@class="table_first_content"]/tr').nth(9),locator('//table/tbody[@class="table_first_content"]/tr').nth(10),locator('//table/tbody[@class="table_first_content"]/tr').nth(11),locator('//table/tbody[@class="table_first_content"]/tr').nth(12),locator('//table/tbody[@class="table_first_content"]/tr').nth(13),locator('//table/tbody[@class="table_first_content"]/tr').nth(14),locator('//table/tbody[@class="table_first_content"]/tr').nth(15),locator('//table/tbody[@class="table_first_content"]/tr').nth(16),locator('//table/tbody[@class="table_first_content"]/tr').nth(17),locator('//table/tbody[@class="table_first_content"]/tr').nth(18) Locators successfully.</msg>
+<msg time="2024-09-19T10:47:03.092348" level="INFO">${rows} = ['xpath=//table/tbody[@class="table_first_content"]/tr &gt;&gt; nth=0', 'xpath=//table/tbody[@class="table_first_content"]/tr &gt;&gt; nth=1', 'xpath=//table/tbody[@class="table_first_content"]/tr &gt;&gt; nth=2', 'xpa...</msg>
+<var>${rows}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:03.063350" elapsed="0.028998"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-09-19T10:47:03.093349" level="INFO">Length is 19.</msg>
+<msg time="2024-09-19T10:47:03.093349" level="INFO">${row_count} = 19</msg>
+<var>${row_count}</var>
+<arg>${rows}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-09-19T10:47:03.093349" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:03.094348" level="INFO">${index} = 1</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:03.093349" elapsed="0.000999"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:03.832524" level="INFO">Text: 'USD'</msg>
+<msg time="2024-09-19T10:47:03.832524" level="INFO">${country} = USD</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:03.094348" elapsed="0.738176"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:03.864523" level="INFO">Text: 'สหรัฐอเมริกา'</msg>
+<msg time="2024-09-19T10:47:03.864523" level="INFO">${currency} = สหรัฐอเมริกา</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:03.833523" elapsed="0.031000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:04.284527" level="INFO">Text: '34.6944'</msg>
+<msg time="2024-09-19T10:47:04.285528" level="INFO">${buy_bill} = 34.6944</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:03.865526" elapsed="0.420002"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:04.309526" level="INFO">Text: '34.7755'</msg>
+<msg time="2024-09-19T10:47:04.309526" level="INFO">${buy_transfer} = 34.7755</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:04.285528" elapsed="0.023998"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:04.327530" level="INFO">Text: '35.0960'</msg>
+<msg time="2024-09-19T10:47:04.327530" level="INFO">${sell} = 35.0960</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:04.309526" elapsed="0.018004"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:04.328531" level="INFO">${data_row} = ['USD', 'สหรัฐอเมริกา', '34.6944', '34.7755', '35.0960']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:04.328531" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:04.328531" elapsed="0.000000"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2024-09-19T10:47:03.093349" elapsed="1.235182"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:04.329527" level="INFO">${index} = 2</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:04.329527" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:04.355308" level="INFO">Text: 'GBP'</msg>
+<msg time="2024-09-19T10:47:04.355308" level="INFO">${country} = GBP</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:04.329527" elapsed="0.025781"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:04.809311" level="INFO">Text: 'สหราชอาณาจักร'</msg>
+<msg time="2024-09-19T10:47:04.809311" level="INFO">${currency} = สหราชอาณาจักร</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:04.355308" elapsed="0.454003"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:04.833312" level="INFO">Text: '43.6365'</msg>
+<msg time="2024-09-19T10:47:04.833312" level="INFO">${buy_bill} = 43.6365</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:04.809311" elapsed="0.024001"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:04.848313" level="INFO">Text: '43.7520'</msg>
+<msg time="2024-09-19T10:47:04.849314" level="INFO">${buy_transfer} = 43.7520</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:04.833312" elapsed="0.016002"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:04.867312" level="INFO">Text: '44.5895'</msg>
+<msg time="2024-09-19T10:47:04.867312" level="INFO">${sell} = 44.5895</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:04.849314" elapsed="0.017998"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:04.868313" level="INFO">${data_row} = ['GBP', 'สหราชอาณาจักร', '43.6365', '43.7520', '44.5895']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:04.867312" elapsed="0.001001"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:04.868313" elapsed="0.000000"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-09-19T10:47:04.328531" elapsed="0.539782"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:04.869312" level="INFO">${index} = 3</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:04.868313" elapsed="0.000999"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:04.888313" level="INFO">Text: 'EUR'</msg>
+<msg time="2024-09-19T10:47:04.889314" level="INFO">${country} = EUR</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:04.869312" elapsed="0.020002"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:05.543317" level="INFO">Text: 'ยูโรโซน'</msg>
+<msg time="2024-09-19T10:47:05.543317" level="INFO">${currency} = ยูโรโซน</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:04.889314" elapsed="0.654003"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:05.561318" level="INFO">Text: '37.8049'</msg>
+<msg time="2024-09-19T10:47:05.561318" level="INFO">${buy_bill} = 37.8049</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:05.543317" elapsed="0.018001"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:05.587317" level="INFO">Text: '37.8865'</msg>
+<msg time="2024-09-19T10:47:05.588319" level="INFO">${buy_transfer} = 37.8865</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:05.562319" elapsed="0.026000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:05.604318" level="INFO">Text: '38.6131'</msg>
+<msg time="2024-09-19T10:47:05.604318" level="INFO">${sell} = 38.6131</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:05.588319" elapsed="0.015999"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:05.605457" level="INFO">${data_row} = ['EUR', 'ยูโรโซน', '37.8049', '37.8865', '38.6131']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:05.604318" elapsed="0.001139"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:05.605457" elapsed="0.000000"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2024-09-19T10:47:04.868313" elapsed="0.737144"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:05.606464" level="INFO">${index} = 4</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:05.606464" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:05.623466" level="INFO">Text: 'JPY'</msg>
+<msg time="2024-09-19T10:47:05.623466" level="INFO">${country} = JPY</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:05.606464" elapsed="0.017002"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:05.986629" level="INFO">Text: 'ญี่ปุ่น (ต่อ 100 เยน)'</msg>
+<msg time="2024-09-19T10:47:05.986629" level="INFO">${currency} = ญี่ปุ่น (ต่อ 100 เยน)</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:05.623466" elapsed="0.363163"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:06.001629" level="INFO">Text: '24.0085'</msg>
+<msg time="2024-09-19T10:47:06.002630" level="INFO">${buy_bill} = 24.0085</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:05.987633" elapsed="0.014997"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:06.023762" level="INFO">Text: '24.0938'</msg>
+<msg time="2024-09-19T10:47:06.023762" level="INFO">${buy_transfer} = 24.0938</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:06.002630" elapsed="0.021132"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:06.039899" level="INFO">Text: '24.7790'</msg>
+<msg time="2024-09-19T10:47:06.039899" level="INFO">${sell} = 24.7790</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:06.024764" elapsed="0.015135"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:06.040898" level="INFO">${data_row} = ['JPY', 'ญี่ปุ่น (ต่อ 100 เยน)', '24.0085', '24.0938', '24.7790']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:06.039899" elapsed="0.000999"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:06.040898" elapsed="0.000000"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2024-09-19T10:47:05.606464" elapsed="0.434434"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:06.041897" level="INFO">${index} = 5</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:06.040898" elapsed="0.000999"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:06.371897" level="INFO">Text: 'HKD'</msg>
+<msg time="2024-09-19T10:47:06.371897" level="INFO">${country} = HKD</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:06.041897" elapsed="0.330000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:06.559834" level="INFO">Text: 'ฮ่องกง'</msg>
+<msg time="2024-09-19T10:47:06.559834" level="INFO">${currency} = ฮ่องกง</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:06.372899" elapsed="0.186935"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:06.591983" level="INFO">Text: '4.4267'</msg>
+<msg time="2024-09-19T10:47:06.591983" level="INFO">${buy_bill} = 4.4267</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:06.560834" elapsed="0.031149"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:06.617980" level="INFO">Text: '4.4417'</msg>
+<msg time="2024-09-19T10:47:06.617980" level="INFO">${buy_transfer} = 4.4417</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:06.591983" elapsed="0.025997"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:06.874982" level="INFO">Text: '4.5121'</msg>
+<msg time="2024-09-19T10:47:06.874982" level="INFO">${sell} = 4.5121</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:06.617980" elapsed="0.258002"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:06.875982" level="INFO">${data_row} = ['HKD', 'ฮ่องกง', '4.4267', '4.4417', '4.5121']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:06.875982" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:06.875982" elapsed="0.000000"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2024-09-19T10:47:06.040898" elapsed="0.835084"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:06.876980" level="INFO">${index} = 6</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:06.876980" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:06.951381" level="INFO">Text: 'MYR'</msg>
+<msg time="2024-09-19T10:47:06.951381" level="INFO">${country} = MYR</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:06.876980" elapsed="0.074401"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:07.081386" level="INFO">Text: 'มาเลเซีย'</msg>
+<msg time="2024-09-19T10:47:07.082385" level="INFO">${currency} = มาเลเซีย</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:06.951381" elapsed="0.131004"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:07.097383" level="INFO">Text: '7.3720'</msg>
+<msg time="2024-09-19T10:47:07.097383" level="INFO">${buy_bill} = 7.3720</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.082385" elapsed="0.014998"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:07.113384" level="INFO">Text: '7.4086'</msg>
+<msg time="2024-09-19T10:47:07.114384" level="INFO">${buy_transfer} = 7.4086</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.098384" elapsed="0.016000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:07.286384" level="INFO">Text: '7.6183'</msg>
+<msg time="2024-09-19T10:47:07.286384" level="INFO">${sell} = 7.6183</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.114384" elapsed="0.172000"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:07.286384" level="INFO">${data_row} = ['MYR', 'มาเลเซีย', '7.3720', '7.4086', '7.6183']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.286384" elapsed="0.001003"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.287541" elapsed="0.000000"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2024-09-19T10:47:06.876980" elapsed="0.410561"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:07.287541" level="INFO">${index} = 7</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.287541" elapsed="0.001005"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:07.335925" level="INFO">Text: 'SGD'</msg>
+<msg time="2024-09-19T10:47:07.336926" level="INFO">${country} = SGD</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.288546" elapsed="0.048380"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:07.476930" level="INFO">Text: 'สิงคโปร์'</msg>
+<msg time="2024-09-19T10:47:07.476930" level="INFO">${currency} = สิงคโปร์</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.336926" elapsed="0.140004"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:07.497928" level="INFO">Text: '25.9328'</msg>
+<msg time="2024-09-19T10:47:07.497928" level="INFO">${buy_bill} = 25.9328</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.477931" elapsed="0.019997"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:07.834251" level="INFO">Text: '25.9914'</msg>
+<msg time="2024-09-19T10:47:07.835252" level="INFO">${buy_transfer} = 25.9914</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.497928" elapsed="0.337324"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:07.852253" level="INFO">Text: '26.5578'</msg>
+<msg time="2024-09-19T10:47:07.852253" level="INFO">${sell} = 26.5578</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.835252" elapsed="0.017001"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:07.853250" level="INFO">${data_row} = ['SGD', 'สิงคโปร์', '25.9328', '25.9914', '26.5578']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.852253" elapsed="0.000997"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.853250" elapsed="0.000000"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2024-09-19T10:47:07.287541" elapsed="0.565709"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:07.854248" level="INFO">${index} = 8</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.853250" elapsed="0.000998"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:07.878251" level="INFO">Text: 'BND'</msg>
+<msg time="2024-09-19T10:47:07.878251" level="INFO">${country} = BND</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.854248" elapsed="0.024003"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:07.900383" level="INFO">Text: 'บรูไนดารุสซาลาม'</msg>
+<msg time="2024-09-19T10:47:07.901382" level="INFO">${currency} = บรูไนดารุสซาลาม</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.879253" elapsed="0.022129"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.019800" level="INFO">Text: '25.7936'</msg>
+<msg time="2024-09-19T10:47:08.019800" level="INFO">${buy_bill} = 25.7936</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:07.901382" elapsed="0.118418"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.036801" level="INFO">Text: '25.8836'</msg>
+<msg time="2024-09-19T10:47:08.036801" level="INFO">${buy_transfer} = 25.8836</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.019800" elapsed="0.017001"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.219801" level="INFO">Text: '26.6381'</msg>
+<msg time="2024-09-19T10:47:08.219801" level="INFO">${sell} = 26.6381</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.036801" elapsed="0.183000"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:08.219801" level="INFO">${data_row} = ['BND', 'บรูไนดารุสซาลาม', '25.7936', '25.8836', '26.6381']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.219801" elapsed="0.001000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.220801" elapsed="0.000000"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2024-09-19T10:47:07.853250" elapsed="0.367551"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:08.220801" level="INFO">${index} = 9</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.220801" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.235931" level="INFO">Text: 'PHP'</msg>
+<msg time="2024-09-19T10:47:08.235931" level="INFO">${country} = PHP</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.220801" elapsed="0.015130"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.250931" level="INFO">Text: 'ฟิลิปปินส์'</msg>
+<msg time="2024-09-19T10:47:08.250931" level="INFO">${currency} = ฟิลิปปินส์</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.236930" elapsed="0.014001"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.267934" level="INFO">Text: '0.6013'</msg>
+<msg time="2024-09-19T10:47:08.268932" level="INFO">${buy_bill} = 0.6013</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.251931" elapsed="0.017001"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.296930" level="INFO">Text: '0.6058'</msg>
+<msg time="2024-09-19T10:47:08.296930" level="INFO">${buy_transfer} = 0.6058</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.268932" elapsed="0.027998"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.315080" level="INFO">Text: '0.6456'</msg>
+<msg time="2024-09-19T10:47:08.315080" level="INFO">${sell} = 0.6456</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.297932" elapsed="0.017148"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:08.316079" level="INFO">${data_row} = ['PHP', 'ฟิลิปปินส์', '0.6013', '0.6058', '0.6456']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.315080" elapsed="0.000999"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.316079" elapsed="0.000000"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2024-09-19T10:47:08.220801" elapsed="0.095278"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:08.317080" level="INFO">${index} = 10</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.316079" elapsed="0.001001"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.332227" level="INFO">Text: 'IDR'</msg>
+<msg time="2024-09-19T10:47:08.333228" level="INFO">${country} = IDR</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.317080" elapsed="0.016148"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.775361" level="INFO">Text: 'อินโดนิเซีย (ต่อ 1000 รูเปีย)'</msg>
+<msg time="2024-09-19T10:47:08.776362" level="INFO">${currency} = อินโดนิเซีย (ต่อ 1000 รูเปีย)</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.333228" elapsed="0.443134"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.791362" level="INFO">Text: '2.1041'</msg>
+<msg time="2024-09-19T10:47:08.791362" level="INFO">${buy_bill} = 2.1041</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.776362" elapsed="0.015000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.808362" level="INFO">Text: '2.1625'</msg>
+<msg time="2024-09-19T10:47:08.808362" level="INFO">${buy_transfer} = 2.1625</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.791362" elapsed="0.017000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.825363" level="INFO">Text: '2.3518'</msg>
+<msg time="2024-09-19T10:47:08.825363" level="INFO">${sell} = 2.3518</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.808362" elapsed="0.017001"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:08.825363" level="INFO">${data_row} = ['IDR', 'อินโดนิเซีย (ต่อ 1000 รูเปีย)', '2.1041', '2.1625', '2.3518']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.825363" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.825363" elapsed="0.000999"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2024-09-19T10:47:08.316079" elapsed="0.510283"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:08.826362" level="INFO">${index} = 11</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.826362" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.851036" level="INFO">Text: 'INR'</msg>
+<msg time="2024-09-19T10:47:08.851036" level="INFO">${country} = INR</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.826362" elapsed="0.024674"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.869039" level="INFO">Text: 'อินเดีย'</msg>
+<msg time="2024-09-19T10:47:08.869039" level="INFO">${currency} = อินเดีย</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.852038" elapsed="0.017001"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.885040" level="INFO">Text: '0.3940'</msg>
+<msg time="2024-09-19T10:47:08.885040" level="INFO">${buy_bill} = 0.3940</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.870035" elapsed="0.015005"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.903037" level="INFO">Text: '0.3948'</msg>
+<msg time="2024-09-19T10:47:08.904039" level="INFO">${buy_transfer} = 0.3948</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.885040" elapsed="0.018999"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:08.920037" level="INFO">Text: '0.4507'</msg>
+<msg time="2024-09-19T10:47:08.920037" level="INFO">${sell} = 0.4507</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.904039" elapsed="0.015998"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:08.921037" level="INFO">${data_row} = ['INR', 'อินเดีย', '0.3940', '0.3948', '0.4507']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.920037" elapsed="0.001000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.921037" elapsed="0.000000"/>
+</kw>
+<var name="${i}">10</var>
+<status status="PASS" start="2024-09-19T10:47:08.826362" elapsed="0.094675"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:08.922040" level="INFO">${index} = 12</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.922040" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:09.338041" level="INFO">Text: 'CHF'</msg>
+<msg time="2024-09-19T10:47:09.338041" level="INFO">${country} = CHF</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:08.922040" elapsed="0.416001"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:09.360043" level="INFO">Text: 'สวิตเซอร์แลนด์'</msg>
+<msg time="2024-09-19T10:47:09.360043" level="INFO">${currency} = สวิตเซอร์แลนด์</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:09.338041" elapsed="0.022002"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:09.387042" level="INFO">Text: '40.0888'</msg>
+<msg time="2024-09-19T10:47:09.387042" level="INFO">${buy_bill} = 40.0888</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:09.360043" elapsed="0.026999"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:09.414040" level="INFO">Text: '40.1838'</msg>
+<msg time="2024-09-19T10:47:09.414040" level="INFO">${buy_transfer} = 40.1838</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:09.387042" elapsed="0.026998"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:09.453042" level="INFO">Text: '40.8620'</msg>
+<msg time="2024-09-19T10:47:09.454040" level="INFO">${sell} = 40.8620</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:09.414040" elapsed="0.040000"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:09.454040" level="INFO">${data_row} = ['CHF', 'สวิตเซอร์แลนด์', '40.0888', '40.1838', '40.8620']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:09.454040" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:09.454040" elapsed="0.000000"/>
+</kw>
+<var name="${i}">11</var>
+<status status="PASS" start="2024-09-19T10:47:08.922040" elapsed="0.532000"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:09.455043" level="INFO">${index} = 13</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:09.455043" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:09.497043" level="INFO">Text: 'AUD'</msg>
+<msg time="2024-09-19T10:47:09.498045" level="INFO">${country} = AUD</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:09.455043" elapsed="0.043002"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:10.183203" level="INFO">Text: 'ออสเตรเลีย'</msg>
+<msg time="2024-09-19T10:47:10.184201" level="INFO">${currency} = ออสเตรเลีย</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:09.498045" elapsed="0.686156"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:10.290205" level="INFO">Text: '23.1055'</msg>
+<msg time="2024-09-19T10:47:10.290205" level="INFO">${buy_bill} = 23.1055</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:10.184201" elapsed="0.106004"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:10.999534" level="INFO">Text: '23.1605'</msg>
+<msg time="2024-09-19T10:47:10.999534" level="INFO">${buy_transfer} = 23.1605</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:10.290205" elapsed="0.709329"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:11.048536" level="INFO">Text: '23.9623'</msg>
+<msg time="2024-09-19T10:47:11.048536" level="INFO">${sell} = 23.9623</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:11.000534" elapsed="0.048002"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:11.049534" level="INFO">${data_row} = ['AUD', 'ออสเตรเลีย', '23.1055', '23.1605', '23.9623']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:11.048536" elapsed="0.000998"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:11.049534" elapsed="0.000000"/>
+</kw>
+<var name="${i}">12</var>
+<status status="PASS" start="2024-09-19T10:47:09.455043" elapsed="1.594491"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:11.049534" level="INFO">${index} = 14</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:11.049534" elapsed="0.000999"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:11.629733" level="INFO">Text: 'NZD'</msg>
+<msg time="2024-09-19T10:47:11.630734" level="INFO">${country} = NZD</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:11.050533" elapsed="0.580201"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:11.752890" level="INFO">Text: 'นิวซีแลนด์'</msg>
+<msg time="2024-09-19T10:47:11.752890" level="INFO">${currency} = นิวซีแลนด์</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:11.630734" elapsed="0.122156"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:11.766889" level="INFO">Text: '21.4819'</msg>
+<msg time="2024-09-19T10:47:11.766889" level="INFO">${buy_bill} = 21.4819</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:11.752890" elapsed="0.013999"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:11.784039" level="INFO">Text: '21.5384'</msg>
+<msg time="2024-09-19T10:47:11.784039" level="INFO">${buy_transfer} = 21.5384</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:11.767890" elapsed="0.016149"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:11.799186" level="INFO">Text: '22.1531'</msg>
+<msg time="2024-09-19T10:47:11.799186" level="INFO">${sell} = 22.1531</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:11.784039" elapsed="0.015147"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:11.800187" level="INFO">${data_row} = ['NZD', 'นิวซีแลนด์', '21.4819', '21.5384', '22.1531']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:11.800187" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:11.800187" elapsed="0.000000"/>
+</kw>
+<var name="${i}">13</var>
+<status status="PASS" start="2024-09-19T10:47:11.049534" elapsed="0.750653"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:11.801185" level="INFO">${index} = 15</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:11.800187" elapsed="0.000998"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:12.551878" level="INFO">Text: 'CAD'</msg>
+<msg time="2024-09-19T10:47:12.551878" level="INFO">${country} = CAD</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:11.801185" elapsed="0.750693"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:12.569035" level="INFO">Text: 'แคนาดา'</msg>
+<msg time="2024-09-19T10:47:12.570035" level="INFO">${currency} = แคนาดา</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:12.551878" elapsed="0.018157"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:12.601034" level="INFO">Text: '25.8498'</msg>
+<msg time="2024-09-19T10:47:12.601034" level="INFO">${buy_bill} = 25.8498</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:12.570035" elapsed="0.030999"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:12.617033" level="INFO">Text: '25.8955'</msg>
+<msg time="2024-09-19T10:47:12.618035" level="INFO">${buy_transfer} = 25.8955</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:12.602031" elapsed="0.016004"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:12.636034" level="INFO">Text: '26.4316'</msg>
+<msg time="2024-09-19T10:47:12.637036" level="INFO">${sell} = 26.4316</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:12.618035" elapsed="0.019042"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:12.637165" level="INFO">${data_row} = ['CAD', 'แคนาดา', '25.8498', '25.8955', '26.4316']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:12.637165" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:12.637165" elapsed="0.000000"/>
+</kw>
+<var name="${i}">14</var>
+<status status="PASS" start="2024-09-19T10:47:11.800187" elapsed="0.836978"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:12.638171" level="INFO">${index} = 16</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:12.638171" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:12.652172" level="INFO">Text: 'SEK'</msg>
+<msg time="2024-09-19T10:47:12.652172" level="INFO">${country} = SEK</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:12.638171" elapsed="0.014001"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.167320" level="INFO">Text: 'สวีเดน'</msg>
+<msg time="2024-09-19T10:47:13.168324" level="INFO">${currency} = สวีเดน</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:12.653172" elapsed="0.515152"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.182320" level="INFO">Text: '3.3963'</msg>
+<msg time="2024-09-19T10:47:13.183322" level="INFO">${buy_bill} = 3.3963</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.168324" elapsed="0.014998"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.197319" level="INFO">Text: '3.4081'</msg>
+<msg time="2024-09-19T10:47:13.197319" level="INFO">${buy_transfer} = 3.4081</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.183322" elapsed="0.013997"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.213322" level="INFO">Text: '3.4688'</msg>
+<msg time="2024-09-19T10:47:13.214321" level="INFO">${sell} = 3.4688</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.197319" elapsed="0.017002"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:13.214321" level="INFO">${data_row} = ['SEK', 'สวีเดน', '3.3963', '3.4081', '3.4688']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.214321" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.214321" elapsed="0.000000"/>
+</kw>
+<var name="${i}">15</var>
+<status status="PASS" start="2024-09-19T10:47:12.637165" elapsed="0.577156"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:13.215322" level="INFO">${index} = 17</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.215322" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.229319" level="INFO">Text: 'DKK'</msg>
+<msg time="2024-09-19T10:47:13.230320" level="INFO">${country} = DKK</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.215322" elapsed="0.014998"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.560446" level="INFO">Text: 'เดนมาร์ก'</msg>
+<msg time="2024-09-19T10:47:13.560446" level="INFO">${currency} = เดนมาร์ก</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.230320" elapsed="0.330126"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.577447" level="INFO">Text: '5.0801'</msg>
+<msg time="2024-09-19T10:47:13.577447" level="INFO">${buy_bill} = 5.0801</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.560446" elapsed="0.017001"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.592450" level="INFO">Text: '5.0933'</msg>
+<msg time="2024-09-19T10:47:13.592450" level="INFO">${buy_transfer} = 5.0933</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.577447" elapsed="0.015003"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.607447" level="INFO">Text: '5.1697'</msg>
+<msg time="2024-09-19T10:47:13.607447" level="INFO">${sell} = 5.1697</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.592450" elapsed="0.014997"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:13.608442" level="INFO">${data_row} = ['DKK', 'เดนมาร์ก', '5.0801', '5.0933', '5.1697']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.607447" elapsed="0.000995"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.608442" elapsed="0.000000"/>
+</kw>
+<var name="${i}">16</var>
+<status status="PASS" start="2024-09-19T10:47:13.215322" elapsed="0.393120"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:13.608442" level="INFO">${index} = 18</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.608442" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.623445" level="INFO">Text: 'NOK'</msg>
+<msg time="2024-09-19T10:47:13.623445" level="INFO">${country} = NOK</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.608442" elapsed="0.015003"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.637449" level="INFO">Text: 'นอร์เวย์'</msg>
+<msg time="2024-09-19T10:47:13.637449" level="INFO">${currency} = นอร์เวย์</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.623445" elapsed="0.014004"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.651588" level="INFO">Text: '3.3349'</msg>
+<msg time="2024-09-19T10:47:13.651588" level="INFO">${buy_bill} = 3.3349</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.637449" elapsed="0.014139"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.666732" level="INFO">Text: '3.3457'</msg>
+<msg time="2024-09-19T10:47:13.666732" level="INFO">${buy_transfer} = 3.3457</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.651588" elapsed="0.015144"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.680867" level="INFO">Text: '3.4102'</msg>
+<msg time="2024-09-19T10:47:13.680867" level="INFO">${sell} = 3.4102</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.667732" elapsed="0.013135"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:13.681869" level="INFO">${data_row} = ['NOK', 'นอร์เวย์', '3.3349', '3.3457', '3.4102']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.681869" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.681869" elapsed="0.000000"/>
+</kw>
+<var name="${i}">17</var>
+<status status="PASS" start="2024-09-19T10:47:13.608442" elapsed="0.073427"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:47:13.682868" level="INFO">${index} = 19</msg>
+<var>${index}</var>
+<arg>${i} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.681869" elapsed="0.000999"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.698006" level="INFO">Text: 'CNY'</msg>
+<msg time="2024-09-19T10:47:13.698006" level="INFO">${country} = CNY</msg>
+<var>${country}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.682868" elapsed="0.015138"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:13.716147" level="INFO">Text: 'จีน'</msg>
+<msg time="2024-09-19T10:47:13.716147" level="INFO">${currency} = จีน</msg>
+<var>${currency}</var>
+<arg>xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.698006" elapsed="0.018141"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:14.262290" level="INFO">Text: '4.8099'</msg>
+<msg time="2024-09-19T10:47:14.262290" level="INFO">${buy_bill} = 4.8099</msg>
+<var>${buy_bill}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:13.716147" elapsed="0.546143"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:14.342287" level="INFO">Text: '4.8344'</msg>
+<msg time="2024-09-19T10:47:14.342287" level="INFO">${buy_transfer} = 4.8344</msg>
+<var>${buy_transfer}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:14.263287" elapsed="0.079000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T10:47:14.358288" level="INFO">Text: '4.9494'</msg>
+<msg time="2024-09-19T10:47:14.359291" level="INFO">${sell} = 4.9494</msg>
+<var>${sell}</var>
+<arg>xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:47:14.343285" elapsed="0.016006"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:47:14.359291" level="INFO">${data_row} = ['CNY', 'จีน', '4.8099', '4.8344', '4.9494']</msg>
+<var>${data_row}</var>
+<arg>${country}</arg>
+<arg>${currency}</arg>
+<arg>${buy_bill}</arg>
+<arg>${buy_transfer}</arg>
+<arg>${sell}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:47:14.359291" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${dataTable}</arg>
+<arg>${data_row}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-09-19T10:47:14.359291" elapsed="0.000000"/>
+</kw>
+<var name="${i}">18</var>
+<status status="PASS" start="2024-09-19T10:47:13.681869" elapsed="0.677422"/>
+</iter>
+<var>${i}</var>
+<value>${row_count}</value>
+<status status="PASS" start="2024-09-19T10:47:03.093349" elapsed="11.266943"/>
+</for>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-19T10:47:14.360292" level="INFO">[['ประเทศ', 'สกุลเงิน', 'อัตราซื้อถัวเฉลี่ย ซื้อตั๋วเงิน', 'อัตราซื้อถัวเฉลี่ย ซื้อเงินโอน', 'อัตราขายถัวเฉลี่ย'], ['USD', 'สหรัฐอเมริกา', '34.6944', '34.7755', '35.0960'], ['GBP', 'สหราชอาณาจักร', '43.6365', '43.7520', '44.5895'], ['EUR', 'ยูโรโซน', '37.8049', '37.8865', '38.6131'], ['JPY', 'ญี่ปุ่น (ต่อ 100 เยน)', '24.0085', '24.0938', '24.7790'], ['HKD', 'ฮ่องกง', '4.4267', '4.4417', '4.5121'], ['MYR', 'มาเลเซีย', '7.3720', '7.4086', '7.6183'], ['SGD', 'สิงคโปร์', '25.9328', '25.9914', '26.5578'], ['BND', 'บรูไนดารุสซาลาม', '25.7936', '25.8836', '26.6381'], ['PHP', 'ฟิลิปปินส์', '0.6013', '0.6058', '0.6456'], ['IDR', 'อินโดนิเซีย (ต่อ 1000 รูเปีย)', '2.1041', '2.1625', '2.3518'], ['INR', 'อินเดีย', '0.3940', '0.3948', '0.4507'], ['CHF', 'สวิตเซอร์แลนด์', '40.0888', '40.1838', '40.8620'], ['AUD', 'ออสเตรเลีย', '23.1055', '23.1605', '23.9623'], ['NZD', 'นิวซีแลนด์', '21.4819', '21.5384', '22.1531'], ['CAD', 'แคนาดา', '25.8498', '25.8955', '26.4316'], ['SEK', 'สวีเดน', '3.3963', '3.4081', '3.4688'], ['DKK', 'เดนมาร์ก', '5.0801', '5.0933', '5.1697'], ['NOK', 'นอร์เวย์', '3.3349', '3.3457', '3.4102'], ['CNY', 'จีน', '4.8099', '4.8344', '4.9494']]</msg>
+<arg>${data_table}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-19T10:47:14.360292" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-19T10:47:03.062350" elapsed="11.297942"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-09-19T10:47:15.119125" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-19T10:47:14.361288" elapsed="0.758838"/>
+</kw>
+<doc>Test case to extract table data from the web and format it</doc>
+<status status="PASS" start="2024-09-19T10:46:53.327518" elapsed="21.794607"/>
+</test>
+<status status="PASS" start="2024-09-19T10:46:51.427116" elapsed="23.704398"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Poc 5 1 1">Poc 5 1 1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

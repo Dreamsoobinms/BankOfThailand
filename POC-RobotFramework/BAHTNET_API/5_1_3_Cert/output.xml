@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-19T10:54:44.540533" rpa="false" schemaversion="5">
+<suite id="s1" name="Poc 5 1 3 Cert" source="C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\poc-robotframework\bahtnet_api\5_1_3_Cert\poc_5_1_3_cert.robot">
+<test id="s1-t1" name="5.1.3 Reguent แบบ มี Certificate ดึงข้อมูลได้ถูกต้อง" line="12">
+<kw name="Send Post Request and Verify response body">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-19T10:54:46.165378" level="INFO">@{client certs} = [ C:/Users/AtiwitK/Documents/Postman/DDG-2-cert.pem | C:/Users/AtiwitK/Documents/Postman/DDG-2-key.pem ]</msg>
+<var>@{client certs}</var>
+<arg>${cert_path}</arg>
+<arg>${key_path}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-19T10:54:46.165378" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-09-19T10:54:46.165378" level="INFO">${HEADERS} = {'accept': 'application/json', 'content-type': 'application/json', 'X-IBM-Client-Id': 'a7f05458-6cc3-45bd-b912-f974218d9277', 'X-IBM-Client-Secret': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0...</msg>
+<var>${HEADERS}</var>
+<arg>accept=application/json</arg>
+<arg>content-type=application/json</arg>
+<arg>X-IBM-Client-Id=a7f05458-6cc3-45bd-b912-f974218d9277</arg>
+<arg>X-IBM-Client-Secret=C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-09-19T10:54:46.165378" elapsed="0.000000"/>
+</kw>
+<kw name="Create Client Cert Session" owner="RequestsLibrary">
+<msg time="2024-09-19T10:54:46.165378" level="INFO">Creating Session using : alias=my_session, url=https://apixgw2.bot.or.th/bot-iwt/partner-extranet/bnapi, headers={'accept': 'application/json', 'content-type': 'application/json', 'X-IBM-Client-Id': 'a7f05458-6cc3-45bd-b912-f974218d9277', 'X-IBM-Client-Secret': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0'},                     cookies={}, client_certs=['C:/Users/AtiwitK/Documents/Postman/DDG-2-cert.pem', 'C:/Users/AtiwitK/Documents/Postman/DDG-2-key.pem'], timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<arg>my_session</arg>
+<arg>url=${URL}</arg>
+<arg>client_certs=${client certs}</arg>
+<arg>headers=${HEADERS}</arg>
+<arg>verify=True</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-09-19T10:54:46.165378" elapsed="0.000000"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2024-09-19T10:54:48.737858" level="INFO">POST Request : url=https://apixgw2.bot.or.th/bot-iwt/partner-extranet/bnapi/inquiry-status-tracking 
+ path_url=/bot-iwt/partner-extranet/bnapi/inquiry-status-tracking 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'accept': 'application/json', 'Connection': 'keep-alive', 'content-type': 'application/json', 'X-IBM-Client-Id': 'a7f05458-6cc3-45bd-b912-f974218d9277', 'X-IBM-Client-Secret': 'C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0', 'Content-Length': '83'} 
+ body={"inquiry_request": {"credit_bic": "BOTHTHB1DDG", "settlement_date": "2024-08-01"}} 
+ </msg>
+<msg time="2024-09-19T10:54:48.737858" level="INFO">POST Response : url=https://apixgw2.bot.or.th/bot-iwt/partner-extranet/bnapi/inquiry-status-tracking 
+ status=200, reason=OK 
+ headers={'X-Backside-Transport': 'OK OK', 'Connection': 'Keep-Alive', 'Transfer-Encoding': 'chunked', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json', 'Content-Language': 'en-US', 'Expires': '-1', 'Server': 'Microsoft-IIS/10.0,IBM,App,Connect,Enterprise', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'X-Original-HTTP-Status-Code': '200', 'X-Powered-By': 'Servlet/3.1,ASP.NET', 'X-AspNet-Version': '4.0.30319', 'Date': 'Thu, 19 Sep 2024 03:54:48 GMT', 'X-Global-Transaction-ID': '196c556566eba08606f32a61', 'X-RateLimit-Limit': 'name=rate-limit-1,50;', 'X-RateLimit-Remaining': 'name=rate-limit-1,49;', 'Content-Encoding': 'gzip'} 
+ body={"inquiry_response":{"response_code":"S","reason":"Success","return_result":[{"settlement_datetime":"2024-08-02T09:33:16","sender_ref_debit":"MXSE61327181","message_type":"009","business_type":"RGS","debit_bic":"KASITHBK","debit_account":"0010037969","credit_bic":"BOTHTHB1DDG","credit_account":"0010039627","debtor_account":"0010037969","creditor_account":"0010039627","settlement_amount":"955214.41","transaction_status":"E","error_code":"MS716","outgoing_incoming":"I"}]}} 
+ </msg>
+<msg time="2024-09-19T10:54:48.737858" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>my_session</arg>
+<arg>/inquiry-status-tracking</arg>
+<arg>data=${BODY}</arg>
+<arg>headers=${HEADERS}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2024-09-19T10:54:46.165378" elapsed="2.572480"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.738858" level="INFO">200</msg>
+<arg>${response.status_code}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.737858" elapsed="0.001000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.738858" level="INFO">{"inquiry_response":{"response_code":"S","reason":"Success","return_result":[{"settlement_datetime":"2024-08-02T09:33:16","sender_ref_debit":"MXSE61327181","message_type":"009","business_type":"RGS","debit_bic":"KASITHBK","debit_account":"0010037969","credit_bic":"BOTHTHB1DDG","credit_account":"0010039627","debtor_account":"0010037969","creditor_account":"0010039627","settlement_amount":"955214.41","transaction_status":"E","error_code":"MS716","outgoing_incoming":"I"}]}}</msg>
+<arg>${response.content}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.738858" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.739856" level="INFO">${response_json} = {'inquiry_response': {'response_code': 'S', 'reason': 'Success', 'return_result': [{'settlement_datetime': '2024-08-02T09:33:16', 'sender_ref_debit': 'MXSE61327181', 'message_type': '009', 'business_t...</msg>
+<var>${response_json}</var>
+<arg>json.loads('''${response.content}''')</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.738858" elapsed="0.000998"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.739856" level="INFO">${inquiry_response} = {'response_code': 'S', 'reason': 'Success', 'return_result': [{'settlement_datetime': '2024-08-02T09:33:16', 'sender_ref_debit': 'MXSE61327181', 'message_type': '009', 'business_type': 'RGS', 'debit_b...</msg>
+<var>${inquiry_response}</var>
+<arg>${response_json['inquiry_response']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.739856" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.740856" level="INFO">${response_code} = S</msg>
+<var>${response_code}</var>
+<arg>${inquiry_response}[response_code]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.739856" elapsed="0.001000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.740856" level="INFO">${reason} = Success</msg>
+<var>${reason}</var>
+<arg>${inquiry_response}[reason]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.740856" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.740856" level="INFO">${settlement_datetime} = 2024-08-02T09:33:16</msg>
+<var>${settlement_datetime}</var>
+<arg>${inquiry_response}[return_result][0][settlement_datetime]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.740856" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.741855" level="INFO">${sender_ref_debit} = MXSE61327181</msg>
+<var>${sender_ref_debit}</var>
+<arg>${inquiry_response}[return_result][0][sender_ref_debit]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.740856" elapsed="0.000999"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.741855" level="INFO">${message_type} = 009</msg>
+<var>${message_type}</var>
+<arg>${inquiry_response}[return_result][0][message_type]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.741855" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.741855" level="INFO">${business_type} = RGS</msg>
+<var>${business_type}</var>
+<arg>${inquiry_response}[return_result][0][business_type]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.741855" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.741855" level="INFO">${debit_bic} = KASITHBK</msg>
+<var>${debit_bic}</var>
+<arg>${inquiry_response}[return_result][0][debit_bic]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.741855" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.742856" level="INFO">${debit_account} = 0010037969</msg>
+<var>${debit_account}</var>
+<arg>${inquiry_response}[return_result][0][debit_account]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.742856" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.742856" level="INFO">${credit_bic} = BOTHTHB1DDG</msg>
+<var>${credit_bic}</var>
+<arg>${inquiry_response}[return_result][0][credit_bic]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.742856" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.742856" level="INFO">${credit_account} = 0010039627</msg>
+<var>${credit_account}</var>
+<arg>${inquiry_response}[return_result][0][credit_account]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.742856" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.742856" level="INFO">${debtor_account} = 0010037969</msg>
+<var>${debtor_account}</var>
+<arg>${inquiry_response}[return_result][0][debtor_account]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.742856" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.743853" level="INFO">${creditor_account} = 0010039627</msg>
+<var>${creditor_account}</var>
+<arg>${inquiry_response}[return_result][0][creditor_account]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.742856" elapsed="0.000997"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.743853" level="INFO">${settlement_amount} = 955214.41</msg>
+<var>${settlement_amount}</var>
+<arg>${inquiry_response}[return_result][0][settlement_amount]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.743853" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.743853" level="INFO">${transaction_status} = E</msg>
+<var>${transaction_status}</var>
+<arg>${inquiry_response}[return_result][0][transaction_status]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.743853" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.743853" level="INFO">${error_code} = MS716</msg>
+<var>${error_code}</var>
+<arg>${inquiry_response}[return_result][0][error_code]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.743853" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-19T10:54:48.744858" level="INFO">${outgoing_incoming} = I</msg>
+<var>${outgoing_incoming}</var>
+<arg>${inquiry_response}[return_result][0][outgoing_incoming]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.744858" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${response_code}</arg>
+<arg>S</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.744858" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${reason}</arg>
+<arg>Success</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.744858" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${settlement_datetime}</arg>
+<arg>2024-08-02T09:33:16</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.745859" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${sender_ref_debit}</arg>
+<arg>MXSE61327181</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.745859" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${message_type}</arg>
+<arg>009</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.745859" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${business_type}</arg>
+<arg>RGS</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.745859" elapsed="0.001000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${debit_bic}</arg>
+<arg>KASITHBK</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.746859" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${debit_account}</arg>
+<arg>0010037969</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.746859" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${credit_bic}</arg>
+<arg>BOTHTHB1DDG</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.746859" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${credit_account}</arg>
+<arg>0010039627</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.746859" elapsed="0.000999"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${debtor_account}</arg>
+<arg>0010037969</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.747858" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${creditor_account}</arg>
+<arg>0010039627</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.747858" elapsed="0.001000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${settlement_amount}</arg>
+<arg>955214.41</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.748858" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${transaction_status}</arg>
+<arg>E</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.748858" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${error_code}</arg>
+<arg>MS716</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.748858" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${outgoing_incoming}</arg>
+<arg>I</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-19T10:54:48.748858" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2024-09-19T10:54:46.165378" elapsed="2.584479"/>
+</kw>
+<status status="PASS" start="2024-09-19T10:54:46.165378" elapsed="2.585078"/>
+</test>
+<status status="PASS" start="2024-09-19T10:54:44.540533" elapsed="4.210947"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Poc 5 1 3 Cert">Poc 5 1 3 Cert</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

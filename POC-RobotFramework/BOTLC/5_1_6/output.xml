@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-19T11:02:38.965152" rpa="false" schemaversion="5">
+<suite id="s1" name="Poc 5 1 6" source="C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\poc-robotframework\botlc\5_1_6\poc_5_1_6.robot">
+<test id="s1-t1" name="5.1.6 การเชื่อมต่อกับ Facebook" line="11">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-09-19T11:02:44.027437" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\AtiwitK\\Documents\\GitHub\\BankOfThailand\\poc-robotframework\\botlc\\5_1_6\\browser\\traces\\3c5828d9-1047-431f-9bdc-bff5ca37dea7"}</msg>
+<msg time="2024-09-19T11:02:45.791113" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\AtiwitK\\Documents\\GitHub\\BankOfThailand\\poc-robotframework\\botlc\\5_1_6\\browser\\traces\\3c5828d9-1047-431f-9bdc-bff5ca37dea7"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-09-19T11:02:44.027437" elapsed="1.763676"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<msg time="2024-09-19T11:02:45.836898" level="INFO">No context open.</msg>
+<arg>30 seconds</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2024-09-19T11:02:45.832897" elapsed="0.004001"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-09-19T11:03:13.611043" level="INFO">Successfully initialized new page object and opened url: https://www.botlc.or.th/</msg>
+<msg time="2024-09-19T11:03:13.611043" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-09-19T11:02:45.851895" elapsed="27.759148"/>
+</kw>
+<kw name="Accept Cookies">
+<kw name="Click" owner="Browser">
+<msg time="2024-09-19T11:03:13.616043" level="INFO">Clicks the element 'text=ยอมรับ'.</msg>
+<arg>text=ยอมรับ</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:03:13.616043" elapsed="0.576123"/>
+</kw>
+<status status="PASS" start="2024-09-19T11:03:13.615044" elapsed="0.577122"/>
+</kw>
+<kw name="Enter Website">
+<kw name="Click" owner="Browser">
+<msg time="2024-09-19T11:03:14.210748" level="INFO">Clicks the element 'role=link[name="เข้าสู่เว็บไซต์"]'.</msg>
+<arg>role=link[name="เข้าสู่เว็บไซต์"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:03:14.210748" elapsed="1.507092"/>
+</kw>
+<status status="PASS" start="2024-09-19T11:03:14.209749" elapsed="1.508091"/>
+</kw>
+<kw name="Verify and Click Facebook Icon">
+<kw name="Get Element" owner="Browser">
+<msg time="2024-09-19T11:03:17.259867" level="INFO">Locator found successfully.</msg>
+<msg time="2024-09-19T11:03:17.259867" level="INFO">${facebook_icon} = a:has(img[src="https://www.botlc.or.th/public/img/simple-icons/facebook.svg"])</msg>
+<var>${facebook_icon}</var>
+<arg>a:has(img[src="https://www.botlc.or.th/public/img/simple-icons/facebook.svg"])</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-09-19T11:03:15.729866" elapsed="1.530001"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2024-09-19T11:03:18.031574" level="INFO">Attribute is: 'https://www.facebook.com/BOTLearningCenter/'</msg>
+<msg time="2024-09-19T11:03:18.032579" level="INFO">${href} = https://www.facebook.com/BOTLearningCenter/</msg>
+<var>${href}</var>
+<arg>${facebook_icon}</arg>
+<arg>href</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:03:17.260870" elapsed="0.771709"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${href}</arg>
+<arg>${FACEBOOK_URL}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T11:03:18.032579" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-09-19T11:03:18.033576" level="INFO">Clicks the element 'a:has(img[src="https://www.botlc.or.th/public/img/simple-icons/facebook.svg"])'.</msg>
+<arg>${facebook_icon}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:03:18.032579" elapsed="9.250476"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-19T11:03:27.312505" level="INFO">Waited for Element with selector a:has(img[src="https://www.botlc.or.th/public/img/simple-icons/facebook.svg"]) at state detached</msg>
+<arg>${facebook_icon}</arg>
+<arg>detached</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-19T11:03:27.284056" elapsed="0.029447"/>
+</kw>
+<status status="PASS" start="2024-09-19T11:03:15.729866" elapsed="11.583637"/>
+</kw>
+<kw name="Verify Facebook Page">
+<kw name="Wait For Condition" owner="Browser">
+<kw name="Get Url" owner="Browser">
+<arg>should end with</arg>
+<arg>https://www.facebook.com/BOTLearningCenter/</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2024-09-19T11:03:27.315506" elapsed="0.003000"/>
+</kw>
+<arg>Url</arg>
+<arg>should end with</arg>
+<arg>${FACEBOOK_URL}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for a condition, defined with Browser getter keywords to become True.</doc>
+<status status="PASS" start="2024-09-19T11:03:27.314503" elapsed="0.004003"/>
+</kw>
+<status status="PASS" start="2024-09-19T11:03:27.314503" elapsed="0.004999"/>
+</kw>
+<kw name="Login To Facebook">
+<kw name="Get Element" owner="Browser">
+<msg time="2024-09-19T11:03:45.828455" level="INFO">Locator found successfully.</msg>
+<msg time="2024-09-19T11:03:45.828455" level="INFO">${email_input} = role=textbox[name="Email address or phone number"]</msg>
+<var>${email_input}</var>
+<arg>role=textbox[name="Email address or phone number"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-09-19T11:03:27.322504" elapsed="18.505951"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-19T11:03:45.857854" level="INFO">Waited for Element with selector role=textbox[name="Email address or phone number"] at state visible</msg>
+<arg>${email_input}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-19T11:03:45.829462" elapsed="0.028392"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-09-19T11:03:45.857854" level="INFO">Fills the text 'atiwit2011@hotmail.com' in the given field.</msg>
+<arg>${email_input}</arg>
+<arg>${EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:03:45.857854" elapsed="0.070262"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-09-19T11:03:46.422360" level="INFO">Locator found successfully.</msg>
+<msg time="2024-09-19T11:03:46.422360" level="INFO">${password_input} = xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[4]/div/div/div/label/input</msg>
+<var>${password_input}</var>
+<arg>xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[4]/div/div/div/label/input</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-09-19T11:03:45.929116" elapsed="0.493244"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-19T11:03:46.445933" level="INFO">Waited for Element with selector xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[4]/div/div/div/label/input at state visible</msg>
+<arg>${password_input}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-19T11:03:46.423367" elapsed="0.022566"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-09-19T11:03:46.446934" level="INFO">Clicks the element 'xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[4]/div/div/div/label/input'.</msg>
+<arg>${password_input}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:03:46.445933" elapsed="1.301757"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-09-19T11:03:47.748700" level="INFO">Fills the text 'dream6010742333' in the given field.</msg>
+<arg>${password_input}</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:03:47.748700" elapsed="0.021766"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-09-19T11:03:47.778468" level="INFO">Locator found successfully.</msg>
+<msg time="2024-09-19T11:03:47.778468" level="INFO">${login_button} = xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[5]/div/div/div[1]/div/span/span</msg>
+<var>${login_button}</var>
+<arg>xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[5]/div/div/div[1]/div/span/span</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-09-19T11:03:47.770466" elapsed="0.008002"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-19T11:03:47.825042" level="INFO">Waited for Element with selector xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[5]/div/div/div[1]/div/span/span at state visible</msg>
+<arg>${login_button}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-19T11:03:47.778468" elapsed="0.047582"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-09-19T11:03:47.826712" level="INFO">Clicks the element 'xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[5]/div/div/div[1]/div/span/span'.</msg>
+<arg>${login_button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:03:47.826296" elapsed="12.184587"/>
+</kw>
+<status status="PASS" start="2024-09-19T11:03:27.321502" elapsed="32.689381"/>
+</kw>
+<kw name="Verify Facebook Login">
+<kw name="Set Browser Timeout" owner="Browser">
+<arg>30 seconds</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2024-09-19T11:04:00.571665" elapsed="0.000000"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-09-19T11:04:14.624966" level="INFO">Locator found successfully.</msg>
+<msg time="2024-09-19T11:04:14.625973" level="INFO">${header} = h1</msg>
+<var>${header}</var>
+<arg>h1</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-09-19T11:04:00.571665" elapsed="14.054308"/>
+</kw>
+<kw name="Wait For Condition" owner="Browser">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-09-19T11:04:14.757831" level="INFO">Text: 'ศูนย์การเรียนรู้แบงก์ชาติ - BOTLC\xa0'</msg>
+<arg>h1</arg>
+<arg>contains</arg>
+<arg>ศูนย์การเรียนรู้แบงก์ชาติ - BOTLC</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:04:14.626968" elapsed="0.130863"/>
+</kw>
+<arg>Text</arg>
+<arg>${header}</arg>
+<arg>contains</arg>
+<arg>ศูนย์การเรียนรู้แบงก์ชาติ - BOTLC</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for a condition, defined with Browser getter keywords to become True.</doc>
+<status status="PASS" start="2024-09-19T11:04:14.625973" elapsed="0.131858"/>
+</kw>
+<status status="PASS" start="2024-09-19T11:04:00.570664" elapsed="14.187167"/>
+</kw>
+<doc>Test case to connect to Facebook and verify the play button</doc>
+<status status="PASS" start="2024-09-19T11:02:44.027437" elapsed="90.752808"/>
+</test>
+<status status="PASS" start="2024-09-19T11:02:38.968151" elapsed="97.236601"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Poc 5 1 6">Poc 5 1 6</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

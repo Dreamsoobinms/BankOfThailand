@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-19T10:58:00.822418" rpa="false" schemaversion="5">
+<suite id="s1" name="Poc 5 1 5" source="C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\poc-robotframework\botlc\5_1_5\poc_5_1_5.robot">
+<test id="s1-t1" name="5.1.5 การเชื่อมต่อกับ YouTube" line="9">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-09-19T10:58:05.661493" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\AtiwitK\\Documents\\GitHub\\BankOfThailand\\poc-robotframework\\botlc\\5_1_5\\browser\\traces\\1123048c-4840-40d0-bedf-a0d21d0370cf"}</msg>
+<msg time="2024-09-19T10:58:06.535221" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\AtiwitK\\Documents\\GitHub\\BankOfThailand\\poc-robotframework\\botlc\\5_1_5\\browser\\traces\\1123048c-4840-40d0-bedf-a0d21d0370cf"}</msg>
+<arg>chromium</arg>
+<arg>headless=True</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-09-19T10:58:05.660495" elapsed="0.874726"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<msg time="2024-09-19T10:58:06.554676" level="INFO">No context open.</msg>
+<arg>30 seconds</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2024-09-19T10:58:06.550677" elapsed="0.003999"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-09-19T10:58:29.354839" level="INFO">Successfully initialized new page object and opened url: https://www.botlc.or.th/</msg>
+<msg time="2024-09-19T10:58:29.354839" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-09-19T10:58:06.555675" elapsed="22.799164"/>
+</kw>
+<kw name="Accept Cookies">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-19T10:58:30.090146" level="INFO">Waited for Element with selector xpath=//a[@aria-label="allow cookies"] at state visible</msg>
+<arg>xpath=//a[@aria-label="allow cookies"]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-19T10:58:29.357837" elapsed="0.732309"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-09-19T10:58:30.091147" level="INFO">Clicks the element 'xpath=//a[@aria-label="allow cookies"]'.</msg>
+<arg>xpath=//a[@aria-label="allow cookies"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:58:30.090146" elapsed="0.410832"/>
+</kw>
+<status status="PASS" start="2024-09-19T10:58:29.356842" elapsed="1.144136"/>
+</kw>
+<kw name="Enter Website">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-19T10:58:30.541635" level="INFO">Waited for Element with selector xpath=//a[text()='เข้าสู่เว็บไซต์'] at state visible</msg>
+<arg>xpath=//a[text()='เข้าสู่เว็บไซต์']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-19T10:58:30.521335" elapsed="0.020300"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-09-19T10:58:30.542632" level="INFO">Clicks the element 'xpath=//a[text()='เข้าสู่เว็บไซต์']'.</msg>
+<arg>xpath=//a[text()='เข้าสู่เว็บไซต์']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:58:30.541635" elapsed="0.592000"/>
+</kw>
+<status status="PASS" start="2024-09-19T10:58:30.520334" elapsed="0.614300"/>
+</kw>
+<kw name="Verify YouTube Play Button">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-19T10:58:36.630832" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-19T10:58:31.161800" elapsed="5.469032"/>
+</kw>
+<kw name="Scroll By" owner="Browser">
+<msg time="2024-09-19T10:58:36.660139" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-09-19T10:58:36.660139" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-09-19T10:58:36.667663" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-09-19T10:58:36.667663" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2024-09-19T10:58:36.692231" level="INFO">JavaScript executed successfully.</msg>
+<arg>${NONE}</arg>
+<arg>1800</arg>
+<arg>0</arg>
+<arg>smooth</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page relative from current position by the given values.</doc>
+<status status="PASS" start="2024-09-19T10:58:36.631831" elapsed="0.061401"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-19T10:58:42.132436" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-19T10:58:36.693232" elapsed="5.439204"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-09-19T10:58:42.177436" level="INFO">Locator found successfully.</msg>
+<msg time="2024-09-19T10:58:42.177436" level="INFO">${iframe} = xpath=//iframe[@title="YouTube video player"]</msg>
+<var>${iframe}</var>
+<arg>xpath=//iframe[@title="YouTube video player"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-09-19T10:58:42.132436" elapsed="0.045000"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-19T10:58:42.204434" level="INFO">Waited for Element with selector xpath=//iframe[@title="YouTube video player"] at state visible</msg>
+<arg>${iframe}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-19T10:58:42.177436" elapsed="0.026998"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-09-19T10:58:42.260437" level="INFO">Locator found successfully.</msg>
+<msg time="2024-09-19T10:58:42.260437" level="INFO">${youtube} = xpath=//iframe[@title="YouTube video player"] &gt;&gt; internal:control=enter-frame &gt;&gt; xpath=/html/body/div/div/div[4]/button</msg>
+<var>${youtube}</var>
+<arg>${iframe} &gt;&gt;&gt; xpath=/html/body/div/div/div[4]/button</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-09-19T10:58:42.204434" elapsed="0.056003"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-19T10:58:42.293574" level="INFO">Waited for Element with selector xpath=//iframe[@title="YouTube video player"] &gt;&gt; internal:control=enter-frame &gt;&gt; xpath=/html/body/div/div/div[4]/button at state visible</msg>
+<arg>${youtube}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-19T10:58:42.260437" elapsed="0.033137"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2024-09-19T10:58:42.974848" level="INFO">Attribute is: 'Play'</msg>
+<msg time="2024-09-19T10:58:42.975852" level="INFO">${aria_label} = Play</msg>
+<var>${aria_label}</var>
+<arg>${youtube}</arg>
+<arg>aria-label</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:58:42.293574" elapsed="0.682278"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2024-09-19T10:58:43.035721" level="INFO">Attribute is: 'Play'</msg>
+<msg time="2024-09-19T10:58:43.035721" level="INFO">${title} = Play</msg>
+<var>${title}</var>
+<arg>${youtube}</arg>
+<arg>title</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:58:42.975852" elapsed="0.059869"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2024-09-19T10:58:43.081317" level="INFO">Attribute is: 'ytp-large-play-button ytp-button ytp-large-play-button-red-bg'</msg>
+<msg time="2024-09-19T10:58:43.081317" level="INFO">${class} = ytp-large-play-button ytp-button ytp-large-play-button-red-bg</msg>
+<var>${class}</var>
+<arg>${youtube}</arg>
+<arg>class</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T10:58:43.035721" elapsed="0.045596"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${aria_label}</arg>
+<arg>Play</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T10:58:43.081715" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>Play</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T10:58:43.081715" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${class}</arg>
+<arg>ytp-large-play-button ytp-button ytp-large-play-button-red-bg</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-19T10:58:43.081715" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-19T10:58:31.160800" elapsed="11.921921"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-09-19T10:58:51.588616" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-19T10:58:43.085718" elapsed="8.502898"/>
+</kw>
+<doc>Test case to connect to YouTube and verify the play button</doc>
+<status status="PASS" start="2024-09-19T10:58:05.655493" elapsed="45.933123"/>
+</test>
+<status status="PASS" start="2024-09-19T10:58:00.822418" elapsed="50.766198"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Poc 5 1 5">Poc 5 1 5</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

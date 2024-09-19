@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-19T11:09:24.561754" rpa="false" schemaversion="5">
+<suite id="s1" name="Poc 5 1 7" source="C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\poc-robotframework\botshare\5_1_7\poc_5_1_7.robot">
+<test id="s1-t1" name="5.1.7 การดึงข้อมูลตารางจาก Web ที่เป็นตาราง (in memory ,File)" line="9">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-09-19T11:09:32.262447" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\AtiwitK\\Documents\\GitHub\\BankOfThailand\\poc-robotframework\\botshare\\5_1_7\\browser\\traces\\d35efb48-f862-4b12-9ccf-b46ffc3dfde4"}</msg>
+<msg time="2024-09-19T11:09:34.342192" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\AtiwitK\\Documents\\GitHub\\BankOfThailand\\poc-robotframework\\botshare\\5_1_7\\browser\\traces\\d35efb48-f862-4b12-9ccf-b46ffc3dfde4"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-09-19T11:09:32.261446" elapsed="2.080746"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<msg time="2024-09-19T11:09:35.010192" level="INFO">No context open.</msg>
+<arg>30 seconds</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2024-09-19T11:09:35.004188" elapsed="0.006004"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-09-19T11:09:41.573765" level="INFO">Successfully initialized new page object and opened url: https://botdrm2-wb-d.bot.or.th/BOTDRM_Portal/Fileplan?classUri=37010</msg>
+<msg time="2024-09-19T11:09:41.574770" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-09-19T11:09:35.603588" elapsed="5.971182"/>
+</kw>
+<kw name="Click create folder">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-19T11:09:43.057240" level="INFO">Waited for Element with selector xpath=//*[@id="divBreadCrumb"]/nav/ol/li[4]/button at state visible</msg>
+<arg>xpath=//*[@id="divBreadCrumb"]/nav/ol/li[4]/button</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-19T11:09:42.107348" elapsed="0.949892"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-09-19T11:09:43.058251" level="INFO">Clicks the element 'xpath=//*[@id="divBreadCrumb"]/nav/ol/li[4]/button'.</msg>
+<arg>xpath=//*[@id="divBreadCrumb"]/nav/ol/li[4]/button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:09:43.057240" elapsed="0.739350"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-19T11:09:43.809663" level="INFO">Waited for Element with selector xpath=//div[@class="dropdown-menu show"]/a/span[text()="Electronic Folder"] at state visible</msg>
+<arg>xpath=//div[@class="dropdown-menu show"]/a/span[text()="Electronic Folder"]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-19T11:09:43.797592" elapsed="0.012071"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-09-19T11:09:43.810665" level="INFO">Clicks the element 'xpath=//div[@class="dropdown-menu show"]/a/span[text()="Electronic Folder"]'.</msg>
+<arg>xpath=//div[@class="dropdown-menu show"]/a/span[text()="Electronic Folder"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:09:43.809663" elapsed="0.348470"/>
+</kw>
+<status status="PASS" start="2024-09-19T11:09:42.106343" elapsed="2.051790"/>
+</kw>
+<kw name="Create Electronic Folder">
+<kw name="Get Element" owner="Browser">
+<msg time="2024-09-19T11:09:44.172599" level="INFO">Locator found successfully.</msg>
+<msg time="2024-09-19T11:09:44.172599" level="INFO">${title} = xpath=//div[@class="modal-body"]/..//input[@id="Title"]</msg>
+<var>${title}</var>
+<arg>xpath=//div[@class="modal-body"]/..//input[@id="Title"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-09-19T11:09:44.158133" elapsed="0.014466"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-19T11:09:44.708306" level="INFO">Waited for Element with selector xpath=//div[@class="modal-body"]/..//input[@id="Title"] at state visible</msg>
+<arg>${title}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-19T11:09:44.173599" elapsed="0.534707"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-09-19T11:09:44.709301" level="INFO">Fills the text 'Test create folder' in the given field.</msg>
+<arg>${title}</arg>
+<arg>Test create folder</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:09:44.708306" elapsed="0.040915"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-09-19T11:09:44.759223" level="INFO">Locator found successfully.</msg>
+<msg time="2024-09-19T11:09:44.760221" level="INFO">${owner_dropdown} = xpath=//div[@class="modal-body"]/..//span[@class="selection"]/span[@aria-labelledby="select2-OwnerLocationUri-container"]</msg>
+<var>${owner_dropdown}</var>
+<arg>xpath=//div[@class="modal-body"]/..//span[@class="selection"]/span[@aria-labelledby="select2-OwnerLocationUri-container"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-09-19T11:09:44.749221" elapsed="0.011000"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-19T11:09:44.779615" level="INFO">Waited for Element with selector xpath=//div[@class="modal-body"]/..//span[@class="selection"]/span[@aria-labelledby="select2-OwnerLocationUri-container"] at state visible</msg>
+<arg>${owner_dropdown}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-19T11:09:44.760221" elapsed="0.019394"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-09-19T11:09:44.780610" level="INFO">Clicks the element 'xpath=//div[@class="modal-body"]/..//span[@class="selection"]/span[@aria-labelledby="select2-OwnerLocationUri-container"]'.</msg>
+<arg>${owner_dropdown}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:09:44.779615" elapsed="0.831044"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-09-19T11:09:45.618539" level="INFO">Locator found successfully.</msg>
+<msg time="2024-09-19T11:09:45.618539" level="INFO">${owner_search_field} = xpath=//span[@class="select2-search select2-search--dropdown"]/input[@type="search"]</msg>
+<var>${owner_search_field}</var>
+<arg>xpath=//span[@class="select2-search select2-search--dropdown"]/input[@type="search"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-09-19T11:09:45.610659" elapsed="0.007880"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-19T11:09:45.627534" level="INFO">Waited for Element with selector xpath=//span[@class="select2-search select2-search--dropdown"]/input[@type="search"] at state visible</msg>
+<arg>${owner_search_field}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-19T11:09:45.619538" elapsed="0.007996"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-09-19T11:09:45.628535" level="INFO">Fills the text 'adtestuser1' in the given field.</msg>
+<arg>${owner_search_field}</arg>
+<arg>adtestuser1</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:09:45.628535" elapsed="0.592761"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-09-19T11:09:46.246869" level="INFO">Locator found successfully.</msg>
+<msg time="2024-09-19T11:09:46.246869" level="INFO">${owner_list} = xpath=//span[@class="select2-results"]/..//li[contains(text(), 'adtestuser1')]</msg>
+<var>${owner_list}</var>
+<arg>xpath=//span[@class="select2-results"]/..//li[contains(text(), 'adtestuser1')]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-09-19T11:09:46.221956" elapsed="0.024913"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-19T11:09:46.257870" level="INFO">Waited for Element with selector xpath=//span[@class="select2-results"]/..//li[contains(text(), 'adtestuser1')] at state visible</msg>
+<arg>${owner_list}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-19T11:09:46.246869" elapsed="0.011001"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-09-19T11:09:46.258861" level="INFO">Clicks the element 'xpath=//span[@class="select2-results"]/..//li[contains(text(), 'adtestuser1')]'.</msg>
+<arg>${owner_list}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:09:46.257870" elapsed="0.102523"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-09-19T11:09:46.372557" level="INFO">Locator found successfully.</msg>
+<msg time="2024-09-19T11:09:46.372557" level="INFO">${Note} = xpath=//div[@class="form-group row"]/..//input[@id="Notes"]</msg>
+<var>${Note}</var>
+<arg>xpath=//div[@class="form-group row"]/..//input[@id="Notes"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-09-19T11:09:46.360393" elapsed="0.012164"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-09-19T11:09:46.382558" level="INFO">Waited for Element with selector xpath=//div[@class="form-group row"]/..//input[@id="Notes"] at state visible</msg>
+<arg>${Note}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-09-19T11:09:46.373566" elapsed="0.008992"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-09-19T11:09:46.383554" level="INFO">Fills the text 'This is an Robot Framework test' in the given field.</msg>
+<arg>${Note}</arg>
+<arg>This is an Robot Framework test</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-09-19T11:09:46.382558" elapsed="0.022166"/>
+</kw>
+<status status="PASS" start="2024-09-19T11:09:44.158133" elapsed="2.246591"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-09-19T11:09:52.165782" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-19T11:09:46.407389" elapsed="5.758393"/>
+</kw>
+<doc>Test case to extract table data from the web and format it</doc>
+<status status="PASS" start="2024-09-19T11:09:32.254444" elapsed="19.918489"/>
+</test>
+<status status="PASS" start="2024-09-19T11:09:24.565757" elapsed="27.624179"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Poc 5 1 7">Poc 5 1 7</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
