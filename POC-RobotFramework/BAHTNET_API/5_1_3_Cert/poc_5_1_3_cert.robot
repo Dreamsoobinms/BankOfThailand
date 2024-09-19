@@ -10,7 +10,7 @@ ${key_path}       C:/Users/AtiwitK/Documents/Postman/DDG-2-key.pem
 
 *** Test Cases ***
 5.1.3 Reguent แบบ มี Certificate ดึงข้อมูลได้ถูกต้อง
-    #   # If you have certificate pfx file, have to install openssl from https://slproweb.com/products/Win32OpenSSL.html, set env and open cmd then follow the openssl cmd
+    #   # If you have certificate pfx file, have to install openssl from https://slproweb.com/products/Win32OpenSSL.html (Lite 3.2.3), set env and open cmd then follow the openssl cmd
     #       openssl pkcs12 -in C:\Users\AtiwitK\Documents\Postman\DDG-2.pfx -clcerts -nokeys -out C:\Users\AtiwitK\Documents\Postman\DDG-2-cert.pem -nodes
     #       openssl pkcs12 -in C:\Users\AtiwitK\Documents\Postman\DDG-2.pfx -nocerts -out C:\Users\AtiwitK\Documents\Postman\DDG-2-key.pem -nodes
     #   # Convert p12 file to pem file
