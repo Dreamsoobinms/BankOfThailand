@@ -21,26 +21,26 @@ ${DAY}            21
 
 *** Keywords ***
 Accept Cookies
-    Browser.Click    xpath=//*[@id="container-b1d85c058c"]/div/div[3]/div/div[1]/div/div/table/tbody/tr[3]/td[3]/button/span[@class="necessary-cookie-button"]
+    Browser.Click           xpath=//*[@id="container-b1d85c058c"]/div/div[3]/div/div[1]/div/div/table/tbody/tr[3]/td[3]/button/span[@class="necessary-cookie-button"]
 
 Select Date
-    [Arguments]    ${year}    ${month}    ${day}
-    Browser.Fill Text    input[type="date"]    ${year}-${month}-${day}
+    [Arguments]             ${year}    ${month}    ${day}
+    Browser.Fill Text       input[type="date"]    ${year}-${month}-${day}
 
 Get Exchange Rates From Website
-    ${dataTable}=    Create List
-    ${header}=    Create List    ประเทศ    สกุลเงิน    อัตราซื้อถัวเฉลี่ย ซื้อตั๋วเงิน    อัตราซื้อถัวเฉลี่ย ซื้อเงินโอน    อัตราขายถัวเฉลี่ย
-    Append To List    ${dataTable}    ${header}
-    ${rows}=    Get Elements    xpath=//table/tbody[@class="table_first_content"]/tr
-    ${row_count}=    Get Length    ${rows}
+    ${dataTable}=           Create List
+    ${header}=              Create List    ประเทศ    สกุลเงิน    อัตราซื้อถัวเฉลี่ย ซื้อตั๋วเงิน    อัตราซื้อถัวเฉลี่ย ซื้อเงินโอน    อัตราขายถัวเฉลี่ย
+    Append To List          ${dataTable}    ${header}
+    ${rows}=                Get Elements    xpath=//table/tbody[@class="table_first_content"]/tr
+    ${row_count}=           Get Length      ${rows}
     FOR    ${i}    IN RANGE    ${row_count}
-        ${index}=   Evaluate    ${i} + 1
-        ${country}=    Get Text    xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3
-        ${currency}=    Get Text    xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p
-        ${buy_bill}=    Get Text    xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]
-        ${buy_transfer}=    Get Text    xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]
-        ${sell}=    Get Text    xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]
-        ${data_row}=    Create List    ${country}    ${currency}    ${buy_bill}    ${buy_transfer}    ${sell}
-        Append To List    ${dataTable}    ${data_row}
+        ${index}=           Evaluate        ${i} + 1
+        ${country}=         Get Text        xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//h3
+        ${currency}=        Get Text        xpath=//table/tbody[@class="table_first_content"]/tr[${index}]/td/..//p
+        ${buy_bill}=        Get Text        xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[1]
+        ${buy_transfer}=    Get Text        xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[2]
+        ${sell}=            Get Text        xpath=//table/tbody[@class="table_second_content"]/tr[${index}]/td[3]
+        ${data_row}=        Create List     ${country}    ${currency}    ${buy_bill}    ${buy_transfer}    ${sell}
+        Append To List      ${dataTable}    ${data_row}
     END
     Log    ${data_table}

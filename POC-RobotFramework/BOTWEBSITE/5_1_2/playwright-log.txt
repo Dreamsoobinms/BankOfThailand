@@ -1,416 +1,416 @@
-{"level":30,"time":"2024-09-19T03:51:45.018Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Listening on 64355"}
-(node:17640) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2024-09-19T10:05:38.252Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Listening on 51320"}
+(node:5552) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2024-09-19T03:51:45.318Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T03:51:45.319Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T03:51:45.325Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T03:51:45.325Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T03:51:45.331Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2024-09-19T03:51:46.392Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Adding browser to stack: chromium, version: 128.0.6613.18"}
-{"level":30,"time":"2024-09-19T03:51:46.393Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method newBrowser"}
-{"level":30,"time":"2024-09-19T03:51:46.393Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2024-09-19T03:51:46.419Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method newPage"}
-{"level":30,"time":"2024-09-19T03:51:46.419Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2024-09-19T03:51:46.436Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Changed active context"}
-{"level":30,"time":"2024-09-19T03:51:47.543Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Video path: undefined"}
-{"level":30,"time":"2024-09-19T03:51:47.543Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Changed active page"}
-{"level":30,"time":"2024-09-19T03:51:58.616Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method newPage"}
-{"level":30,"time":"2024-09-19T03:51:58.623Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
-{"level":30,"time":"2024-09-19T03:51:58.623Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"container-b1d85c058c\"]/div/div[3]/div/div[1]/div/div/table/tbody/tr[3]/td[3]/button/span[@class=\"necessary-cookie-button\"] in page."}
-{"level":30,"time":"2024-09-19T03:51:58.700Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
-{"level":30,"time":"2024-09-19T03:51:58.962Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-09-19T03:51:58.963Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with input[type=\"date\"] in page."}
-{"level":30,"time":"2024-09-19T03:51:58.998Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method fillText"}
-{"level":30,"time":"2024-09-19T03:51:59.005Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElements"}
-{"level":30,"time":"2024-09-19T03:51:59.005Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is disabled, return Locator: xpath=//table/tbody[@class=\"table_first_content\"]/tr in page."}
-{"level":30,"time":"2024-09-19T03:51:59.005Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Wait element to reach attached state."}
-{"level":30,"time":"2024-09-19T03:51:59.025Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Found 19 elements."}
-{"level":30,"time":"2024-09-19T03:51:59.026Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getElements"}
-{"level":30,"time":"2024-09-19T03:51:59.032Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:51:59.032Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[1]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:51:59.361Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[1]/td/..//h3 containing USD"}
-{"level":30,"time":"2024-09-19T03:51:59.361Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:51:59.365Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:51:59.365Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[1]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:51:59.390Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[1]/td/..//p containing สหรัฐอเมริกา"}
-{"level":30,"time":"2024-09-19T03:51:59.390Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:51:59.393Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:51:59.393Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[1]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:51:59.418Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[1]/td[1] containing 34.3594"}
-{"level":30,"time":"2024-09-19T03:51:59.418Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:51:59.421Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:51:59.421Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[1]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:51:59.440Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[1]/td[2] containing 34.4393"}
-{"level":30,"time":"2024-09-19T03:51:59.440Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:51:59.443Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:51:59.443Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[1]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:51:59.460Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[1]/td[3] containing 34.7726"}
-{"level":30,"time":"2024-09-19T03:51:59.460Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:51:59.465Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:51:59.465Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[2]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:00.057Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[2]/td/..//h3 containing GBP"}
-{"level":30,"time":"2024-09-19T03:52:00.057Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.060Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.061Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[2]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:00.073Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[2]/td/..//p containing สหราชอาณาจักร"}
-{"level":30,"time":"2024-09-19T03:52:00.073Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.076Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.076Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[2]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:00.232Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[2]/td[1] containing 43.3893"}
-{"level":30,"time":"2024-09-19T03:52:00.232Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.235Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.235Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[2]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:00.247Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[2]/td[2] containing 43.5078"}
-{"level":30,"time":"2024-09-19T03:52:00.248Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.377Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.377Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[2]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:00.391Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[2]/td[3] containing 44.3481"}
-{"level":30,"time":"2024-09-19T03:52:00.391Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.395Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.396Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[3]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:00.468Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[3]/td/..//h3 containing EUR"}
-{"level":30,"time":"2024-09-19T03:52:00.468Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.682Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.682Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[3]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:00.697Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[3]/td/..//p containing ยูโรโซน"}
-{"level":30,"time":"2024-09-19T03:52:00.697Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.701Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.701Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[3]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:00.715Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[3]/td[1] containing 37.6293"}
-{"level":30,"time":"2024-09-19T03:52:00.715Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.718Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.718Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[3]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:00.731Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[3]/td[2] containing 37.7250"}
-{"level":30,"time":"2024-09-19T03:52:00.731Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.735Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.735Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[3]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:00.747Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[3]/td[3] containing 38.4384"}
-{"level":30,"time":"2024-09-19T03:52:00.747Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.751Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.751Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[4]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:00.765Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[4]/td/..//h3 containing JPY"}
-{"level":30,"time":"2024-09-19T03:52:00.765Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.768Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.768Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[4]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:00.778Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[4]/td/..//p containing ญี่ปุ่น (ต่อ 100 เยน)"}
-{"level":30,"time":"2024-09-19T03:52:00.778Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.782Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.782Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[4]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:00.792Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[4]/td[1] containing 23.9085"}
-{"level":30,"time":"2024-09-19T03:52:00.792Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.795Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.795Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[4]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:00.805Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[4]/td[2] containing 24.0043"}
-{"level":30,"time":"2024-09-19T03:52:00.805Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.808Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.808Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[4]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:00.822Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[4]/td[3] containing 24.6574"}
-{"level":30,"time":"2024-09-19T03:52:00.822Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.827Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.827Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[5]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:00.838Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[5]/td/..//h3 containing HKD"}
-{"level":30,"time":"2024-09-19T03:52:00.838Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.841Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.841Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[5]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:00.853Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[5]/td/..//p containing ฮ่องกง"}
-{"level":30,"time":"2024-09-19T03:52:00.853Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.856Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.856Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[5]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:00.969Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[5]/td[1] containing 4.3789"}
-{"level":30,"time":"2024-09-19T03:52:00.969Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.974Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:00.974Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[5]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:01.106Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[5]/td[2] containing 4.3932"}
-{"level":30,"time":"2024-09-19T03:52:01.106Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.109Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.109Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[5]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:01.122Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[5]/td[3] containing 4.4663"}
-{"level":30,"time":"2024-09-19T03:52:01.122Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.128Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.128Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[6]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:01.220Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[6]/td/..//h3 containing MYR"}
-{"level":30,"time":"2024-09-19T03:52:01.220Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.223Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.223Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[6]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:01.298Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[6]/td/..//p containing มาเลเซีย"}
-{"level":30,"time":"2024-09-19T03:52:01.298Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.301Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.301Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[6]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:01.380Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[6]/td[1] containing 7.3307"}
-{"level":30,"time":"2024-09-19T03:52:01.380Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.384Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.384Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[6]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:01.395Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[6]/td[2] containing 7.3687"}
-{"level":30,"time":"2024-09-19T03:52:01.395Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.399Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.399Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[6]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:01.506Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[6]/td[3] containing 7.5814"}
-{"level":30,"time":"2024-09-19T03:52:01.506Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.510Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.510Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[7]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:01.522Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[7]/td/..//h3 containing SGD"}
-{"level":30,"time":"2024-09-19T03:52:01.522Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.525Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.525Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[7]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:01.536Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[7]/td/..//p containing สิงคโปร์"}
-{"level":30,"time":"2024-09-19T03:52:01.536Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.539Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.540Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[7]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:01.552Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[7]/td[1] containing 25.7639"}
-{"level":30,"time":"2024-09-19T03:52:01.552Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.555Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.555Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[7]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:01.725Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[7]/td[2] containing 25.8328"}
-{"level":30,"time":"2024-09-19T03:52:01.725Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.730Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.730Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[7]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:01.822Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[7]/td[3] containing 26.3920"}
-{"level":30,"time":"2024-09-19T03:52:01.822Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.986Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:01.986Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[8]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:02.000Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[8]/td/..//h3 containing BND"}
-{"level":30,"time":"2024-09-19T03:52:02.000Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.003Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.003Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[8]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:02.016Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[8]/td/..//p containing บรูไนดารุสซาลาม"}
-{"level":30,"time":"2024-09-19T03:52:02.016Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.019Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.019Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[8]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:02.034Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[8]/td[1] containing 25.6739"}
-{"level":30,"time":"2024-09-19T03:52:02.034Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.038Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.038Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[8]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:02.050Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[8]/td[2] containing 25.7639"}
-{"level":30,"time":"2024-09-19T03:52:02.050Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.053Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.053Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[8]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:02.065Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[8]/td[3] containing 26.5042"}
-{"level":30,"time":"2024-09-19T03:52:02.065Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.069Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.069Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[9]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:02.081Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[9]/td/..//h3 containing PHP"}
-{"level":30,"time":"2024-09-19T03:52:02.081Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.084Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.084Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[9]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:02.094Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[9]/td/..//p containing ฟิลิปปินส์"}
-{"level":30,"time":"2024-09-19T03:52:02.094Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.097Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.097Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[9]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:02.108Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[9]/td[1] containing 0.5985"}
-{"level":30,"time":"2024-09-19T03:52:02.108Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.111Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.111Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[9]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:02.146Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[9]/td[2] containing 0.6028"}
-{"level":30,"time":"2024-09-19T03:52:02.147Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.150Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.150Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[9]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:02.208Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[9]/td[3] containing 0.6436"}
-{"level":30,"time":"2024-09-19T03:52:02.209Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.213Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.213Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[10]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:02.346Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[10]/td/..//h3 containing IDR"}
-{"level":30,"time":"2024-09-19T03:52:02.346Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.349Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.349Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[10]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:02.364Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[10]/td/..//p containing อินโดนิเซีย (ต่อ 1000 รูเปีย)"}
-{"level":30,"time":"2024-09-19T03:52:02.364Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.367Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.367Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[10]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:02.659Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[10]/td[1] containing 2.0640"}
-{"level":30,"time":"2024-09-19T03:52:02.659Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.662Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.662Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[10]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:02.675Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[10]/td[2] containing 2.1447"}
-{"level":30,"time":"2024-09-19T03:52:02.675Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.679Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.679Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[10]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:02.691Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[10]/td[3] containing 2.3467"}
-{"level":30,"time":"2024-09-19T03:52:02.691Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.696Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.697Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[11]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:02.708Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[11]/td/..//h3 containing INR"}
-{"level":30,"time":"2024-09-19T03:52:02.708Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.711Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.711Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[11]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:02.722Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[11]/td/..//p containing อินเดีย"}
-{"level":30,"time":"2024-09-19T03:52:02.722Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.726Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.726Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[11]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:02.874Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[11]/td[1] containing 0.3852"}
-{"level":30,"time":"2024-09-19T03:52:02.874Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.877Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.877Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[11]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:02.888Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[11]/td[2] containing 0.3888"}
-{"level":30,"time":"2024-09-19T03:52:02.889Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.892Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.892Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[11]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:02.903Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[11]/td[3] containing 0.4503"}
-{"level":30,"time":"2024-09-19T03:52:02.903Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.908Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.908Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[12]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:02.921Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[12]/td/..//h3 containing CHF"}
-{"level":30,"time":"2024-09-19T03:52:02.921Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.924Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.924Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[12]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:02.936Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[12]/td/..//p containing สวิตเซอร์แลนด์"}
-{"level":30,"time":"2024-09-19T03:52:02.936Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.939Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.939Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[12]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:02.950Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[12]/td[1] containing 40.0100"}
-{"level":30,"time":"2024-09-19T03:52:02.950Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.953Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:02.954Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[12]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:03.272Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[12]/td[2] containing 40.0910"}
-{"level":30,"time":"2024-09-19T03:52:03.272Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.275Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.275Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[12]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:03.492Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[12]/td[3] containing 40.7302"}
-{"level":30,"time":"2024-09-19T03:52:03.492Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.496Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.497Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[13]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:03.508Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[13]/td/..//h3 containing AUD"}
-{"level":30,"time":"2024-09-19T03:52:03.508Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.511Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.511Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[13]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:03.523Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[13]/td/..//p containing ออสเตรเลีย"}
-{"level":30,"time":"2024-09-19T03:52:03.523Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.526Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.526Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[13]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:03.538Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[13]/td[1] containing 23.0278"}
-{"level":30,"time":"2024-09-19T03:52:03.538Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.542Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.542Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[13]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:03.554Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[13]/td[2] containing 23.0873"}
-{"level":30,"time":"2024-09-19T03:52:03.554Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.558Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.558Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[13]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:03.571Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[13]/td[3] containing 23.8738"}
-{"level":30,"time":"2024-09-19T03:52:03.571Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.576Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.576Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[14]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:03.590Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[14]/td/..//h3 containing NZD"}
-{"level":30,"time":"2024-09-19T03:52:03.590Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.594Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.594Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[14]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:03.742Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[14]/td/..//p containing นิวซีแลนด์"}
-{"level":30,"time":"2024-09-19T03:52:03.742Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.745Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.745Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[14]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:03.756Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[14]/td[1] containing 21.4025"}
-{"level":30,"time":"2024-09-19T03:52:03.756Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.759Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.759Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[14]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:03.789Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[14]/td[2] containing 21.4624"}
-{"level":30,"time":"2024-09-19T03:52:03.790Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.794Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.794Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[14]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:03.806Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[14]/td[3] containing 22.0776"}
-{"level":30,"time":"2024-09-19T03:52:03.806Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.813Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.813Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[15]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:03.826Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[15]/td/..//h3 containing CAD"}
-{"level":30,"time":"2024-09-19T03:52:03.826Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.830Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.830Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[15]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:03.841Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[15]/td/..//p containing แคนาดา"}
-{"level":30,"time":"2024-09-19T03:52:03.841Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.845Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.845Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[15]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:03.855Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[15]/td[1] containing 25.7600"}
-{"level":30,"time":"2024-09-19T03:52:03.855Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.859Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.859Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[15]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:03.869Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[15]/td[2] containing 25.8278"}
-{"level":30,"time":"2024-09-19T03:52:03.869Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.872Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.872Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[15]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:03.884Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[15]/td[3] containing 26.3067"}
-{"level":30,"time":"2024-09-19T03:52:03.884Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.889Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.889Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[16]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:03.900Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[16]/td/..//h3 containing SEK"}
-{"level":30,"time":"2024-09-19T03:52:03.900Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.903Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.903Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[16]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:03.913Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[16]/td/..//p containing สวีเดน"}
-{"level":30,"time":"2024-09-19T03:52:03.913Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.916Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:03.916Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[16]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:04.321Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[16]/td[1] containing 3.4048"}
-{"level":30,"time":"2024-09-19T03:52:04.321Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.325Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.325Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[16]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:04.388Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[16]/td[2] containing 3.4172"}
-{"level":30,"time":"2024-09-19T03:52:04.388Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.391Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.391Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[16]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:04.491Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[16]/td[3] containing 3.4834"}
-{"level":30,"time":"2024-09-19T03:52:04.491Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.495Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.495Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[17]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:04.623Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[17]/td/..//h3 containing DKK"}
-{"level":30,"time":"2024-09-19T03:52:04.623Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.626Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.626Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[17]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:04.637Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[17]/td/..//p containing เดนมาร์ก"}
-{"level":30,"time":"2024-09-19T03:52:04.637Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.641Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.641Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[17]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:04.664Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[17]/td[1] containing 5.0543"}
-{"level":30,"time":"2024-09-19T03:52:04.664Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.668Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.668Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[17]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:04.682Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[17]/td[2] containing 5.0685"}
-{"level":30,"time":"2024-09-19T03:52:04.682Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.687Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.687Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[17]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:04.700Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[17]/td[3] containing 5.1507"}
-{"level":30,"time":"2024-09-19T03:52:04.701Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.705Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.705Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[18]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:04.719Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[18]/td/..//h3 containing NOK"}
-{"level":30,"time":"2024-09-19T03:52:04.719Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.722Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.722Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[18]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:04.733Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[18]/td/..//p containing นอร์เวย์"}
-{"level":30,"time":"2024-09-19T03:52:04.733Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.736Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.736Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[18]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:04.748Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[18]/td[1] containing 3.3350"}
-{"level":30,"time":"2024-09-19T03:52:04.748Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.751Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:04.752Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[18]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:05.107Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[18]/td[2] containing 3.3471"}
-{"level":30,"time":"2024-09-19T03:52:05.107Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:05.110Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:05.110Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[18]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:05.210Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[18]/td[3] containing 3.4324"}
-{"level":30,"time":"2024-09-19T03:52:05.210Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:05.215Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:05.215Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[19]/td/..//h3 in page."}
-{"level":30,"time":"2024-09-19T03:52:05.226Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[19]/td/..//h3 containing CNY"}
-{"level":30,"time":"2024-09-19T03:52:05.227Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:05.231Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:05.231Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[19]/td/..//p in page."}
-{"level":30,"time":"2024-09-19T03:52:05.325Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[19]/td/..//p containing จีน"}
-{"level":30,"time":"2024-09-19T03:52:05.325Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:05.328Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:05.328Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[19]/td[1] in page."}
-{"level":30,"time":"2024-09-19T03:52:05.439Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[19]/td[1] containing 4.7627"}
-{"level":30,"time":"2024-09-19T03:52:05.439Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:05.442Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:05.442Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[19]/td[2] in page."}
-{"level":30,"time":"2024-09-19T03:52:05.453Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[19]/td[2] containing 4.7875"}
-{"level":30,"time":"2024-09-19T03:52:05.453Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:05.456Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:05.456Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[19]/td[3] in page."}
-{"level":30,"time":"2024-09-19T03:52:05.467Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[19]/td[3] containing 4.9109"}
-{"level":30,"time":"2024-09-19T03:52:05.467Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T03:52:05.474Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2024-09-19T03:52:05.487Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Removed page=d00125cc-bb6e-410f-bc9d-649aaa3c52a2 from context=e56b8646-0007-4efe-9384-b4459f98d9c4 page stack"}
-{"level":30,"time":"2024-09-19T03:52:05.820Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method closeBrowser"}
-{"level":30,"time":"2024-09-19T03:52:06.399Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T03:52:06.400Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T10:05:38.904Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T10:05:38.904Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T10:05:38.909Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T10:05:38.909Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T10:05:38.914Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-09-19T10:05:39.674Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Adding browser to stack: chromium, version: 128.0.6613.18"}
+{"level":30,"time":"2024-09-19T10:05:39.674Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-09-19T10:05:39.674Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-09-19T10:05:39.704Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-09-19T10:05:39.704Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-09-19T10:05:40.436Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Changed active context"}
+{"level":30,"time":"2024-09-19T10:05:41.178Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Video path: undefined"}
+{"level":30,"time":"2024-09-19T10:05:41.178Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Changed active page"}
+{"level":30,"time":"2024-09-19T10:05:50.095Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method newPage"}
+{"level":30,"time":"2024-09-19T10:05:50.101Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
+{"level":30,"time":"2024-09-19T10:05:50.102Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//*[@id=\"container-b1d85c058c\"]/div/div[3]/div/div[1]/div/div/table/tbody/tr[3]/td[3]/button/span[@class=\"necessary-cookie-button\"] in page."}
+{"level":30,"time":"2024-09-19T10:05:50.191Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
+{"level":30,"time":"2024-09-19T10:05:50.796Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-09-19T10:05:50.796Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with input[type=\"date\"] in page."}
+{"level":30,"time":"2024-09-19T10:05:50.827Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-09-19T10:05:50.835Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-09-19T10:05:50.835Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is disabled, return Locator: xpath=//table/tbody[@class=\"table_first_content\"]/tr in page."}
+{"level":30,"time":"2024-09-19T10:05:50.836Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-09-19T10:05:50.855Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Found 19 elements."}
+{"level":30,"time":"2024-09-19T10:05:50.856Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getElements"}
+{"level":30,"time":"2024-09-19T10:05:50.862Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:50.863Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[1]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:50.916Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[1]/td/..//h3 containing USD"}
+{"level":30,"time":"2024-09-19T10:05:50.916Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:50.922Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:50.922Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[1]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:51.176Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[1]/td/..//p containing สหรัฐอเมริกา"}
+{"level":30,"time":"2024-09-19T10:05:51.176Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:51.343Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:51.343Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[1]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:51.368Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[1]/td[1] containing 34.3594"}
+{"level":30,"time":"2024-09-19T10:05:51.368Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:51.371Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:51.371Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[1]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:51.394Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[1]/td[2] containing 34.4393"}
+{"level":30,"time":"2024-09-19T10:05:51.394Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:51.398Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:51.398Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[1]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:51.417Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[1]/td[3] containing 34.7726"}
+{"level":30,"time":"2024-09-19T10:05:51.417Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:51.422Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:51.422Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[2]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:51.444Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[2]/td/..//h3 containing GBP"}
+{"level":30,"time":"2024-09-19T10:05:51.444Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:51.447Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:51.447Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[2]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:51.466Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[2]/td/..//p containing สหราชอาณาจักร"}
+{"level":30,"time":"2024-09-19T10:05:51.466Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:51.469Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:51.469Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[2]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:51.493Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[2]/td[1] containing 43.3893"}
+{"level":30,"time":"2024-09-19T10:05:51.494Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:51.497Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:51.497Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[2]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:52.054Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[2]/td[2] containing 43.5078"}
+{"level":30,"time":"2024-09-19T10:05:52.054Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.058Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.058Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[2]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:52.074Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[2]/td[3] containing 44.3481"}
+{"level":30,"time":"2024-09-19T10:05:52.074Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.079Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.079Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[3]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:52.095Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[3]/td/..//h3 containing EUR"}
+{"level":30,"time":"2024-09-19T10:05:52.096Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.099Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.099Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[3]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:52.112Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[3]/td/..//p containing ยูโรโซน"}
+{"level":30,"time":"2024-09-19T10:05:52.112Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.116Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.116Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[3]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:52.128Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[3]/td[1] containing 37.6293"}
+{"level":30,"time":"2024-09-19T10:05:52.128Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.131Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.131Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[3]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:52.144Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[3]/td[2] containing 37.7250"}
+{"level":30,"time":"2024-09-19T10:05:52.144Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.147Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.147Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[3]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:52.160Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[3]/td[3] containing 38.4384"}
+{"level":30,"time":"2024-09-19T10:05:52.160Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.164Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.164Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[4]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:52.176Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[4]/td/..//h3 containing JPY"}
+{"level":30,"time":"2024-09-19T10:05:52.177Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.180Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.180Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[4]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:52.195Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[4]/td/..//p containing ญี่ปุ่น (ต่อ 100 เยน)"}
+{"level":30,"time":"2024-09-19T10:05:52.195Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.198Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.198Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[4]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:52.746Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[4]/td[1] containing 23.9085"}
+{"level":30,"time":"2024-09-19T10:05:52.746Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.749Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.749Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[4]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:52.892Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[4]/td[2] containing 24.0043"}
+{"level":30,"time":"2024-09-19T10:05:52.892Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.895Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.895Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[4]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:52.909Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[4]/td[3] containing 24.6574"}
+{"level":30,"time":"2024-09-19T10:05:52.909Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.913Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.913Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[5]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:52.926Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[5]/td/..//h3 containing HKD"}
+{"level":30,"time":"2024-09-19T10:05:52.927Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.930Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.930Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[5]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:52.941Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[5]/td/..//p containing ฮ่องกง"}
+{"level":30,"time":"2024-09-19T10:05:52.941Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.945Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:52.945Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[5]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:52.956Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[5]/td[1] containing 4.3789"}
+{"level":30,"time":"2024-09-19T10:05:52.956Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.038Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.039Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[5]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:53.065Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[5]/td[2] containing 4.3932"}
+{"level":30,"time":"2024-09-19T10:05:53.065Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.068Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.068Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[5]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:53.184Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[5]/td[3] containing 4.4663"}
+{"level":30,"time":"2024-09-19T10:05:53.184Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.189Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.189Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[6]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:53.225Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[6]/td/..//h3 containing MYR"}
+{"level":30,"time":"2024-09-19T10:05:53.225Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.228Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.228Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[6]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:53.318Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[6]/td/..//p containing มาเลเซีย"}
+{"level":30,"time":"2024-09-19T10:05:53.318Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.322Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.322Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[6]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:53.406Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[6]/td[1] containing 7.3307"}
+{"level":30,"time":"2024-09-19T10:05:53.406Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.410Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.410Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[6]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:53.423Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[6]/td[2] containing 7.3687"}
+{"level":30,"time":"2024-09-19T10:05:53.423Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.427Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.427Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[6]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:53.689Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[6]/td[3] containing 7.5814"}
+{"level":30,"time":"2024-09-19T10:05:53.689Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.694Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.694Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[7]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:53.707Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[7]/td/..//h3 containing SGD"}
+{"level":30,"time":"2024-09-19T10:05:53.707Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.711Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.711Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[7]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:53.724Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[7]/td/..//p containing สิงคโปร์"}
+{"level":30,"time":"2024-09-19T10:05:53.724Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.728Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.728Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[7]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:53.744Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[7]/td[1] containing 25.7639"}
+{"level":30,"time":"2024-09-19T10:05:53.744Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.747Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.747Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[7]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:53.762Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[7]/td[2] containing 25.8328"}
+{"level":30,"time":"2024-09-19T10:05:53.762Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.765Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.765Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[7]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:53.777Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[7]/td[3] containing 26.3920"}
+{"level":30,"time":"2024-09-19T10:05:53.777Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.782Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.782Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[8]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:53.794Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[8]/td/..//h3 containing BND"}
+{"level":30,"time":"2024-09-19T10:05:53.794Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.800Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.800Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[8]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:53.897Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[8]/td/..//p containing บรูไนดารุสซาลาม"}
+{"level":30,"time":"2024-09-19T10:05:53.897Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.900Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.901Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[8]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:53.915Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[8]/td[1] containing 25.6739"}
+{"level":30,"time":"2024-09-19T10:05:53.915Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.918Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.918Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[8]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:53.931Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[8]/td[2] containing 25.7639"}
+{"level":30,"time":"2024-09-19T10:05:53.931Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.935Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:53.935Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[8]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:54.103Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[8]/td[3] containing 26.5042"}
+{"level":30,"time":"2024-09-19T10:05:54.103Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.108Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.108Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[9]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:54.233Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[9]/td/..//h3 containing PHP"}
+{"level":30,"time":"2024-09-19T10:05:54.233Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.236Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.236Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[9]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:54.250Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[9]/td/..//p containing ฟิลิปปินส์"}
+{"level":30,"time":"2024-09-19T10:05:54.250Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.254Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.254Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[9]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:54.268Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[9]/td[1] containing 0.5985"}
+{"level":30,"time":"2024-09-19T10:05:54.268Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.272Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.272Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[9]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:54.286Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[9]/td[2] containing 0.6028"}
+{"level":30,"time":"2024-09-19T10:05:54.286Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.289Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.289Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[9]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:54.304Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[9]/td[3] containing 0.6436"}
+{"level":30,"time":"2024-09-19T10:05:54.304Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.309Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.309Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[10]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:54.323Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[10]/td/..//h3 containing IDR"}
+{"level":30,"time":"2024-09-19T10:05:54.323Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.326Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.326Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[10]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:54.341Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[10]/td/..//p containing อินโดนิเซีย (ต่อ 1000 รูเปีย)"}
+{"level":30,"time":"2024-09-19T10:05:54.341Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.344Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.344Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[10]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:54.358Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[10]/td[1] containing 2.0640"}
+{"level":30,"time":"2024-09-19T10:05:54.358Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.362Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.362Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[10]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:54.375Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[10]/td[2] containing 2.1447"}
+{"level":30,"time":"2024-09-19T10:05:54.375Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.379Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.379Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[10]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:54.391Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[10]/td[3] containing 2.3467"}
+{"level":30,"time":"2024-09-19T10:05:54.391Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.396Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.396Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[11]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:54.410Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[11]/td/..//h3 containing INR"}
+{"level":30,"time":"2024-09-19T10:05:54.410Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.413Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.413Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[11]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:54.425Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[11]/td/..//p containing อินเดีย"}
+{"level":30,"time":"2024-09-19T10:05:54.425Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.428Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.429Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[11]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:54.441Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[11]/td[1] containing 0.3852"}
+{"level":30,"time":"2024-09-19T10:05:54.441Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.444Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.445Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[11]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:54.457Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[11]/td[2] containing 0.3888"}
+{"level":30,"time":"2024-09-19T10:05:54.457Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.460Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.460Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[11]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:54.473Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[11]/td[3] containing 0.4503"}
+{"level":30,"time":"2024-09-19T10:05:54.473Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.477Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.477Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[12]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:54.491Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[12]/td/..//h3 containing CHF"}
+{"level":30,"time":"2024-09-19T10:05:54.491Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.495Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:54.495Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[12]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:55.372Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[12]/td/..//p containing สวิตเซอร์แลนด์"}
+{"level":30,"time":"2024-09-19T10:05:55.372Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.375Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.375Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[12]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:55.388Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[12]/td[1] containing 40.0100"}
+{"level":30,"time":"2024-09-19T10:05:55.388Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.391Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.391Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[12]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:55.405Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[12]/td[2] containing 40.0910"}
+{"level":30,"time":"2024-09-19T10:05:55.405Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.409Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.409Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[12]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:55.421Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[12]/td[3] containing 40.7302"}
+{"level":30,"time":"2024-09-19T10:05:55.421Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.426Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.426Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[13]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:55.438Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[13]/td/..//h3 containing AUD"}
+{"level":30,"time":"2024-09-19T10:05:55.438Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.441Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.441Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[13]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:55.454Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[13]/td/..//p containing ออสเตรเลีย"}
+{"level":30,"time":"2024-09-19T10:05:55.454Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.457Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.457Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[13]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:55.484Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[13]/td[1] containing 23.0278"}
+{"level":30,"time":"2024-09-19T10:05:55.484Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.488Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.488Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[13]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:55.505Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[13]/td[2] containing 23.0873"}
+{"level":30,"time":"2024-09-19T10:05:55.505Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.508Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.508Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[13]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:55.521Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[13]/td[3] containing 23.8738"}
+{"level":30,"time":"2024-09-19T10:05:55.521Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.526Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.526Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[14]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:55.537Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[14]/td/..//h3 containing NZD"}
+{"level":30,"time":"2024-09-19T10:05:55.537Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.540Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.540Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[14]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:55.552Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[14]/td/..//p containing นิวซีแลนด์"}
+{"level":30,"time":"2024-09-19T10:05:55.552Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.555Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:55.555Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[14]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:56.193Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[14]/td[1] containing 21.4025"}
+{"level":30,"time":"2024-09-19T10:05:56.193Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.196Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.197Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[14]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:56.219Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[14]/td[2] containing 21.4624"}
+{"level":30,"time":"2024-09-19T10:05:56.219Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.222Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.222Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[14]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:56.240Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[14]/td[3] containing 22.0776"}
+{"level":30,"time":"2024-09-19T10:05:56.240Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.244Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.244Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[15]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:56.257Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[15]/td/..//h3 containing CAD"}
+{"level":30,"time":"2024-09-19T10:05:56.257Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.260Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.261Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[15]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:56.275Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[15]/td/..//p containing แคนาดา"}
+{"level":30,"time":"2024-09-19T10:05:56.275Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.278Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.278Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[15]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:56.291Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[15]/td[1] containing 25.7600"}
+{"level":30,"time":"2024-09-19T10:05:56.292Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.295Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.295Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[15]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:56.307Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[15]/td[2] containing 25.8278"}
+{"level":30,"time":"2024-09-19T10:05:56.307Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.311Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.311Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[15]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:56.324Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[15]/td[3] containing 26.3067"}
+{"level":30,"time":"2024-09-19T10:05:56.324Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.329Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.329Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[16]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:56.342Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[16]/td/..//h3 containing SEK"}
+{"level":30,"time":"2024-09-19T10:05:56.342Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.345Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.345Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[16]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:56.358Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[16]/td/..//p containing สวีเดน"}
+{"level":30,"time":"2024-09-19T10:05:56.358Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.362Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.362Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[16]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:56.384Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[16]/td[1] containing 3.4048"}
+{"level":30,"time":"2024-09-19T10:05:56.384Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.387Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.387Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[16]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:56.404Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[16]/td[2] containing 3.4172"}
+{"level":30,"time":"2024-09-19T10:05:56.404Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.407Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.407Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[16]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:56.421Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[16]/td[3] containing 3.4834"}
+{"level":30,"time":"2024-09-19T10:05:56.421Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.426Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.426Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[17]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:56.439Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[17]/td/..//h3 containing DKK"}
+{"level":30,"time":"2024-09-19T10:05:56.439Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.442Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:56.442Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[17]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:57.321Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[17]/td/..//p containing เดนมาร์ก"}
+{"level":30,"time":"2024-09-19T10:05:57.321Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.324Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.325Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[17]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:57.344Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[17]/td[1] containing 5.0543"}
+{"level":30,"time":"2024-09-19T10:05:57.344Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.347Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.347Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[17]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:57.363Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[17]/td[2] containing 5.0685"}
+{"level":30,"time":"2024-09-19T10:05:57.363Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.367Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.367Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[17]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:57.391Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[17]/td[3] containing 5.1507"}
+{"level":30,"time":"2024-09-19T10:05:57.391Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.396Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.396Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[18]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:57.416Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[18]/td/..//h3 containing NOK"}
+{"level":30,"time":"2024-09-19T10:05:57.416Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.420Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.420Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[18]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:57.437Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[18]/td/..//p containing นอร์เวย์"}
+{"level":30,"time":"2024-09-19T10:05:57.438Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.441Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.441Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[18]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:57.458Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[18]/td[1] containing 3.3350"}
+{"level":30,"time":"2024-09-19T10:05:57.458Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.462Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.462Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[18]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:57.483Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[18]/td[2] containing 3.3471"}
+{"level":30,"time":"2024-09-19T10:05:57.483Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.487Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:57.487Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[18]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:58.090Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[18]/td[3] containing 3.4324"}
+{"level":30,"time":"2024-09-19T10:05:58.090Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:58.095Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:58.095Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[19]/td/..//h3 in page."}
+{"level":30,"time":"2024-09-19T10:05:58.120Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[19]/td/..//h3 containing CNY"}
+{"level":30,"time":"2024-09-19T10:05:58.120Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:58.123Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:58.123Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_first_content\"]/tr[19]/td/..//p in page."}
+{"level":30,"time":"2024-09-19T10:05:58.135Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_first_content\"]/tr[19]/td/..//p containing จีน"}
+{"level":30,"time":"2024-09-19T10:05:58.135Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:58.139Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:58.139Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[19]/td[1] in page."}
+{"level":30,"time":"2024-09-19T10:05:58.151Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[19]/td[1] containing 4.7627"}
+{"level":30,"time":"2024-09-19T10:05:58.151Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:58.155Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:58.155Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[19]/td[2] in page."}
+{"level":30,"time":"2024-09-19T10:05:58.166Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[19]/td[2] containing 4.7875"}
+{"level":30,"time":"2024-09-19T10:05:58.166Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:58.170Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:58.170Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//table/tbody[@class=\"table_second_content\"]/tr[19]/td[3] in page."}
+{"level":30,"time":"2024-09-19T10:05:58.181Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element xpath=//table/tbody[@class=\"table_second_content\"]/tr[19]/td[3] containing 4.9109"}
+{"level":30,"time":"2024-09-19T10:05:58.181Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T10:05:58.187Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-09-19T10:05:58.196Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Removed page=e310dad9-644a-4d18-b1c4-fabfe5c7433f from context=c00e0bb2-c554-4709-a6ec-8d6a65b1b3f1 page stack"}
+{"level":30,"time":"2024-09-19T10:05:58.934Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2024-09-19T10:05:59.426Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T10:05:59.426Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (C:\Users\AtiwitK\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10748:15)
@@ -424,7 +424,7 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1696:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
 =============================================================
-{"level":30,"time":"2024-09-19T03:52:06.567Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T03:52:06.568Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T03:52:06.822Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2024-09-19T03:52:06.823Z","pid":17640,"hostname":"RPATDV-GN-P3","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2024-09-19T10:05:59.463Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T10:05:59.463Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T10:06:00.166Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-09-19T10:06:00.166Z","pid":5552,"hostname":"RPATDV-GN-P3","msg":"End of node method closeAllBrowsers"}
