@@ -20,10 +20,10 @@ ${key_path}       C:/Users/AtiwitK/Documents/Postman/DDG-2-key.pem
 
 *** Keywords ***
 Send Post Request and Verify response body
-    @{client certs}=  create list  ${cert_path}  ${key_path}
-    ${HEADERS}=    Create Dictionary    accept=application/json    content-type=application/json    X-IBM-Client-Id=a7f05458-6cc3-45bd-b912-f974218d9277    X-IBM-Client-Secret=C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0
-    Create Client Cert Session      my_session      url=${URL}      client_certs=${client certs}     headers=${HEADERS}     verify=True
-    ${response}=    POST On Session    my_session    /inquiry-status-tracking    data=${BODY}   headers=${HEADERS}
+    @{client certs}=                create list             ${cert_path}  ${key_path}
+    ${HEADERS}=                     Create Dictionary       accept=application/json    content-type=application/json    X-IBM-Client-Id=a7f05458-6cc3-45bd-b912-f974218d9277    X-IBM-Client-Secret=C8jN8tM4tU5rS5qK2nX4jR0dR5bG4cQ6aH5uF3rU5fK1sW0dN0
+    Create Client Cert Session      my_session              url=${URL}      client_certs=${client certs}        headers=${HEADERS}      verify=True
+    ${response}=                    POST On Session         my_session      /inquiry-status-tracking            data=${BODY}            headers=${HEADERS}
     Log    ${response.status_code}
     Log    ${response.content}
 

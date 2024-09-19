@@ -1,100 +1,100 @@
-{"level":30,"time":"2024-09-19T04:02:43.297Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Listening on 65456"}
-(node:15708) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2024-09-19T09:50:53.864Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Listening on 50268"}
+(node:10364) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2024-09-19T04:02:44.025Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T04:02:44.025Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T04:02:44.031Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T04:02:44.031Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T04:02:44.035Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2024-09-19T04:02:45.788Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Adding browser to stack: chromium, version: 128.0.6613.18"}
-{"level":30,"time":"2024-09-19T04:02:45.789Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method newBrowser"}
-{"level":30,"time":"2024-09-19T04:02:45.789Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2024-09-19T04:02:45.856Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method newPage"}
-{"level":30,"time":"2024-09-19T04:02:45.857Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2024-09-19T04:02:45.911Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Changed active context"}
-{"level":30,"time":"2024-09-19T04:02:47.274Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Video path: undefined"}
-{"level":30,"time":"2024-09-19T04:02:47.274Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Changed active page"}
-{"level":30,"time":"2024-09-19T04:03:13.608Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method newPage"}
-{"level":30,"time":"2024-09-19T04:03:13.618Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
-{"level":30,"time":"2024-09-19T04:03:13.619Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with text=ยอมรับ in page."}
-{"level":30,"time":"2024-09-19T04:03:14.190Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
-{"level":30,"time":"2024-09-19T04:03:14.213Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
-{"level":30,"time":"2024-09-19T04:03:14.213Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with role=link[name=\"เข้าสู่เว็บไซต์\"] in page."}
-{"level":30,"time":"2024-09-19T04:03:15.716Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
-{"level":30,"time":"2024-09-19T04:03:15.735Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElement"}
-{"level":30,"time":"2024-09-19T04:03:15.736Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with a:has(img[src=\"https://www.botlc.or.th/public/img/simple-icons/facebook.svg\"]) in page."}
-{"level":30,"time":"2024-09-19T04:03:17.233Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method getElement"}
-{"level":30,"time":"2024-09-19T04:03:17.265Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElementAttribute"}
-{"level":30,"time":"2024-09-19T04:03:17.265Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with a:has(img[src=\"https://www.botlc.or.th/public/img/simple-icons/facebook.svg\"]) in page."}
-{"level":30,"time":"2024-09-19T04:03:18.030Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Retrieved attribute for element a:has(img[src=\"https://www.botlc.or.th/public/img/simple-icons/facebook.svg\"]) containing https://www.facebook.com/BOTLearningCenter/"}
-{"level":30,"time":"2024-09-19T04:03:18.030Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method getElementAttribute"}
-{"level":30,"time":"2024-09-19T04:03:18.034Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
-{"level":30,"time":"2024-09-19T04:03:18.034Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with a:has(img[src=\"https://www.botlc.or.th/public/img/simple-icons/facebook.svg\"]) in page."}
-{"level":30,"time":"2024-09-19T04:03:27.281Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
-{"level":30,"time":"2024-09-19T04:03:27.285Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T04:03:27.285Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with a:has(img[src=\"https://www.botlc.or.th/public/img/simple-icons/facebook.svg\"]) in page."}
-{"level":30,"time":"2024-09-19T04:03:27.311Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T04:03:27.323Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElement"}
-{"level":30,"time":"2024-09-19T04:03:27.323Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with role=textbox[name=\"Email address or phone number\"] in page."}
-{"level":30,"time":"2024-09-19T04:03:45.782Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method getElement"}
-{"level":30,"time":"2024-09-19T04:03:45.831Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T04:03:45.831Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with role=textbox[name=\"Email address or phone number\"] in page."}
-{"level":30,"time":"2024-09-19T04:03:45.856Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T04:03:45.860Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with role=textbox[name=\"Email address or phone number\"] in page."}
-{"level":30,"time":"2024-09-19T04:03:45.860Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-09-19T04:03:45.927Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method fillText"}
-{"level":30,"time":"2024-09-19T04:03:45.930Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[4]/div/div/div/label/input in page."}
-{"level":30,"time":"2024-09-19T04:03:45.930Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElement"}
-{"level":30,"time":"2024-09-19T04:03:46.421Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method getElement"}
-{"level":30,"time":"2024-09-19T04:03:46.425Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[4]/div/div/div/label/input in page."}
-{"level":30,"time":"2024-09-19T04:03:46.424Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T04:03:46.444Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T04:03:46.448Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
-{"level":30,"time":"2024-09-19T04:03:46.448Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[4]/div/div/div/label/input in page."}
-{"level":30,"time":"2024-09-19T04:03:47.746Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
-{"level":30,"time":"2024-09-19T04:03:47.750Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method fillText"}
-{"level":30,"time":"2024-09-19T04:03:47.750Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[4]/div/div/div/label/input in page."}
-{"level":30,"time":"2024-09-19T04:03:47.769Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method fillText"}
-{"level":30,"time":"2024-09-19T04:03:47.772Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElement"}
-{"level":30,"time":"2024-09-19T04:03:47.772Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[5]/div/div/div[1]/div/span/span in page."}
-{"level":30,"time":"2024-09-19T04:03:47.776Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method getElement"}
-{"level":30,"time":"2024-09-19T04:03:47.780Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T04:03:47.780Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[5]/div/div/div[1]/div/span/span in page."}
-{"level":30,"time":"2024-09-19T04:03:47.823Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T04:03:47.828Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[5]/div/div/div[1]/div/span/span in page."}
-{"level":30,"time":"2024-09-19T04:03:47.828Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
-{"level":30,"time":"2024-09-19T04:04:00.009Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
-{"level":30,"time":"2024-09-19T04:04:00.573Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElement"}
-{"level":30,"time":"2024-09-19T04:04:00.573Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with h1 in page."}
-{"level":30,"time":"2024-09-19T04:04:14.141Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method getElement"}
-{"level":30,"time":"2024-09-19T04:04:14.629Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
-{"level":30,"time":"2024-09-19T04:04:14.629Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with h1 in page."}
-{"level":30,"time":"2024-09-19T04:04:14.756Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element h1 containing ศูนย์การเรียนรู้แบงก์ชาติ - BOTLC "}
-{"level":30,"time":"2024-09-19T04:04:14.756Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
-{"level":30,"time":"2024-09-19T04:04:15.316Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T04:04:15.333Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T04:04:15.336Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T04:04:15.341Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Changed active context"}
-{"level":30,"time":"2024-09-19T04:04:15.338Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T04:04:15.341Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Changing current active page: page=2d305bdd-3d2e-41b3-a376-bfca2d3703f9"}
-{"level":30,"time":"2024-09-19T04:04:15.341Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Changed active page"}
-{"level":30,"time":"2024-09-19T04:04:15.345Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T04:04:15.348Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T04:04:15.357Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Changing current active page: page=2d305bdd-3d2e-41b3-a376-bfca2d3703f9"}
-{"level":30,"time":"2024-09-19T04:04:15.350Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2024-09-19T04:04:15.351Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2024-09-19T04:04:15.353Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2024-09-19T04:04:15.354Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2024-09-19T04:04:15.357Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Changed active page"}
-{"level":30,"time":"2024-09-19T04:04:15.362Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T04:04:15.364Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T04:04:15.367Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Changed active context"}
-{"level":30,"time":"2024-09-19T04:04:15.367Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Changing current active page: page=2d305bdd-3d2e-41b3-a376-bfca2d3703f9"}
-{"level":30,"time":"2024-09-19T04:04:15.367Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Changed active page"}
-{"level":30,"time":"2024-09-19T04:04:15.369Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method closeContext"}
-{"level":30,"time":"2024-09-19T04:04:15.388Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Removed page=ac1a39ec-40f1-4269-ac63-6a763e3d85b9 from context=cb32ebf9-4d55-46ab-ade9-250b8d5d8b0c page stack"}
-{"level":30,"time":"2024-09-19T04:04:15.491Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method closeContext"}
-{"level":30,"time":"2024-09-19T04:04:16.208Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T04:04:16.208Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T04:04:16.903Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2024-09-19T04:04:25.373Z","pid":15708,"hostname":"RPATDV-GN-P3","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2024-09-19T09:50:54.224Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:50:54.224Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:50:54.230Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:50:54.230Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:50:54.235Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-09-19T09:50:54.647Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Adding browser to stack: chromium, version: 128.0.6613.18"}
+{"level":30,"time":"2024-09-19T09:50:54.647Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-09-19T09:50:54.647Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-09-19T09:50:55.283Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-09-19T09:50:55.284Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-09-19T09:50:55.313Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Changed active context"}
+{"level":30,"time":"2024-09-19T09:50:56.837Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Video path: undefined"}
+{"level":30,"time":"2024-09-19T09:50:56.837Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Changed active page"}
+{"level":30,"time":"2024-09-19T09:51:23.063Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method newPage"}
+{"level":30,"time":"2024-09-19T09:51:23.069Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
+{"level":30,"time":"2024-09-19T09:51:23.070Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with text=ยอมรับ in page."}
+{"level":30,"time":"2024-09-19T09:51:23.194Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
+{"level":30,"time":"2024-09-19T09:51:23.201Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
+{"level":30,"time":"2024-09-19T09:51:23.201Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with role=link[name=\"เข้าสู่เว็บไซต์\"] in page."}
+{"level":30,"time":"2024-09-19T09:51:23.871Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
+{"level":30,"time":"2024-09-19T09:51:23.877Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-09-19T09:51:23.877Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with a:has(img[src=\"https://www.botlc.or.th/public/img/simple-icons/facebook.svg\"]) in page."}
+{"level":30,"time":"2024-09-19T09:51:24.322Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method getElement"}
+{"level":30,"time":"2024-09-19T09:51:24.335Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2024-09-19T09:51:24.335Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with a:has(img[src=\"https://www.botlc.or.th/public/img/simple-icons/facebook.svg\"]) in page."}
+{"level":30,"time":"2024-09-19T09:51:24.576Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Retrieved attribute for element a:has(img[src=\"https://www.botlc.or.th/public/img/simple-icons/facebook.svg\"]) containing https://www.facebook.com/BOTLearningCenter/"}
+{"level":30,"time":"2024-09-19T09:51:24.577Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2024-09-19T09:51:24.582Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with a:has(img[src=\"https://www.botlc.or.th/public/img/simple-icons/facebook.svg\"]) in page."}
+{"level":30,"time":"2024-09-19T09:51:24.582Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
+{"level":30,"time":"2024-09-19T09:51:26.703Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
+{"level":30,"time":"2024-09-19T09:51:26.729Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:51:26.729Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with a:has(img[src=\"https://www.botlc.or.th/public/img/simple-icons/facebook.svg\"]) in page."}
+{"level":30,"time":"2024-09-19T09:51:26.759Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:51:26.805Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-09-19T09:51:26.805Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with role=textbox[name=\"Email address or phone number\"] in page."}
+{"level":30,"time":"2024-09-19T09:51:33.338Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method getElement"}
+{"level":30,"time":"2024-09-19T09:51:33.345Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with role=textbox[name=\"Email address or phone number\"] in page."}
+{"level":30,"time":"2024-09-19T09:51:33.345Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:51:33.368Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:51:33.372Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-09-19T09:51:33.372Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with role=textbox[name=\"Email address or phone number\"] in page."}
+{"level":30,"time":"2024-09-19T09:51:34.110Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-09-19T09:51:34.114Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[4]/div/div/div/label/input in page."}
+{"level":30,"time":"2024-09-19T09:51:34.114Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-09-19T09:51:34.149Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method getElement"}
+{"level":30,"time":"2024-09-19T09:51:34.153Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[4]/div/div/div/label/input in page."}
+{"level":30,"time":"2024-09-19T09:51:34.153Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:51:34.173Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:51:34.176Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[4]/div/div/div/label/input in page."}
+{"level":30,"time":"2024-09-19T09:51:34.176Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
+{"level":30,"time":"2024-09-19T09:51:35.746Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
+{"level":30,"time":"2024-09-19T09:51:35.749Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-09-19T09:51:35.749Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[4]/div/div/div/label/input in page."}
+{"level":30,"time":"2024-09-19T09:51:35.916Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method fillText"}
+{"level":30,"time":"2024-09-19T09:51:35.919Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[5]/div/div/div[1]/div/span/span in page."}
+{"level":30,"time":"2024-09-19T09:51:35.919Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-09-19T09:51:36.563Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method getElement"}
+{"level":30,"time":"2024-09-19T09:51:36.567Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[5]/div/div/div[1]/div/span/span in page."}
+{"level":30,"time":"2024-09-19T09:51:36.567Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:51:36.621Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:51:36.625Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
+{"level":30,"time":"2024-09-19T09:51:36.625Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[5]/div/div/div[1]/div/span/span in page."}
+{"level":30,"time":"2024-09-19T09:51:36.706Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
+{"level":30,"time":"2024-09-19T09:51:37.559Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-09-19T09:51:37.559Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with h1 in page."}
+{"level":30,"time":"2024-09-19T09:51:55.206Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method getElement"}
+{"level":30,"time":"2024-09-19T09:51:55.212Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with h1 in page."}
+{"level":30,"time":"2024-09-19T09:51:55.211Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method getText"}
+{"level":30,"time":"2024-09-19T09:51:55.895Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Retrieved text for element h1 containing ศูนย์การเรียนรู้แบงก์ชาติ - BOTLC "}
+{"level":30,"time":"2024-09-19T09:51:55.895Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method getText"}
+{"level":30,"time":"2024-09-19T09:51:55.940Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:51:55.943Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:51:55.945Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:51:55.947Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:51:55.950Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Changed active context"}
+{"level":30,"time":"2024-09-19T09:51:55.954Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:51:55.950Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Changing current active page: page=4fb340b7-46c8-431c-8847-e8cd75ec6885"}
+{"level":30,"time":"2024-09-19T09:51:55.950Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Changed active page"}
+{"level":30,"time":"2024-09-19T09:51:55.956Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:51:55.958Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-09-19T09:51:55.959Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-09-19T09:51:55.961Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-09-19T09:51:55.962Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-09-19T09:51:55.965Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Changing current active page: page=4fb340b7-46c8-431c-8847-e8cd75ec6885"}
+{"level":30,"time":"2024-09-19T09:51:55.965Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Changed active page"}
+{"level":30,"time":"2024-09-19T09:51:55.969Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:51:55.971Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:51:55.973Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Changed active context"}
+{"level":30,"time":"2024-09-19T09:51:55.973Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Changing current active page: page=4fb340b7-46c8-431c-8847-e8cd75ec6885"}
+{"level":30,"time":"2024-09-19T09:51:55.973Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Changed active page"}
+{"level":30,"time":"2024-09-19T09:51:55.976Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-09-19T09:51:55.989Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Removed page=381e63ec-50fa-49df-9ae4-45ae264b863c from context=bce29234-d93f-4421-8c24-ce2fcb08bb31 page stack"}
+{"level":30,"time":"2024-09-19T09:51:56.670Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-09-19T09:51:56.708Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:51:56.708Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:51:56.832Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-09-19T09:51:59.953Z","pid":10364,"hostname":"RPATDV-GN-P3","msg":"End of node method closeAllBrowsers"}

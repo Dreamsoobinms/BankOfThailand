@@ -22,37 +22,37 @@ ${PASSWORD}       dream6010742333
 
 *** Keywords ***
 Accept Cookies
-    Browser.Click    text=ยอมรับ
+    Browser.Click               text=ยอมรับ
 
 Enter Website
-    Browser.Click    role=link[name="เข้าสู่เว็บไซต์"]
+    Browser.Click               role=link[name="เข้าสู่เว็บไซต์"]
 
 Verify and Click Facebook Icon
-    ${facebook_icon}=    Get Element    a:has(img[src="https://www.botlc.or.th/public/img/simple-icons/facebook.svg"])
-    ${href}    Get Attribute    ${facebook_icon}   href
-    Should Be Equal    ${href}    ${FACEBOOK_URL}
-    Browser.Click    ${facebook_icon}
-    Wait For Elements State    ${facebook_icon}    detached
+    ${facebook_icon}=           Get Element             a:has(img[src="https://www.botlc.or.th/public/img/simple-icons/facebook.svg"])
+    ${href}                     Get Attribute           ${facebook_icon}        href
+    Should Be Equal             ${href}                 ${FACEBOOK_URL}
+    Browser.Click               ${facebook_icon}
+    Wait For Elements State     ${facebook_icon}        detached
 
 Verify Facebook Page
-    Wait For Condition    Url    should end with    ${FACEBOOK_URL}
+    Wait For Condition          Url                     should end with         ${FACEBOOK_URL}
 
 Login To Facebook
     # input facebook email or phone number
-    ${email_input}=    Get Element    role=textbox[name="Email address or phone number"]
-    Wait For Elements State    ${email_input}    visible
-    Browser.Fill Text    ${email_input}    ${EMAIL}
+    ${email_input}=             Get Element             role=textbox[name="Email address or phone number"]
+    Wait For Elements State     ${email_input}          visible
+    Browser.Fill Text           ${email_input}          ${EMAIL}
     # input facebook password
-    ${password_input}=    Get Element    xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[4]/div/div/div/label/input
-    Wait For Elements State    ${password_input}    visible
-    Browser.Click    ${password_input}
-    Browser.Fill Text    ${password_input}    ${PASSWORD}
+    ${password_input}=          Get Element             xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[4]/div/div/div/label/input
+    Wait For Elements State     ${password_input}       visible
+    Browser.Click               ${password_input}
+    Browser.Fill Text           ${password_input}       ${PASSWORD}
     # click log in facebook
-    ${login_button}=    Get Element    xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[5]/div/div/div[1]/div/span/span
-    Wait For Elements State    ${login_button}    visible
-    Browser.Click    ${login_button}
+    ${login_button}=            Get Element             xpath=/html/body/div[1]/div/div[1]/div/div[5]/div/div/div[1]/div/div[2]/div/div/div/div[2]/form/div/div[5]/div/div/div[1]/div/span/span
+    Wait For Elements State     ${login_button}         visible
+    Browser.Click               ${login_button}
 
 Verify Facebook Login
-    Set Browser Timeout    30 seconds
-    ${header}=    Get Element    h1
-    Wait For Condition    Text    ${header}   contains    ศูนย์การเรียนรู้แบงก์ชาติ - BOTLC
+    Set Browser Timeout         30 seconds
+    ${header}=                  Get Element             h1
+    Wait For Condition          Text                    ${header}   contains    ศูนย์การเรียนรู้แบงก์ชาติ - BOTLC

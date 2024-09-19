@@ -1,71 +1,71 @@
-{"level":30,"time":"2024-09-19T03:58:04.093Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Listening on 64713"}
-(node:4280) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2024-09-19T09:46:37.107Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Listening on 49862"}
+(node:1552) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2024-09-19T03:58:05.653Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T03:58:05.653Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T03:58:05.658Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T03:58:05.658Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T03:58:05.663Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2024-09-19T03:58:06.533Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Adding browser to stack: chromium, version: 128.0.6613.18"}
-{"level":30,"time":"2024-09-19T03:58:06.534Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method newBrowser"}
-{"level":30,"time":"2024-09-19T03:58:06.533Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2024-09-19T03:58:06.557Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method newPage"}
-{"level":30,"time":"2024-09-19T03:58:06.558Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2024-09-19T03:58:06.568Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Changed active context"}
-{"level":30,"time":"2024-09-19T03:58:07.395Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Video path: undefined"}
-{"level":30,"time":"2024-09-19T03:58:07.396Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Changed active page"}
-{"level":30,"time":"2024-09-19T03:58:29.353Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method newPage"}
-{"level":30,"time":"2024-09-19T03:58:29.360Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T03:58:29.361Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//a[@aria-label=\"allow cookies\"] in page."}
-{"level":30,"time":"2024-09-19T03:58:30.089Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T03:58:30.092Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
-{"level":30,"time":"2024-09-19T03:58:30.092Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//a[@aria-label=\"allow cookies\"] in page."}
-{"level":30,"time":"2024-09-19T03:58:30.186Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
-{"level":30,"time":"2024-09-19T03:58:30.524Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T03:58:30.524Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//a[text()='เข้าสู่เว็บไซต์'] in page."}
-{"level":30,"time":"2024-09-19T03:58:30.539Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T03:58:30.544Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
-{"level":30,"time":"2024-09-19T03:58:30.545Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//a[text()='เข้าสู่เว็บไซต์'] in page."}
-{"level":30,"time":"2024-09-19T03:58:31.132Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
-{"level":30,"time":"2024-09-19T03:58:36.634Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method evaluateJavascript"}
-{"level":30,"time":"2024-09-19T03:58:36.652Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method evaluateJavascript"}
-{"level":30,"time":"2024-09-19T03:58:36.655Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method evaluateJavascript"}
-{"level":30,"time":"2024-09-19T03:58:36.659Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method evaluateJavascript"}
-{"level":30,"time":"2024-09-19T03:58:36.661Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method evaluateJavascript"}
-{"level":30,"time":"2024-09-19T03:58:36.664Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method evaluateJavascript"}
-{"level":30,"time":"2024-09-19T03:58:36.667Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method evaluateJavascript"}
-{"level":30,"time":"2024-09-19T03:58:36.669Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method evaluateJavascript"}
-{"level":30,"time":"2024-09-19T03:58:36.671Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method evaluateJavascript"}
-{"level":30,"time":"2024-09-19T03:58:36.691Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method evaluateJavascript"}
-{"level":30,"time":"2024-09-19T03:58:42.135Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElement"}
-{"level":30,"time":"2024-09-19T03:58:42.135Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//iframe[@title=\"YouTube video player\"] in page."}
-{"level":30,"time":"2024-09-19T03:58:42.176Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method getElement"}
-{"level":30,"time":"2024-09-19T03:58:42.179Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T03:58:42.179Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//iframe[@title=\"YouTube video player\"] in page."}
-{"level":30,"time":"2024-09-19T03:58:42.203Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T03:58:42.206Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button in page."}
-{"level":30,"time":"2024-09-19T03:58:42.206Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElement"}
-{"level":30,"time":"2024-09-19T03:58:42.259Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method getElement"}
-{"level":30,"time":"2024-09-19T03:58:42.262Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T03:58:42.263Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button in page."}
-{"level":30,"time":"2024-09-19T03:58:42.292Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2024-09-19T03:58:42.296Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElementAttribute"}
-{"level":30,"time":"2024-09-19T03:58:42.296Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button in page."}
-{"level":30,"time":"2024-09-19T03:58:42.974Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Retrieved attribute for element xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button containing Play"}
-{"level":30,"time":"2024-09-19T03:58:42.974Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method getElementAttribute"}
-{"level":30,"time":"2024-09-19T03:58:42.977Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElementAttribute"}
-{"level":30,"time":"2024-09-19T03:58:42.977Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button in page."}
-{"level":30,"time":"2024-09-19T03:58:43.034Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Retrieved attribute for element xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button containing Play"}
-{"level":30,"time":"2024-09-19T03:58:43.034Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method getElementAttribute"}
-{"level":30,"time":"2024-09-19T03:58:43.038Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElementAttribute"}
-{"level":30,"time":"2024-09-19T03:58:43.038Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button in page."}
-{"level":30,"time":"2024-09-19T03:58:43.079Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Retrieved attribute for element xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button containing ytp-large-play-button ytp-button ytp-large-play-button-red-bg"}
-{"level":30,"time":"2024-09-19T03:58:43.079Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method getElementAttribute"}
-{"level":30,"time":"2024-09-19T03:58:43.087Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2024-09-19T03:58:44.006Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Removed page=bddef827-96cb-4f8c-9323-b023f211d3d0 from context=b84df61d-b0c3-4a43-b994-93def699d0c5 page stack"}
-{"level":30,"time":"2024-09-19T03:58:51.598Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method closeBrowser"}
-{"level":30,"time":"2024-09-19T03:58:51.601Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T03:58:51.601Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:46:37.825Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:46:37.826Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:46:37.832Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:46:37.832Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:46:37.838Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-09-19T09:46:40.235Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Adding browser to stack: chromium, version: 128.0.6613.18"}
+{"level":30,"time":"2024-09-19T09:46:40.235Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-09-19T09:46:40.235Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-09-19T09:46:40.249Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-09-19T09:46:40.250Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-09-19T09:46:40.266Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Changed active context"}
+{"level":30,"time":"2024-09-19T09:46:41.161Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Video path: undefined"}
+{"level":30,"time":"2024-09-19T09:46:41.161Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Changed active page"}
+{"level":30,"time":"2024-09-19T09:46:55.834Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method newPage"}
+{"level":30,"time":"2024-09-19T09:46:56.031Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:46:56.031Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//a[@aria-label=\"allow cookies\"] in page."}
+{"level":30,"time":"2024-09-19T09:46:56.505Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:46:56.509Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
+{"level":30,"time":"2024-09-19T09:46:56.509Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//a[@aria-label=\"allow cookies\"] in page."}
+{"level":30,"time":"2024-09-19T09:46:56.570Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
+{"level":30,"time":"2024-09-19T09:46:56.577Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:46:56.577Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//a[text()='เข้าสู่เว็บไซต์'] in page."}
+{"level":30,"time":"2024-09-19T09:46:56.582Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:46:56.587Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method click"}
+{"level":30,"time":"2024-09-19T09:46:56.587Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//a[text()='เข้าสู่เว็บไซต์'] in page."}
+{"level":30,"time":"2024-09-19T09:46:57.358Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method click"}
+{"level":30,"time":"2024-09-19T09:47:02.392Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-09-19T09:47:02.774Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-09-19T09:47:02.776Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-09-19T09:47:02.898Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-09-19T09:47:02.900Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-09-19T09:47:02.907Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-09-19T09:47:02.910Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-09-19T09:47:02.915Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-09-19T09:47:02.917Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-09-19T09:47:02.924Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-09-19T09:47:08.279Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-09-19T09:47:08.279Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//iframe[@title=\"YouTube video player\"] in page."}
+{"level":30,"time":"2024-09-19T09:47:08.334Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method getElement"}
+{"level":30,"time":"2024-09-19T09:47:08.338Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:47:08.338Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//iframe[@title=\"YouTube video player\"] in page."}
+{"level":30,"time":"2024-09-19T09:47:08.632Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:47:08.635Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-09-19T09:47:08.635Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button in page."}
+{"level":30,"time":"2024-09-19T09:47:08.657Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method getElement"}
+{"level":30,"time":"2024-09-19T09:47:08.661Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:47:08.661Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button in page."}
+{"level":30,"time":"2024-09-19T09:47:08.837Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-09-19T09:47:08.840Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2024-09-19T09:47:08.840Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button in page."}
+{"level":30,"time":"2024-09-19T09:47:09.035Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Retrieved attribute for element xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button containing Play"}
+{"level":30,"time":"2024-09-19T09:47:09.035Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2024-09-19T09:47:09.039Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2024-09-19T09:47:09.039Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button in page."}
+{"level":30,"time":"2024-09-19T09:47:09.054Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Retrieved attribute for element xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button containing Play"}
+{"level":30,"time":"2024-09-19T09:47:09.054Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2024-09-19T09:47:09.058Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2024-09-19T09:47:09.058Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Strict mode is enabled, find Locator with xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button in page."}
+{"level":30,"time":"2024-09-19T09:47:09.071Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Retrieved attribute for element xpath=//iframe[@title=\"YouTube video player\"] >> internal:control=enter-frame >> xpath=/html/body/div/div/div[4]/button containing ytp-large-play-button ytp-button ytp-large-play-button-red-bg"}
+{"level":30,"time":"2024-09-19T09:47:09.071Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2024-09-19T09:47:09.195Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-09-19T09:47:09.224Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Removed page=33e9e805-c657-4391-88d8-b81639d9b236 from context=dcaa2824-2786-475e-aa5f-be44f63d02b9 page stack"}
+{"level":30,"time":"2024-09-19T09:47:09.894Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2024-09-19T09:47:09.899Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:47:09.899Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (C:\Users\AtiwitK\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10748:15)
@@ -79,7 +79,7 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1696:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
 =============================================================
-{"level":30,"time":"2024-09-19T03:58:52.151Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T03:58:52.151Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2024-09-19T03:58:52.254Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2024-09-19T03:58:52.255Z","pid":4280,"hostname":"RPATDV-GN-P3","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2024-09-19T09:47:09.990Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:47:09.990Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-19T09:47:13.441Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-09-19T09:47:13.441Z","pid":1552,"hostname":"RPATDV-GN-P3","msg":"End of node method closeAllBrowsers"}
