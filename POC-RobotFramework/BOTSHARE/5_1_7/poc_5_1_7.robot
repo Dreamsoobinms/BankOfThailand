@@ -8,7 +8,7 @@ ${owner}            adtestuser1
 ${note}             This is an Robot Framework test
 
 *** Test Cases ***
-5.1.7 การดึงข้อมูลตารางจาก Web ที่เป็นตาราง (in memory ,File)
+5.1.7 สามารถ handle pop up ของ BOT-ShaRe
     [Documentation]    Test case to extract table data from the web and format it
     New Browser    chromium     headless=True
     Set Browser Timeout    30 seconds

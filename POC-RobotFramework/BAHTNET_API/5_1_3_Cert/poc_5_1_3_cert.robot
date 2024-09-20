@@ -5,8 +5,9 @@ Library           JSONLibrary
 *** Variables ***
 ${URL}            https://apixgw2.bot.or.th/bot-iwt/partner-extranet/bnapi
 ${BODY}           {"inquiry_request": {"credit_bic": "BOTHTHB1DDG", "settlement_date": "2024-08-01"}}
-${cert_path}      C:/Users/AtiwitK/Documents/Postman/DDG-2-cert.pem
-${key_path}       C:/Users/AtiwitK/Documents/Postman/DDG-2-key.pem
+# Path from bot.or.th (network)
+${cert_path}        //bot.or.th/cfs/FILESERV/QMDataFile/FIN1/Postman collection/DDG-2-cert.pem
+${key_path}         //bot.or.th/cfs/FILESERV/QMDataFile/FIN1/Postman collection/DDG-2-key.pem
 
 *** Test Cases ***
 5.1.3 Reguent แบบ มี Certificate ดึงข้อมูลได้ถูกต้อง
