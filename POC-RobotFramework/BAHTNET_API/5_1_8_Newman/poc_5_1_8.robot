@@ -9,7 +9,7 @@ ${KEY}            C:/Users/AtiwitK/Documents/Postman/DDG-2-key.pem
 ${OUTPUT}         C:/Users/AtiwitK/Documents/Postman/output.json
 
 *** Test Cases ***
-5.1.8 Verify Run Newman with Postman collection using Robot Framework
+5.1.8 เป็น adapter เพื่อ trigger Postman Collection โดยใช้ Newman (แบบมี Certificate)
     Run Postman Collection with Newman
     Load JSON from output file and get 'run' body value
     Get 'Executed' and 'Failed' status from 'iterations, requests, test-scripts, prerequest-scripts and assertions'
