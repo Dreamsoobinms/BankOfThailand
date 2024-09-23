@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-23T17:44:04.087303" rpa="false" schemaversion="5">
+<suite id="s1" name="Poc 5 1 9 Ftp" source="C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\poc-robotframework\winscp\5_1_9\poc_5_1_9_ftp.robot">
+<test id="s1-t1" name="Verify FTP Connection and Directory" line="14">
+<kw name="Ftp Connect" owner="FtpLibrary">
+<msg time="2024-09-23T17:44:05.073883" level="INFO">220 Microsoft FTP Service230 User logged in.</msg>
+<arg>${HOST}</arg>
+<arg>user=${USERNAME}</arg>
+<arg>password=${PASSWORD}</arg>
+<arg>port=${PORT}</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<arg>tls=False</arg>
+<doc>Constructs FTP object, opens a connection and login. TLS support is optional.
+Call this function before any other (otherwise raises exception).
+Returns server output.
+Parameters:
+    - host - server host address
+    - user(optional) - FTP user name. If not given, 'anonymous' is used.
+    - password(optional) - FTP password. If not given, 'anonymous@' is used.
+    - port(optional) - TCP port. By default 21.
+    - timeout(optional) - timeout in seconds. By default 30.
+    - connId(optional) - connection identifier. By default equals 'default'
+    - tls(optional) - TLS connections flag. By default False
+    - mode(optional) - set the transfer mode to 'active' or 'passive'. By default 'passive'</doc>
+<status status="PASS" start="2024-09-23T17:44:05.051408" elapsed="0.022475"/>
+</kw>
+<kw name="Dir" owner="FtpLibrary">
+<msg time="2024-09-23T17:44:05.089092" level="INFO">10-21-22  06:58PM       &lt;DIR&gt;          aspnet_client
+11-16-22  05:33PM       &lt;DIR&gt;          PREFUND_DATA
+06-30-20  09:11AM       &lt;DIR&gt;          PREFUND_SOURCE
+</msg>
+<msg time="2024-09-23T17:44:05.089092" level="INFO">@{dirResult} = [ 10-21-22  06:58PM       &lt;DIR&gt;          aspnet_client | 11-16-22  05:33PM       &lt;DIR&gt;          PREFUND_DATA | 06-30-20  09:11AM       &lt;DIR&gt;          PREFUND_SOURCE ]</msg>
+<var>@{dirResult}</var>
+<doc>Returns list of raw lines returned as contens of current directory.
+Parameters:
+- connId(optional) - connection identifier. By default equals 'default'</doc>
+<status status="PASS" start="2024-09-23T17:44:05.079613" elapsed="0.009479"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-23T17:44:05.090090" level="INFO">['10-21-22  06:58PM       &lt;DIR&gt;          aspnet_client', '11-16-22  05:33PM       &lt;DIR&gt;          PREFUND_DATA', '06-30-20  09:11AM       &lt;DIR&gt;          PREFUND_SOURCE']</msg>
+<arg>${dirResult}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-23T17:44:05.090090" elapsed="0.000000"/>
+</kw>
+<kw name="Dir Names" owner="FtpLibrary">
+<msg time="2024-09-23T17:44:05.106229" level="INFO">@{files} = [ aspnet_client | PREFUND_DATA | PREFUND_SOURCE ]</msg>
+<var>@{files}</var>
+<doc>Returns list of files (and/or directories) of current directory.
+Parameters:
+- connId(optional) - connection identifier. By default equals 'default'</doc>
+<status status="PASS" start="2024-09-23T17:44:05.090090" elapsed="0.017142"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-23T17:44:05.111951" level="INFO">['aspnet_client', 'PREFUND_DATA', 'PREFUND_SOURCE']</msg>
+<arg>${files}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-23T17:44:05.111951" elapsed="0.000000"/>
+</kw>
+<kw name="Pwd" owner="FtpLibrary">
+<msg time="2024-09-23T17:44:05.115370" level="INFO">/</msg>
+<msg time="2024-09-23T17:44:05.115370" level="INFO">${pwdMsg} = /</msg>
+<var>${pwdMsg}</var>
+<doc>Returns the pathname of the current directory on the server.
+Parameters:
+- connId(optional) - connection identifier. By default equals 'default'</doc>
+<status status="PASS" start="2024-09-23T17:44:05.111951" elapsed="0.003419"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${files}</arg>
+<arg>aspnet_client</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-09-23T17:44:05.117367" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${files}</arg>
+<arg>PREFUND_DATA</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-09-23T17:44:05.118369" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${files}</arg>
+<arg>PREFUND_SOURCE</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-09-23T17:44:05.118369" elapsed="0.000000"/>
+</kw>
+<kw name="Download File" owner="FtpLibrary">
+<msg time="2024-09-23T17:44:05.157272" level="INFO">226 Transfer complete.</msg>
+<arg>${DIRECTORY}/DPSDA81_20110503_MXA.TXT</arg>
+<arg>C:/Users/AtiwitK/Documents/DPSDA81_20110503_MXA.TXT</arg>
+<doc>Downloads file from current directory on FTP server in binary mode. If
+localFilePath is not given, file is saved in current local directory (by
+default folder containing robot framework project file) with the same name
+as source file. Returns server output
+Parameters:
+- remoteFileName - file name on FTP server
+- localFilePath (optional) - local file name or path where remote file should be saved.
+- connId(optional) - connection identifier. By default equals 'default'
+localFilePath variable can have following meanings:
+1. file name (will be saved in current default directory);
+2. full path (dir + file name)
+3. dir path (original file name will be added)
+Examples:
+| download file | a.txt |  |  |
+| download file | a.txt | b.txt | connId=ftp1 |
+| download file | a.txt | D:/rfftppy/tmp |  |
+| download file | a.txt | D:/rfftppy/tmp/b.txt |  |
+| download file | a.txt | D:\rfftppy\tmp\c.txt |  |</doc>
+<status status="PASS" start="2024-09-23T17:44:05.119367" elapsed="0.037905"/>
+</kw>
+<kw name="Ftp Close" owner="FtpLibrary">
+<doc>Closes FTP connection. Returns None.
+Parameters:
+- connId(optional) - connection identifier. By default equals 'default'</doc>
+<status status="PASS" start="2024-09-23T17:44:05.158274" elapsed="0.002000"/>
+</kw>
+<status status="PASS" start="2024-09-23T17:44:05.049406" elapsed="0.112870"/>
+</test>
+<status status="PASS" start="2024-09-23T17:44:04.087303" elapsed="1.077969"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Poc 5 1 9 Ftp">Poc 5 1 9 Ftp</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
