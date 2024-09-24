@@ -6,10 +6,10 @@ Library    OperatingSystem
 
 *** Variables ***
 ${WINSCP_PATH}      C:/Program Files (x86)/WinSCP/WinSCP.com
-${SCRIPT_PATH}      C:/Users/AtiwitK/Documents/GitHub/BankOfThailand/POC-RobotFramework/WINSCP/5_1_9_WINSCP/winscp_script.txt
+${SCRIPT_PATH}      C:/Users/AtiwitK/Documents/GitHub/BankOfThailand/POC-RobotFramework/BOTEFS/5_1_9_WINSCP/winscp_script.txt
 ${DIR_PATH}         A81
 ${FILE_NAME}        DPSDA81_20220725_MXA.txt
-${DOWNLOAD_PATH}    C:/Users/AtiwitK/Documents/GitHub/BankOfThailand/POC-RobotFramework/WINSCP/5_1_9_WINSCP/${DIR_PATH}/${FILE_NAME}
+${DOWNLOAD_PATH}    C:/Users/AtiwitK/Documents/GitHub/BankOfThailand/POC-RobotFramework/BOTEFS/5_1_9_WINSCP/${DIR_PATH}/${FILE_NAME}
 
 *** Test Cases ***
     # cmd: "C:/Program Files (x86)/WinSCP/WinSCP.com" /script=C:/Users/AtiwitK/Documents/GitHub/BankOfThailand/POC-RobotFramework/WINSCP/5_1_9_WINSCP/winscp_script.txt

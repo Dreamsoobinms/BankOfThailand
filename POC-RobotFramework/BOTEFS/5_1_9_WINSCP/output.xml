@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-24T13:39:40.963641" rpa="false" schemaversion="5">
-<suite id="s1" name="Poc 5 1 9 Winscp" source="C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\poc-robotframework\winscp\5_1_9_winscp\poc_5_1_9_winscp.robot">
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-24T14:15:41.496906" rpa="false" schemaversion="5">
+<suite id="s1" name="Poc 5 1 9 Winscp" source="C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\poc-robotframework\botefs\5_1_9_winscp\poc_5_1_9_winscp.robot">
 <test id="s1-t1" name="5.1.9 ใช้ Robot Framework เชื่อมต่อ Session โดย WINSCP" line="17">
 <kw name="Run Process" owner="Process">
-<msg time="2024-09-24T13:39:41.707845" level="INFO">Starting process:
-cmd /c "C:/Program Files (x86)/WinSCP/WinSCP.com" /script=C:/Users/AtiwitK/Documents/GitHub/BankOfThailand/POC-RobotFramework/WINSCP/5_1_9_WINSCP/winscp_script.txt</msg>
-<msg time="2024-09-24T13:39:41.722848" level="INFO">Waiting for process to complete.</msg>
-<msg time="2024-09-24T13:39:44.002723" level="INFO">Process completed.</msg>
-<msg time="2024-09-24T13:39:44.002723" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
+<msg time="2024-09-24T14:15:41.574798" level="INFO">Starting process:
+cmd /c "C:/Program Files (x86)/WinSCP/WinSCP.com" /script=C:/Users/AtiwitK/Documents/GitHub/BankOfThailand/POC-RobotFramework/BOTEFS/5_1_9_WINSCP/winscp_script.txt</msg>
+<msg time="2024-09-24T14:15:41.598053" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-09-24T14:15:46.293763" level="INFO">Process completed.</msg>
+<msg time="2024-09-24T14:15:46.293763" level="INFO">${result} = &lt;result object with rc 0&gt;</msg>
 <var>${result}</var>
 <arg>cmd /c "${WINSCP_PATH}" /script\=${SCRIPT_PATH}</arg>
 <arg>shell=True</arg>
 <doc>Runs a process and waits for it to complete.</doc>
-<status status="PASS" start="2024-09-24T13:39:41.707845" elapsed="2.294878"/>
+<status status="PASS" start="2024-09-24T14:15:41.574798" elapsed="4.718965"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-09-24T13:39:44.004723" level="INFO">Connecting to efswin-ap1-t1:2121 ...
+<msg time="2024-09-24T14:15:46.293763" level="INFO">Connecting to efswin-ap1-t1:2121 ...
 Connected
 Starting the session...
 Session started.
@@ -25,19 +25,19 @@ D---------   0                           0 Oct 21 18:58 aspnet_client
 D---------   0                           0 Nov 16 17:33 PREFUND_DATA
 D---------   0                           0 Jun 30  9:11 PREFUND_SOURCE
 A81                       |            0 B |    0.0 KB/s | binary |   0%
-DPSDA81_20220725_MXA.txt  |          451 B |   14.2 KB/s | binary | 100%</msg>
+DPSDA81_20220725_MXA.txt  |          451 B |    9.4 KB/s | binary | 100%</msg>
 <arg>${result.stdout}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.003725" elapsed="0.000998"/>
+<status status="PASS" start="2024-09-24T14:15:46.293763" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-09-24T13:39:44.005724" level="INFO"/>
+<msg time="2024-09-24T14:15:46.339622" level="INFO"/>
 <arg>${result.stderr}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.004723" elapsed="0.001001"/>
+<status status="PASS" start="2024-09-24T14:15:46.338622" elapsed="0.001000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-09-24T13:39:44.006724" level="INFO">${dir_list} = Connecting to efswin-ap1-t1:2121 ...
+<msg time="2024-09-24T14:15:46.372568" level="INFO">${dir_list} = Connecting to efswin-ap1-t1:2121 ...
 Connected
 Starting the session...
 Session started.
@@ -47,10 +47,10 @@ D-----...</msg>
 <var>${dir_list}</var>
 <arg>${result.stdout}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.005724" elapsed="0.001000"/>
+<status status="PASS" start="2024-09-24T14:15:46.372568" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-09-24T13:39:44.007727" level="INFO">Connecting to efswin-ap1-t1:2121 ...
+<msg time="2024-09-24T14:15:46.399130" level="INFO">Connecting to efswin-ap1-t1:2121 ...
 Connected
 Starting the session...
 Session started.
@@ -60,338 +60,338 @@ D---------   0                           0 Oct 21 18:58 aspnet_client
 D---------   0                           0 Nov 16 17:33 PREFUND_DATA
 D---------   0                           0 Jun 30  9:11 PREFUND_SOURCE
 A81                       |            0 B |    0.0 KB/s | binary |   0%
-DPSDA81_20220725_MXA.txt  |          451 B |   14.2 KB/s | binary | 100%</msg>
+DPSDA81_20220725_MXA.txt  |          451 B |    9.4 KB/s | binary | 100%</msg>
 <arg>${dir_list}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.006724" elapsed="0.001003"/>
+<status status="PASS" start="2024-09-24T14:15:46.399130" elapsed="0.000000"/>
 </kw>
 <kw name="Split String" owner="String">
-<msg time="2024-09-24T13:39:44.007727" level="INFO">${lines} = ['Connecting to efswin-ap1-t1:2121 ...', 'Connected', 'Starting the session...', 'Session started.', 'Active session: [1] botefscauser@efswin-ap1-t1', 'D---------   0                           0      ...</msg>
+<msg time="2024-09-24T14:15:46.413134" level="INFO">${lines} = ['Connecting to efswin-ap1-t1:2121 ...', 'Connected', 'Starting the session...', 'Session started.', 'Active session: [1] botefscauser@efswin-ap1-t1', 'D---------   0                           0      ...</msg>
 <var>${lines}</var>
 <arg>${dir_list}</arg>
 <arg>\n</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.007727" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.410132" elapsed="0.003002"/>
 </kw>
 <kw name="Create List" owner="BuiltIn">
-<msg time="2024-09-24T13:39:44.008723" level="INFO">${directories} = []</msg>
+<msg time="2024-09-24T14:15:46.417131" level="INFO">${directories} = []</msg>
 <var>${directories}</var>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.007727" elapsed="0.000996"/>
+<status status="PASS" start="2024-09-24T14:15:46.417131" elapsed="0.000000"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Split String" owner="String">
-<msg time="2024-09-24T13:39:44.008723" level="INFO">${parts} = ['Connecting', 'to', 'efswin-ap1-t1:2121', '...']</msg>
+<msg time="2024-09-24T14:15:46.433531" level="INFO">${parts} = ['Connecting', 'to', 'efswin-ap1-t1:2121', '...']</msg>
 <var>${parts}</var>
 <arg>${line}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.008723" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.433531" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-09-24T13:39:44.009724" level="INFO">${name} = ...</msg>
+<msg time="2024-09-24T14:15:46.433531" level="INFO">${name} = ...</msg>
 <var>${name}</var>
 <arg>${parts}</arg>
 <arg>-1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.008723" elapsed="0.001001"/>
+<status status="PASS" start="2024-09-24T14:15:46.433531" elapsed="0.000000"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${directories}</arg>
 <arg>${name}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.009724" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.433531" elapsed="0.000000"/>
 </kw>
 <var name="${line}">Connecting to efswin-ap1-t1:2121 ...</var>
-<status status="PASS" start="2024-09-24T13:39:44.008723" elapsed="0.001001"/>
+<status status="PASS" start="2024-09-24T14:15:46.432530" elapsed="0.001001"/>
 </iter>
 <iter>
 <kw name="Split String" owner="String">
-<msg time="2024-09-24T13:39:44.009724" level="INFO">${parts} = ['Connected']</msg>
+<msg time="2024-09-24T14:15:46.434529" level="INFO">${parts} = ['Connected']</msg>
 <var>${parts}</var>
 <arg>${line}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.009724" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.434529" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-09-24T13:39:44.009724" level="INFO">${name} = Connected</msg>
+<msg time="2024-09-24T14:15:46.434529" level="INFO">${name} = Connected</msg>
 <var>${name}</var>
 <arg>${parts}</arg>
 <arg>-1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.009724" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.434529" elapsed="0.000000"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${directories}</arg>
 <arg>${name}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.009724" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.434529" elapsed="0.001001"/>
 </kw>
 <var name="${line}">Connected</var>
-<status status="PASS" start="2024-09-24T13:39:44.009724" elapsed="0.000999"/>
+<status status="PASS" start="2024-09-24T14:15:46.434529" elapsed="0.001001"/>
 </iter>
 <iter>
 <kw name="Split String" owner="String">
-<msg time="2024-09-24T13:39:44.010723" level="INFO">${parts} = ['Starting', 'the', 'session...']</msg>
+<msg time="2024-09-24T14:15:46.435530" level="INFO">${parts} = ['Starting', 'the', 'session...']</msg>
 <var>${parts}</var>
 <arg>${line}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.010723" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.435530" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-09-24T13:39:44.010723" level="INFO">${name} = session...</msg>
+<msg time="2024-09-24T14:15:46.435530" level="INFO">${name} = session...</msg>
 <var>${name}</var>
 <arg>${parts}</arg>
 <arg>-1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.010723" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.435530" elapsed="0.000000"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${directories}</arg>
 <arg>${name}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.010723" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.435530" elapsed="0.001000"/>
 </kw>
 <var name="${line}">Starting the session...</var>
-<status status="PASS" start="2024-09-24T13:39:44.010723" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.435530" elapsed="0.001000"/>
 </iter>
 <iter>
 <kw name="Split String" owner="String">
-<msg time="2024-09-24T13:39:44.011722" level="INFO">${parts} = ['Session', 'started.']</msg>
+<msg time="2024-09-24T14:15:46.436530" level="INFO">${parts} = ['Session', 'started.']</msg>
 <var>${parts}</var>
 <arg>${line}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.010723" elapsed="0.000999"/>
+<status status="PASS" start="2024-09-24T14:15:46.436530" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-09-24T13:39:44.011722" level="INFO">${name} = started.</msg>
+<msg time="2024-09-24T14:15:46.436530" level="INFO">${name} = started.</msg>
 <var>${name}</var>
 <arg>${parts}</arg>
 <arg>-1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.011722" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.436530" elapsed="0.001000"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${directories}</arg>
 <arg>${name}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.011722" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.437530" elapsed="0.001001"/>
 </kw>
 <var name="${line}">Session started.</var>
-<status status="PASS" start="2024-09-24T13:39:44.010723" elapsed="0.000999"/>
+<status status="PASS" start="2024-09-24T14:15:46.436530" elapsed="0.002001"/>
 </iter>
 <iter>
 <kw name="Split String" owner="String">
-<msg time="2024-09-24T13:39:44.011722" level="INFO">${parts} = ['Active', 'session:', '[1]', 'botefscauser@efswin-ap1-t1']</msg>
+<msg time="2024-09-24T14:15:46.438531" level="INFO">${parts} = ['Active', 'session:', '[1]', 'botefscauser@efswin-ap1-t1']</msg>
 <var>${parts}</var>
 <arg>${line}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.011722" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.438531" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-09-24T13:39:44.012721" level="INFO">${name} = botefscauser@efswin-ap1-t1</msg>
+<msg time="2024-09-24T14:15:46.438531" level="INFO">${name} = botefscauser@efswin-ap1-t1</msg>
 <var>${name}</var>
 <arg>${parts}</arg>
 <arg>-1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.012721" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.438531" elapsed="0.000000"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${directories}</arg>
 <arg>${name}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.012721" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.438531" elapsed="0.000000"/>
 </kw>
 <var name="${line}">Active session: [1] botefscauser@efswin-ap1-t1</var>
-<status status="PASS" start="2024-09-24T13:39:44.011722" elapsed="0.000999"/>
+<status status="PASS" start="2024-09-24T14:15:46.438531" elapsed="0.000000"/>
 </iter>
 <iter>
 <kw name="Split String" owner="String">
-<msg time="2024-09-24T13:39:44.012721" level="INFO">${parts} = ['D---------', '0', '0', '..']</msg>
+<msg time="2024-09-24T14:15:46.439530" level="INFO">${parts} = ['D---------', '0', '0', '..']</msg>
 <var>${parts}</var>
 <arg>${line}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.012721" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.438531" elapsed="0.000999"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-09-24T13:39:44.012721" level="INFO">${name} = ..</msg>
+<msg time="2024-09-24T14:15:46.439530" level="INFO">${name} = ..</msg>
 <var>${name}</var>
 <arg>${parts}</arg>
 <arg>-1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.012721" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.439530" elapsed="0.000000"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${directories}</arg>
 <arg>${name}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.012721" elapsed="0.002002"/>
+<status status="PASS" start="2024-09-24T14:15:46.439530" elapsed="0.000000"/>
 </kw>
 <var name="${line}">D---------   0                           0              ..</var>
-<status status="PASS" start="2024-09-24T13:39:44.012721" elapsed="0.002002"/>
+<status status="PASS" start="2024-09-24T14:15:46.438531" elapsed="0.000999"/>
 </iter>
 <iter>
 <kw name="Split String" owner="String">
-<msg time="2024-09-24T13:39:44.014723" level="INFO">${parts} = ['D---------', '0', '0', 'Oct', '21', '18:58', 'aspnet_client']</msg>
+<msg time="2024-09-24T14:15:46.439530" level="INFO">${parts} = ['D---------', '0', '0', 'Oct', '21', '18:58', 'aspnet_client']</msg>
 <var>${parts}</var>
 <arg>${line}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.014723" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.439530" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-09-24T13:39:44.014723" level="INFO">${name} = aspnet_client</msg>
+<msg time="2024-09-24T14:15:46.440529" level="INFO">${name} = aspnet_client</msg>
 <var>${name}</var>
 <arg>${parts}</arg>
 <arg>-1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.014723" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.439530" elapsed="0.000999"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${directories}</arg>
 <arg>${name}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.014723" elapsed="0.004000"/>
+<status status="PASS" start="2024-09-24T14:15:46.440529" elapsed="0.000000"/>
 </kw>
 <var name="${line}">D---------   0                           0 Oct 21 18:58 aspnet_client</var>
-<status status="PASS" start="2024-09-24T13:39:44.014723" elapsed="0.004000"/>
+<status status="PASS" start="2024-09-24T14:15:46.439530" elapsed="0.000999"/>
 </iter>
 <iter>
 <kw name="Split String" owner="String">
-<msg time="2024-09-24T13:39:44.018723" level="INFO">${parts} = ['D---------', '0', '0', 'Nov', '16', '17:33', 'PREFUND_DATA']</msg>
+<msg time="2024-09-24T14:15:46.440529" level="INFO">${parts} = ['D---------', '0', '0', 'Nov', '16', '17:33', 'PREFUND_DATA']</msg>
 <var>${parts}</var>
 <arg>${line}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.018723" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.440529" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-09-24T13:39:44.019724" level="INFO">${name} = PREFUND_DATA</msg>
+<msg time="2024-09-24T14:15:46.440529" level="INFO">${name} = PREFUND_DATA</msg>
 <var>${name}</var>
 <arg>${parts}</arg>
 <arg>-1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.019724" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.440529" elapsed="0.000000"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${directories}</arg>
 <arg>${name}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.019724" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.440529" elapsed="0.000000"/>
 </kw>
 <var name="${line}">D---------   0                           0 Nov 16 17:33 PREFUND_DATA</var>
-<status status="PASS" start="2024-09-24T13:39:44.018723" elapsed="0.001001"/>
+<status status="PASS" start="2024-09-24T14:15:46.440529" elapsed="0.000999"/>
 </iter>
 <iter>
 <kw name="Split String" owner="String">
-<msg time="2024-09-24T13:39:44.019724" level="INFO">${parts} = ['D---------', '0', '0', 'Jun', '30', '9:11', 'PREFUND_SOURCE']</msg>
+<msg time="2024-09-24T14:15:46.441528" level="INFO">${parts} = ['D---------', '0', '0', 'Jun', '30', '9:11', 'PREFUND_SOURCE']</msg>
 <var>${parts}</var>
 <arg>${line}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.019724" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.441528" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-09-24T13:39:44.019724" level="INFO">${name} = PREFUND_SOURCE</msg>
+<msg time="2024-09-24T14:15:46.441528" level="INFO">${name} = PREFUND_SOURCE</msg>
 <var>${name}</var>
 <arg>${parts}</arg>
 <arg>-1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.019724" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.441528" elapsed="0.000000"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${directories}</arg>
 <arg>${name}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.020726" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.441528" elapsed="0.000000"/>
 </kw>
 <var name="${line}">D---------   0                           0 Jun 30  9:11 PREFUND_SOURCE</var>
-<status status="PASS" start="2024-09-24T13:39:44.019724" elapsed="0.001002"/>
+<status status="PASS" start="2024-09-24T14:15:46.441528" elapsed="0.000000"/>
 </iter>
 <iter>
 <kw name="Split String" owner="String">
-<msg time="2024-09-24T13:39:44.022742" level="INFO">${parts} = ['A81', '|', '0', 'B', '|', '0.0', 'KB/s', '|', 'binary', '|', '0%']</msg>
+<msg time="2024-09-24T14:15:46.441528" level="INFO">${parts} = ['A81', '|', '0', 'B', '|', '0.0', 'KB/s', '|', 'binary', '|', '0%']</msg>
 <var>${parts}</var>
 <arg>${line}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.020726" elapsed="0.002016"/>
+<status status="PASS" start="2024-09-24T14:15:46.441528" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-09-24T13:39:44.023402" level="INFO">${name} = 0%</msg>
+<msg time="2024-09-24T14:15:46.442524" level="INFO">${name} = 0%</msg>
 <var>${name}</var>
 <arg>${parts}</arg>
 <arg>-1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.023402" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.442524" elapsed="0.000000"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${directories}</arg>
 <arg>${name}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.023402" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.442524" elapsed="0.000000"/>
 </kw>
 <var name="${line}">A81                       |            0 B |    0.0 KB/s | binary |   0%</var>
-<status status="PASS" start="2024-09-24T13:39:44.020726" elapsed="0.002676"/>
+<status status="PASS" start="2024-09-24T14:15:46.441528" elapsed="0.000996"/>
 </iter>
 <iter>
 <kw name="Split String" owner="String">
-<msg time="2024-09-24T13:39:44.023402" level="INFO">${parts} = ['DPSDA81_20220725_MXA.txt', '|', '451', 'B', '|', '14.2', 'KB/s', '|', 'binary', '|', '100%']</msg>
+<msg time="2024-09-24T14:15:46.442524" level="INFO">${parts} = ['DPSDA81_20220725_MXA.txt', '|', '451', 'B', '|', '9.4', 'KB/s', '|', 'binary', '|', '100%']</msg>
 <var>${parts}</var>
 <arg>${line}</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.023402" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.442524" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-09-24T13:39:44.024408" level="INFO">${name} = 100%</msg>
+<msg time="2024-09-24T14:15:46.442524" level="INFO">${name} = 100%</msg>
 <var>${name}</var>
 <arg>${parts}</arg>
 <arg>-1</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.023402" elapsed="0.001006"/>
+<status status="PASS" start="2024-09-24T14:15:46.442524" elapsed="0.001006"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${directories}</arg>
 <arg>${name}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.024408" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.443530" elapsed="0.000000"/>
 </kw>
-<var name="${line}">DPSDA81_20220725_MXA.txt  |          451 B |   14.2 KB/s | binary | 100%</var>
-<status status="PASS" start="2024-09-24T13:39:44.023402" elapsed="0.001006"/>
+<var name="${line}">DPSDA81_20220725_MXA.txt  |          451 B |    9.4 KB/s | binary | 100%</var>
+<status status="PASS" start="2024-09-24T14:15:46.442524" elapsed="0.001006"/>
 </iter>
 <var>${line}</var>
 <value>@{lines}</value>
-<status status="PASS" start="2024-09-24T13:39:44.008723" elapsed="0.015685"/>
+<status status="PASS" start="2024-09-24T14:15:46.432530" elapsed="0.011000"/>
 </for>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-09-24T13:39:44.035553" level="INFO">['...', 'Connected', 'session...', 'started.', 'botefscauser@efswin-ap1-t1', '..', 'aspnet_client', 'PREFUND_DATA', 'PREFUND_SOURCE', '0%', '100%']</msg>
+<msg time="2024-09-24T14:15:46.445529" level="INFO">['...', 'Connected', 'session...', 'started.', 'botefscauser@efswin-ap1-t1', '..', 'aspnet_client', 'PREFUND_DATA', 'PREFUND_SOURCE', '0%', '100%']</msg>
 <arg>${directories}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.035553" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.445529" elapsed="0.000000"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${dir_list}</arg>
 <arg>aspnet_client</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.636654" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.446530" elapsed="0.000000"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${dir_list}</arg>
 <arg>PREFUND_DATA</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.637655" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.447531" elapsed="0.000000"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${dir_list}</arg>
 <arg>PREFUND_SOURCE</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.639655" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.447531" elapsed="0.000000"/>
 </kw>
 <kw name="File Should Exist" owner="OperatingSystem">
-<msg time="2024-09-24T13:39:44.645654" level="INFO" html="true">File '&lt;a href="file://C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\POC-RobotFramework\WINSCP\5_1_9_WINSCP\A81\DPSDA81_20220725_MXA.txt"&gt;C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\POC-RobotFramework\WINSCP\5_1_9_WINSCP\A81\DPSDA81_20220725_MXA.txt&lt;/a&gt;' exists.</msg>
+<msg time="2024-09-24T14:15:46.448529" level="INFO" html="true">File '&lt;a href="file://C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\POC-RobotFramework\BOTEFS\5_1_9_WINSCP\A81\DPSDA81_20220725_MXA.txt"&gt;C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\POC-RobotFramework\BOTEFS\5_1_9_WINSCP\A81\DPSDA81_20220725_MXA.txt&lt;/a&gt;' exists.</msg>
 <arg>${DOWNLOAD_PATH}</arg>
 <doc>Fails unless the given ``path`` points to an existing file.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.644652" elapsed="0.001002"/>
+<status status="PASS" start="2024-09-24T14:15:46.447531" elapsed="0.000998"/>
 </kw>
 <kw name="Get File" owner="OperatingSystem">
-<msg time="2024-09-24T13:39:44.650654" level="INFO" html="true">Getting file '&lt;a href="file://C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\POC-RobotFramework\WINSCP\5_1_9_WINSCP\A81\DPSDA81_20220725_MXA.txt"&gt;C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\POC-RobotFramework\WINSCP\5_1_9_WINSCP\A81\DPSDA81_20220725_MXA.txt&lt;/a&gt;'.</msg>
-<msg time="2024-09-24T13:39:44.651656" level="INFO">${downloaded_content} = 20220725;0010039503;100031.31
+<msg time="2024-09-24T14:15:46.448529" level="INFO" html="true">Getting file '&lt;a href="file://C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\POC-RobotFramework\BOTEFS\5_1_9_WINSCP\A81\DPSDA81_20220725_MXA.txt"&gt;C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\POC-RobotFramework\BOTEFS\5_1_9_WINSCP\A81\DPSDA81_20220725_MXA.txt&lt;/a&gt;'.</msg>
+<msg time="2024-09-24T14:15:46.448529" level="INFO">${downloaded_content} = 20220725;0010039503;100031.31
 20220725;0010039521;100032.32
 20220725;0010007369;100033.33
 20220725;0010006532;100034.34
@@ -401,10 +401,10 @@ DPSDA81_20220725_MXA.txt  |          451 B |   14.2 KB/s | binary | 100%</msg>
 <var>${downloaded_content}</var>
 <arg>${DOWNLOAD_PATH}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.650654" elapsed="0.001002"/>
+<status status="PASS" start="2024-09-24T14:15:46.448529" elapsed="0.001000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-09-24T13:39:44.657590" level="INFO">20220725;0010039503;100031.31
+<msg time="2024-09-24T14:15:46.449529" level="INFO">20220725;0010039503;100031.31
 20220725;0010039521;100032.32
 20220725;0010007369;100033.33
 20220725;0010006532;100034.34
@@ -422,29 +422,29 @@ DPSDA81_20220725_MXA.txt  |          451 B |   14.2 KB/s | binary | 100%</msg>
 </msg>
 <arg>${downloaded_content}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.657590" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.449529" elapsed="0.000000"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${downloaded_content}</arg>
 <arg>20220725;0010039503;100031.31</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.657590" elapsed="0.001001"/>
+<status status="PASS" start="2024-09-24T14:15:46.449529" elapsed="0.000000"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${downloaded_content}</arg>
 <arg>20220725;0010039521;100032.32</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.658591" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.449529" elapsed="0.001137"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${downloaded_content}</arg>
 <arg>20220725;0010007369;100033.33</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2024-09-24T13:39:44.659591" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-24T14:15:46.451674" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-09-24T13:39:41.704846" elapsed="2.954745"/>
+<status status="PASS" start="2024-09-24T14:15:41.574798" elapsed="4.877876"/>
 </test>
-<status status="PASS" start="2024-09-24T13:39:40.965690" elapsed="3.695902"/>
+<status status="PASS" start="2024-09-24T14:15:41.496906" elapsed="4.958767"/>
 </suite>
 <statistics>
 <total>

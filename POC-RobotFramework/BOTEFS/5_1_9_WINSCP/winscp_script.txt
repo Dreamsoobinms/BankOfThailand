@@ -2,5 +2,5 @@ open ftp://botefscauser:botefscauser@efswin-ap1-t1:2121
 # List all directories and output to console
 ls
 # downloaded file from specified dirctory path
-get /PREFUND_DATA/A81   C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\POC-RobotFramework\WINSCP\5_1_9_WINSCP\
+get /PREFUND_DATA/A81   C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\POC-RobotFramework\BOTEFS\5_1_9_WINSCP\
 exit
