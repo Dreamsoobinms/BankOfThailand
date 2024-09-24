@@ -12,13 +12,11 @@ ${REMOTE_PATH}    /PREFUND_DATA/
 
 *** Test Cases ***
 Connect To SFTP Server
-    [Documentation]    Connect to the SFTP server and list files
-    Open Connection    ${HOST}    port=${PORT}
-    ${output}=   Login    ${USERNAME}    ${PASSWORD}
-    Should Contain	    ${output}	Last login at	
-    ${files}=    List Files In Directory    ${REMOTE_PATH}
-    Log    ${files}
-    Close Connection
+    Open Connection    ${HOST}    port=${PORT}    timeout=30
+    Login    ${USERNAME}    ${PASSWORD}
+    ${output}=    Execute Command    ls -la
+    Log    ${output}
+    Close All Connections
 
 # Download File From SFTP Server
 #     [Documentation]    Download a file from the SFTP server

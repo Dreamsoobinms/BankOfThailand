@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-24T14:32:40.051720" rpa="false" schemaversion="5">
+<suite id="s1" name="Poc 5 1 9" source="C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\poc-robotframework\botefs\5_1_9_sftp\poc_5_1_9.robot">
+<test id="s1-t1" name="Connect To SFTP Server" line="14">
+<kw name="Open Connection" owner="SSHLibrary">
+<arg>${HOST}</arg>
+<arg>port=${PORT}</arg>
+<arg>timeout=30</arg>
+<doc>Opens a new SSH connection to the given ``host`` and ``port``.</doc>
+<status status="PASS" start="2024-09-24T14:32:41.316981" elapsed="0.000000"/>
+</kw>
+<kw name="Login" owner="SSHLibrary">
+<msg time="2024-09-24T14:32:41.316981" level="INFO">Logging into 'efswin-ap1-t1:2121' as 'botefscauser'.</msg>
+<msg time="2024-09-24T14:32:43.423674" level="FAIL">SSHException: Error reading SSH protocol banner</msg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Logs into the SSH server with the given ``username`` and ``password``.</doc>
+<status status="FAIL" start="2024-09-24T14:32:41.316981" elapsed="2.110505">SSHException: Error reading SSH protocol banner</status>
+</kw>
+<kw name="Execute Command" owner="SSHLibrary">
+<var>${output}</var>
+<arg>ls -la</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="NOT RUN" start="2024-09-24T14:32:43.447494" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${output}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-09-24T14:32:43.452498" elapsed="0.000000"/>
+</kw>
+<kw name="Close All Connections" owner="SSHLibrary">
+<doc>Closes all open connections.</doc>
+<status status="NOT RUN" start="2024-09-24T14:32:43.466562" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-24T14:32:41.316981" elapsed="2.151584">SSHException: Error reading SSH protocol banner</status>
+</test>
+<status status="FAIL" start="2024-09-24T14:32:40.051720" elapsed="3.420845"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Poc 5 1 9">Poc 5 1 9</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

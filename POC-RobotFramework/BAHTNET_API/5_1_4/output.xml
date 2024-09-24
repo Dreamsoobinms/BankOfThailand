@@ -1,28 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-18T18:11:26.507917" rpa="false" schemaversion="5">
-<suite id="s1" name="Test" source="C:\Users\AtiwitK\Documents\POC-robotframework\bahtnet_api\5_1_4\test.robot">
-<test id="s1-t1" name="Handle Certificate Pop-Up" line="17">
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-24T17:48:38.831716" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\poc-robotframework\bahtnet_api\5_1_4\test.robot">
+<test id="s1-t1" name="Open Google in IE Mode on Edge" line="16">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-18T18:11:26.900818" level="INFO">Opening browser 'edge' to base url 'https://bahtnet-iwt.xtest-bot.or.th/EFSExternalWebUI/faces/home.jsp'.</msg>
-<msg time="2024-09-18T18:11:26.920924" level="INFO">Executing: C:\Users\AtiwitK\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser edge --output json</msg>
+<msg time="2024-09-24T17:48:41.143541" level="INFO">Opening browser 'ie' to base url 'https://bahtnet-iwt.xtest-bot.or.th/EFSExternalWebUI/faces/home.jsp'.</msg>
 <arg>${URL}</arg>
-<arg>edge</arg>
-<arg>options=add_argument("--remote-debugging-port=0")</arg>
+<arg>ie</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-18T18:11:26.900818" elapsed="25.983749"/>
+<status status="PASS" start="2024-09-24T17:48:41.143541" elapsed="24.758224"/>
 </kw>
-<status status="PASS" start="2024-09-18T18:11:26.900818" elapsed="25.984746"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-24T17:49:05.910763" elapsed="0.041000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T17:49:05.975767" level="INFO">Clicking element 'id=main2'.</msg>
+<arg>id=main2</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T17:49:05.973764" elapsed="5.419575"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//span[contains(text(), 'Authorization')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-24T17:49:11.393339" elapsed="0.500061"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T17:49:11.893400" level="INFO">Clicking element 'xpath=//span[contains(text(), 'Authorization')]'.</msg>
+<arg>xpath=//span[contains(text(), 'Authorization')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T17:49:11.893400" elapsed="1.812655"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(text(), '${EXPECTED_TEXT}')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-24T17:49:13.706055" elapsed="1.312355"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T17:49:15.018410" level="INFO">Clicking element 'xpath=//a[contains(text(), 'FI to FI Customer Credit Transfer (pacs.008)')]'.</msg>
+<arg>xpath=//a[contains(text(), '${EXPECTED_TEXT}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T17:49:15.018410" elapsed="12.444438"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>30 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-09-24T17:49:27.462848" elapsed="0.024487"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-09-24T17:49:27.489258" level="INFO">Selecting frame '//iframe[@name="iframeDetail"]'.</msg>
+<arg>//iframe[@name="iframeDetail"]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-09-24T17:49:27.487335" elapsed="0.713690"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@id="mainForm:txtBiccode"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-24T17:49:28.206045" elapsed="0.546868"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T17:49:28.752913" level="INFO">Typing text 'BOTHTHB1DDG' into text field 'xpath=//input[@id="mainForm:txtBiccode"]'.</msg>
+<arg>xpath=//input[@id="mainForm:txtBiccode"]</arg>
+<arg>${credit_bic}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T17:49:28.752913" elapsed="2.007351"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//td[contains(text(), '${credit_bic}')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-24T17:49:30.768792" elapsed="1.937327"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T17:49:32.706119" level="INFO">Clicking element 'xpath=//td[contains(text(), 'BOTHTHB1DDG')]'.</msg>
+<arg>xpath=//td[contains(text(), '${credit_bic}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T17:49:32.706119" elapsed="1.593801"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@name="mainForm:showModalCrebitBICCode"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-24T17:49:34.299920" elapsed="0.366456"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T17:49:34.666376" level="INFO">Clicking element 'xpath=//input[@name="mainForm:showModalCrebitBICCode"]'.</msg>
+<arg>xpath=//input[@name="mainForm:showModalCrebitBICCode"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T17:49:34.666376" elapsed="2.524632"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//tbody[@id="sharePopupBicForm:bictbl:tb"]/..//a[contains(text(), '${credit_bic}')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-24T17:49:37.191008" elapsed="1.140402"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T17:49:38.331410" level="INFO">Clicking element 'xpath=//tbody[@id="sharePopupBicForm:bictbl:tb"]/..//a[contains(text(), 'BOTHTHB1DDG')]'.</msg>
+<arg>xpath=//tbody[@id="sharePopupBicForm:bictbl:tb"]/..//a[contains(text(), '${credit_bic}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T17:49:38.331410" elapsed="2.730474"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@name="mainForm:searchBtn"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-24T17:49:41.079070" elapsed="0.830421"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-24T17:49:41.909491" level="INFO">Clicking element 'xpath=//input[@name="mainForm:searchBtn"]'.</msg>
+<arg>xpath=//input[@name="mainForm:searchBtn"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T17:49:41.909491" elapsed="1.218957"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="New Page">
+<msg time="2024-09-24T17:49:43.128448" level="FAIL">No keyword with name 'New Page' found.</msg>
+<arg>${URL}</arg>
+<status status="FAIL" start="2024-09-24T17:49:43.128448" elapsed="0.000000">No keyword with name 'New Page' found.</status>
+</kw>
+<msg time="2024-09-24T17:49:43.128448" level="INFO">${result} = False</msg>
+<var>${result}</var>
+<arg>New Page</arg>
+<arg>${URL}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-09-24T17:49:43.128448" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${result} == ${FALSE}">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T17:49:45.675048" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T17:49:43.128448" elapsed="2.546600"/>
+</kw>
+<kw name="Run">
+<msg time="2024-09-24T17:49:45.675048" level="FAIL">No keyword with name 'Run' found.</msg>
+<arg>"C:/Program Files (x86)/AutoIt3/SciTE/select_cert3.exe"</arg>
+<status status="FAIL" start="2024-09-24T17:49:45.675048" elapsed="0.000000">No keyword with name 'Run' found.</status>
+</kw>
+<kw name="New Page">
+<arg>${URL}</arg>
+<status status="NOT RUN" start="2024-09-24T17:49:45.675048" elapsed="0.000000"/>
+</kw>
+<kw name="Set Browser Timeout">
+<arg>30 seconds</arg>
+<status status="NOT RUN" start="2024-09-24T17:49:45.675048" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-24T17:49:43.128448" elapsed="2.546600">No keyword with name 'Run' found.</status>
+</branch>
+<status status="FAIL" start="2024-09-24T17:49:43.128448" elapsed="2.546600">No keyword with name 'Run' found.</status>
+</if>
+<kw name="mainForm:taskList:noDataRow">
+<status status="NOT RUN" start="2024-09-24T17:49:45.675048" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="NOT RUN" start="2024-09-24T17:49:45.675048" elapsed="0.000000"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" start="2024-09-24T17:49:45.690680" elapsed="0.000000"/>
+</kw>
+<doc>Test case to open Google Thailand in IE mode on Edge</doc>
+<status status="FAIL" start="2024-09-24T17:48:41.143541" elapsed="64.556947">No keyword with name 'Run' found.</status>
 </test>
-<status status="PASS" start="2024-09-18T18:11:26.510921" elapsed="26.375642"/>
+<status status="FAIL" start="2024-09-24T17:48:38.834491" elapsed="66.870999"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
 </suite>
 </statistics>
 <errors>
