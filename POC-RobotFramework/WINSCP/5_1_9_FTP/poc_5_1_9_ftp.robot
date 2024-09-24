@@ -11,7 +11,7 @@ ${DIRECTORY}    /PREFUND_DATA
 ${TIMEOUT}      30
 
 *** Test Cases ***
-Verify FTP Connection and Directory
+5.1.9 ใช้ Robot Framework เชื่อมต่อ Session โดย File Protocol (FTP)
     # Connect FTP protocol with Host, user, password port (timeout and tls is optional)
     FTP CONNECT    ${HOST}    user=${USERNAME}    password=${PASSWORD}    port=${PORT}    timeout=${TIMEOUT}    tls=False
     # log Directory path
