@@ -1,196 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-26T17:24:13.571733" rpa="false" schemaversion="5">
-<suite id="s1" name="Test" source="C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\poc-robotframework\bahtnet_api\5_1_4\test.robot">
-<test id="s1-t1" name="5.1.4 การใช้ Certificate ในการ Login" line="24">
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-27T10:22:29.067512" rpa="false" schemaversion="5">
+<suite id="s1" name="POC 5 1 4" source="C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\poc-robotframework\bahtnet_api\5_1_4\POC_5_1_4.robot">
+<test id="s1-t1" name="5.1.4 การใช้ Certificate ในการ Login" line="25">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-26T17:24:17.097475" level="INFO">Opening browser 'ie' to base url 'https://bahtnet-iwt.xtest-bot.or.th/EFSExternalWebUI/faces/home.jsp'.</msg>
+<msg time="2024-09-27T10:22:29.606563" level="INFO">Opening browser 'ie' to base url 'https://bahtnet-iwt.xtest-bot.or.th/EFSExternalWebUI/faces/home.jsp'.</msg>
 <arg>${URL}</arg>
 <arg>ie</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-26T17:24:17.097475" elapsed="24.943734"/>
+<status status="PASS" start="2024-09-27T10:22:29.606563" elapsed="22.416867"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-09-26T17:24:42.044209" elapsed="0.044128"/>
+<status status="PASS" start="2024-09-27T10:22:52.024430" elapsed="0.231003"/>
 </kw>
 <kw name="Click download file">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-26T17:24:42.091338" level="INFO">Clicking element 'id=main2'.</msg>
+<msg time="2024-09-27T10:22:52.307431" level="INFO">Clicking element 'id=main2'.</msg>
 <arg>id=main2</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-26T17:24:42.091338" elapsed="8.396272"/>
+<status status="PASS" start="2024-09-27T10:22:52.306432" elapsed="4.589428"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//span[contains(text(), 'Report')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-26T17:24:50.487610" elapsed="1.796840"/>
+<status status="PASS" start="2024-09-27T10:22:56.895860" elapsed="1.127989"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-26T17:24:52.284450" level="INFO">Clicking element 'xpath=//span[contains(text(), 'Report')]'.</msg>
+<msg time="2024-09-27T10:22:58.023849" level="INFO">Clicking element 'xpath=//span[contains(text(), 'Report')]'.</msg>
 <arg>xpath=//span[contains(text(), 'Report')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-26T17:24:52.284450" elapsed="2.360179"/>
+<status status="PASS" start="2024-09-27T10:22:58.023849" elapsed="1.450967"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//a[contains(text(), 'BAHTNET Report')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-26T17:24:54.644629" elapsed="1.764868"/>
+<status status="PASS" start="2024-09-27T10:22:59.474816" elapsed="0.890047"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-26T17:24:56.409497" level="INFO">Clicking element 'xpath=//a[contains(text(), 'BAHTNET Report')]'.</msg>
+<msg time="2024-09-27T10:23:00.364863" level="INFO">Clicking element 'xpath=//a[contains(text(), 'BAHTNET Report')]'.</msg>
 <arg>xpath=//a[contains(text(), 'BAHTNET Report')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-26T17:24:56.409497" elapsed="3.546896"/>
+<status status="PASS" start="2024-09-27T10:23:00.364863" elapsed="6.562385"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>30 seconds</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2024-09-26T17:24:59.956393" elapsed="0.015636"/>
+<status status="PASS" start="2024-09-27T10:23:06.927248" elapsed="0.015621"/>
 </kw>
 <kw name="Select Frame" owner="SeleniumLibrary">
-<msg time="2024-09-26T17:24:59.972029" level="INFO">Selecting frame '//iframe[@name="iframeDetail"]'.</msg>
+<msg time="2024-09-27T10:23:06.942869" level="INFO">Selecting frame '//iframe[@name="iframeDetail"]'.</msg>
 <arg>//iframe[@name="iframeDetail"]</arg>
 <doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="PASS" start="2024-09-26T17:24:59.972029" elapsed="1.046873"/>
+<status status="PASS" start="2024-09-27T10:23:06.942869" elapsed="0.984387"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//img[@id="staticRptInrMenuForm:j_id_jsp_474309668_3:project:0::j_id_jsp_474309668_5:handle:img:collapsed"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-26T17:25:01.018902" elapsed="0.754161"/>
+<status status="PASS" start="2024-09-27T10:23:07.927256" elapsed="0.906254"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-26T17:25:01.773063" level="INFO">Clicking element 'xpath=//img[@id="staticRptInrMenuForm:j_id_jsp_474309668_3:project:0::j_id_jsp_474309668_5:handle:img:collapsed"]'.</msg>
+<msg time="2024-09-27T10:23:08.833510" level="INFO">Clicking element 'xpath=//img[@id="staticRptInrMenuForm:j_id_jsp_474309668_3:project:0::j_id_jsp_474309668_5:handle:img:collapsed"]'.</msg>
 <arg>xpath=//img[@id="staticRptInrMenuForm:j_id_jsp_474309668_3:project:0::j_id_jsp_474309668_5:handle:img:collapsed"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-26T17:25:01.773063" elapsed="1.924036"/>
+<status status="PASS" start="2024-09-27T10:23:08.833510" elapsed="1.606130"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>30 seconds</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2024-09-26T17:25:03.697099" elapsed="0.024946"/>
+<status status="PASS" start="2024-09-27T10:23:10.439640" elapsed="0.019178"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//a[contains(text(), 'หนังสือยืนยันรายการโอนเงินผ่านบาทเนต')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-26T17:25:03.722045" elapsed="0.906255"/>
+<status status="PASS" start="2024-09-27T10:23:10.458818" elapsed="0.321965"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-26T17:25:04.628300" level="INFO">Clicking element 'xpath=//a[contains(text(), 'หนังสือยืนยันรายการโอนเงินผ่านบาทเนต')]'.</msg>
+<msg time="2024-09-27T10:23:10.780783" level="INFO">Clicking element 'xpath=//a[contains(text(), 'หนังสือยืนยันรายการโอนเงินผ่านบาทเนต')]'.</msg>
 <arg>xpath=//a[contains(text(), 'หนังสือยืนยันรายการโอนเงินผ่านบาทเนต')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-26T17:25:04.628300" elapsed="4.726829"/>
+<status status="PASS" start="2024-09-27T10:23:10.780783" elapsed="2.787125"/>
 </kw>
 <kw name="Select Frame" owner="SeleniumLibrary">
-<msg time="2024-09-26T17:25:09.355129" level="INFO">Selecting frame '//iframe[@name="iframeBrowseReport"]'.</msg>
+<msg time="2024-09-27T10:23:13.567908" level="INFO">Selecting frame '//iframe[@name="iframeBrowseReport"]'.</msg>
 <arg>//iframe[@name="iframeBrowseReport"]</arg>
 <doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="PASS" start="2024-09-26T17:25:09.355129" elapsed="0.116962"/>
+<status status="PASS" start="2024-09-27T10:23:13.567908" elapsed="0.078127"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${XPATH}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-26T17:25:09.472091" elapsed="0.781256"/>
+<status status="PASS" start="2024-09-27T10:23:13.646035" elapsed="0.281299"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-26T17:25:10.253347" level="INFO">Clicking element '//a[@id="downloadStaticRptInrForm:taskList:0:exPDFBtn"]'.</msg>
+<msg time="2024-09-27T10:23:13.927334" level="INFO">Clicking element '//a[@id="downloadStaticRptInrForm:taskList:0:exPDFBtn"]'.</msg>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-09-26T17:30:12.927863" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-27T10:28:15.086933" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-09-26T17:30:12.653455" elapsed="0.274408"/>
+<status status="PASS" start="2024-09-27T10:28:15.027074" elapsed="0.059859"/>
 </kw>
-<msg time="2024-09-26T17:30:12.928865" level="FAIL">TimeoutException: Message: Timed out waiting for page to load.
+<msg time="2024-09-27T10:28:15.086933" level="FAIL">TimeoutException: Message: Timed out waiting for page to load.
 </msg>
 <arg>${XPATH}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-09-26T17:25:10.253347" elapsed="302.742411">TimeoutException: Message: Timed out waiting for page to load.
+<status status="FAIL" start="2024-09-27T10:23:13.927334" elapsed="301.159599">TimeoutException: Message: Timed out waiting for page to load.
 </status>
 </kw>
-<msg time="2024-09-26T17:30:12.995758" level="INFO">${result} = False</msg>
+<msg time="2024-09-27T10:28:15.086933" level="INFO">${result} = False</msg>
 <var>${result}</var>
 <arg>Click Element</arg>
 <arg>${XPATH}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2024-09-26T17:25:10.253347" elapsed="302.742411"/>
+<status status="PASS" start="2024-09-27T10:23:13.927334" elapsed="301.159599"/>
 </kw>
 <if>
 <branch type="IF" condition="${result} == ${FALSE}">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-26T17:30:15.285528" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-09-27T10:28:17.087011" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-26T17:30:12.996759" elapsed="2.288769"/>
+<status status="PASS" start="2024-09-27T10:28:15.086933" elapsed="2.000078"/>
 </kw>
 <kw name="Run Process" owner="Process">
-<msg time="2024-09-26T17:30:15.286525" level="INFO">Starting process:
+<msg time="2024-09-27T10:28:17.087011" level="INFO">Starting process:
 "C:/Program Files (x86)/AutoIt3/SciTE/download_bahtnet_file.exe"</msg>
-<msg time="2024-09-26T17:30:22.206744" level="INFO">Waiting for process to complete.</msg>
-<msg time="2024-09-26T17:30:35.656166" level="INFO">Process completed.</msg>
+<msg time="2024-09-27T10:28:22.508969" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-09-27T10:28:34.281862" level="INFO">Process completed.</msg>
 <arg>C:/Program Files (x86)/AutoIt3/SciTE/download_bahtnet_file.exe</arg>
 <doc>Runs a process and waits for it to complete.</doc>
-<status status="PASS" start="2024-09-26T17:30:15.285528" elapsed="20.370638"/>
+<status status="PASS" start="2024-09-27T10:28:17.087011" elapsed="17.194851"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-26T17:30:40.656310" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-09-27T10:28:39.282479" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-26T17:30:35.656166" elapsed="5.000144"/>
+<status status="PASS" start="2024-09-27T10:28:34.281862" elapsed="5.000617"/>
 </kw>
 <kw name="File Should Exist" owner="OperatingSystem">
-<msg time="2024-09-26T17:30:40.656310" level="INFO" html="true">File '&lt;a href="file://C:\Users\AtiwitK\Downloads\CF1202409250000.pdf"&gt;C:\Users\AtiwitK\Downloads\CF1202409250000.pdf&lt;/a&gt;' exists.</msg>
+<msg time="2024-09-27T10:28:39.282479" level="INFO" html="true">File '&lt;a href="file://C:\Users\AtiwitK\Downloads\CF1202409260000.pdf"&gt;C:\Users\AtiwitK\Downloads\CF1202409260000.pdf&lt;/a&gt;' exists.</msg>
 <arg>${DOWNLOADED_FILE_PATH}</arg>
 <doc>Fails unless the given ``path`` points to an existing file.</doc>
-<status status="PASS" start="2024-09-26T17:30:40.656310" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-27T10:28:39.282479" elapsed="0.000000"/>
 </kw>
 <kw name="List Files In Directory" owner="OperatingSystem">
-<msg time="2024-09-26T17:30:40.656310" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\Users\AtiwitK\Downloads"&gt;C:\Users\AtiwitK\Downloads&lt;/a&gt;'.</msg>
-<msg time="2024-09-26T17:30:40.656310" level="INFO">7 files:
-CF1202409250000.pdf
+<msg time="2024-09-27T10:28:39.282479" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\Users\AtiwitK\Downloads"&gt;C:\Users\AtiwitK\Downloads&lt;/a&gt;'.</msg>
+<msg time="2024-09-27T10:28:39.282479" level="INFO">7 files:
+CF1202409260000.pdf
 Git-2.46.0-64-bit.exe
 GitHubDesktopSetup-x64.exe
 IEDriverServer_Win32_4.14.0.zip
 Win64OpenSSL_Light-3_2_3.exe
 desktop.ini
 rustup-init.exe</msg>
-<msg time="2024-09-26T17:30:40.656310" level="INFO">${files} = ['CF1202409250000.pdf', 'Git-2.46.0-64-bit.exe', 'GitHubDesktopSetup-x64.exe', 'IEDriverServer_Win32_4.14.0.zip', 'Win64OpenSSL_Light-3_2_3.exe', 'desktop.ini', 'rustup-init.exe']</msg>
+<msg time="2024-09-27T10:28:39.282479" level="INFO">${files} = ['CF1202409260000.pdf', 'Git-2.46.0-64-bit.exe', 'GitHubDesktopSetup-x64.exe', 'IEDriverServer_Win32_4.14.0.zip', 'Win64OpenSSL_Light-3_2_3.exe', 'desktop.ini', 'rustup-init.exe']</msg>
 <var>${files}</var>
 <arg>${DOWNLOAD_PATH}</arg>
 <doc>Wrapper for `List Directory` that returns only files.</doc>
-<status status="PASS" start="2024-09-26T17:30:40.656310" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-27T10:28:39.282479" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-09-26T17:30:40.656310" level="INFO">${file_name} = CF1202409250000.pdf</msg>
+<msg time="2024-09-27T10:28:39.282479" level="INFO">${file_name} = CF1202409260000.pdf</msg>
 <var>${file_name}</var>
 <arg>${files}</arg>
 <arg>0</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-09-26T17:30:40.656310" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-27T10:28:39.282479" elapsed="0.000000"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${file_name}</arg>
 <arg>${EXPECTED_FILE}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-09-26T17:30:40.656310" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-27T10:28:39.282479" elapsed="0.000000"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>30 seconds</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2024-09-26T17:30:40.656310" elapsed="0.021678"/>
+<status status="PASS" start="2024-09-27T10:28:39.282479" elapsed="0.023172"/>
 </kw>
-<status status="PASS" start="2024-09-26T17:30:12.995758" elapsed="27.682230"/>
+<status status="PASS" start="2024-09-27T10:28:15.086933" elapsed="24.218718"/>
 </branch>
-<status status="PASS" start="2024-09-26T17:30:12.995758" elapsed="27.682230"/>
+<status status="PASS" start="2024-09-27T10:28:15.086933" elapsed="24.218718"/>
 </if>
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-09-26T17:30:40.677988" elapsed="24.922669"/>
+<status status="PASS" start="2024-09-27T10:28:39.305651" elapsed="23.781539"/>
 </kw>
-<status status="PASS" start="2024-09-26T17:24:42.091338" elapsed="383.509645"/>
+<status status="PASS" start="2024-09-27T10:22:52.306432" elapsed="370.780758"/>
 </kw>
 <doc>Test case to open Google Thailand in IE mode on Edge</doc>
-<status status="PASS" start="2024-09-26T17:24:17.097475" elapsed="408.503508"/>
+<status status="PASS" start="2024-09-27T10:22:29.606563" elapsed="393.480627"/>
 </test>
-<status status="PASS" start="2024-09-26T17:24:13.571733" elapsed="412.029250"/>
+<status status="PASS" start="2024-09-27T10:22:29.083140" elapsed="394.004050"/>
 </suite>
 <statistics>
 <total>
@@ -199,7 +199,7 @@ rustup-init.exe</msg>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="POC 5 1 4">POC 5 1 4</stat>
 </suite>
 </statistics>
 <errors>
