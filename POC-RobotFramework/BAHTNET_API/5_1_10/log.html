@@ -2081,25 +2081,25 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[1,0,8852],[],[[4,0,5,[],[1,497,2425],[[0,6,7,0,8,9,0,0,[1,499,2406],[[499,2,10],[525,2,11],[2905,2,12]]]]],[13,0,14,[],[1,3728,4521],[[0,6,7,0,8,15,0,0,[1,3745,4448],[[3745,2,16],[3764,2,11],[8193,2,12]]]]]],[],[2,2,0,0]];
+window.output["suite"] = [1,2,3,0,[],[1,0,7791],[],[[4,0,0,[],[1,214,7565],[[0,5,0,0,6,0,0,0,[1,215,2661],[[0,7,8,0,9,10,0,0,[1,216,2659],[[216,2,11],[433,2,12],[2874,2,13]]]]],[0,14,0,0,15,0,0,0,[1,3647,4122],[[0,7,8,0,9,16,0,0,[1,3648,4121],[[3648,2,17],[3686,2,12],[7768,2,13]]]]]]]],[],[1,1,0,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*POC 5 1 10","*C:\\Users\\AtiwitK\\Documents\\GitHub\\BankOfThailand\\poc-robotframework\\bahtnet_api\\5_1_10\\POC_5_1_10.robot","*POC_5_1_10.robot","*Add Certificate","*<p>Add a certificate with a passphrase\x3c/p>","*Run Process","*Process","*<p>Runs a process and waits for it to complete.\x3c/p>","*powershell.exe    -Command    Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"$password \\= ConvertTo-SecureString -String ''${PASSWORD}'' -AsPlainText -Force; Import-PfxCertificate -FilePath ''${CERT_PATH}'' -CertStoreLocation Cert:/CurrentUser/My -Password $password -Verbose;\"' -Verb RunAs","*Starting process:\npowershell.exe -Command \"Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \\\"$password = ConvertTo-SecureString -String ''1234zZ'' -AsPlainText -Force; Import-PfxCertificate -FilePath ''//bot.or.th/cfs/FILESERV/QMDataFile/FIN1/SCB Cert/SCB-1.p12'' -CertStoreLocation Cert:/CurrentUser/My -Password $password -Verbose;\\\"' -Verb RunAs\"","*Waiting for process to complete.","*Process completed.","*Remove Certificate","*<p>Remove a certificate using its thumbprint\x3c/p>","*powershell.exe    -Command    Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"Set-Location Cert:/CurrentUser/My; Get-ChildItem | Where-Object {$_.Thumbprint -eq ''${THUMBPRINT}''} | Remove-Item -Verbose;\"' -Verb RunAs","*Starting process:\npowershell.exe -Command \"Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \\\"Set-Location Cert:/CurrentUser/My; Get-ChildItem | Where-Object {$_.Thumbprint -eq ''E47BD149C8655112D11C48F242E3856FF4D536CF''} | Remove-Item -Verbose;\\\"' -Verb RunAs\""]);
+window.output["strings"] = window.output["strings"].concat(["*","*POC 5 1 10","*C:\\Users\\AtiwitK\\Documents\\GitHub\\BankOfThailand\\poc-robotframework\\bahtnet_api\\5_1_10\\POC_5_1_10.robot","*POC_5_1_10.robot","*5.1.10 สร้าง script สำหรับการ add/remove certificate โดย Powershell ระบบ ที่ใช้ Certificate","*Add Certificate","*<p>Add a certificate with a passphrase\x3c/p>","*Run Process","*Process","*<p>Runs a process and waits for it to complete.\x3c/p>","*powershell.exe    -Command    Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"$password \\= ConvertTo-SecureString -String ''${PASSWORD}'' -AsPlainText -Force; Import-PfxCertificate -FilePath ''${CERT_PATH}'' -CertStoreLocation Cert:/CurrentUser/My -Password $password -Verbose;\"' -Verb RunAs","*Starting process:\npowershell.exe -Command \"Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \\\"$password = ConvertTo-SecureString -String ''1234zZ'' -AsPlainText -Force; Import-PfxCertificate -FilePath ''//bot.or.th/cfs/FILESERV/QMDataFile/FIN1/SCB Cert/SCB-1.p12'' -CertStoreLocation Cert:/CurrentUser/My -Password $password -Verbose;\\\"' -Verb RunAs\"","*Waiting for process to complete.","*Process completed.","*Remove Certificate","*<p>Remove a certificate using its thumbprint\x3c/p>","*powershell.exe    -Command    Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"Set-Location Cert:/CurrentUser/My; Get-ChildItem | Where-Object {$_.Thumbprint -eq ''${THUMBPRINT}''} | Remove-Item -Verbose;\"' -Verb RunAs","*Starting process:\npowershell.exe -Command \"Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \\\"Set-Location Cert:/CurrentUser/My; Get-ChildItem | Where-Object {$_.Thumbprint -eq ''E47BD149C8655112D11C48F242E3856FF4D536CF''} | Remove-Item -Verbose;\\\"' -Verb RunAs\""]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:07","fail":0,"label":"All Tests","pass":2,"skip":0}],[],[{"elapsed":"00:00:09","fail":0,"id":"s1","label":"POC 5 1 10","name":"POC 5 1 10","pass":2,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:00:08","fail":0,"label":"All Tests","pass":1,"skip":0}],[],[{"elapsed":"00:00:08","fail":0,"id":"s1","label":"POC 5 1 10","name":"POC 5 1 10","pass":1,"skip":0}]];
 </script>
 <script type="text/javascript">
 window.output["errors"] = [];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1727424400907;
+window.output["baseMillis"] = 1727427548883;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 8945;
+window.output["generated"] = 7852;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;
