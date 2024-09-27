@@ -1,150 +1,212 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-27T10:22:29.067512" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-27T15:19:46.903955" rpa="false" schemaversion="5">
 <suite id="s1" name="POC 5 1 4" source="C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\poc-robotframework\bahtnet_api\5_1_4\POC_5_1_4.robot">
-<test id="s1-t1" name="5.1.4 การใช้ Certificate ในการ Login" line="25">
+<kw name="Add SCB-1 Certificate" type="SETUP">
+<kw name="Run Process" owner="Process">
+<msg time="2024-09-27T15:19:49.407488" level="INFO">Starting process:
+powershell.exe -Command "Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"$password = ConvertTo-SecureString -String ''1234zZ'' -AsPlainText -Force; Import-PfxCertificate -FilePath ''//bot.or.th/cfs/FILESERV/QMDataFile/FIN1/SCB Cert/SCB-1.p12'' -CertStoreLocation Cert:/CurrentUser/My -Password $password -Verbose;\"' -Verb RunAs"</msg>
+<msg time="2024-09-27T15:19:49.418484" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-09-27T15:19:53.584337" level="INFO">Process completed.</msg>
+<arg>powershell.exe</arg>
+<arg>-Command</arg>
+<arg>Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command "$password \= ConvertTo-SecureString -String ''${PASSWORD}'' -AsPlainText -Force; Import-PfxCertificate -FilePath ''${CERT_PATH}'' -CertStoreLocation Cert:/CurrentUser/My -Password $password -Verbose;"' -Verb RunAs</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-09-27T15:19:49.407488" elapsed="4.176849"/>
+</kw>
+<doc>Add a certificate with a passphrase</doc>
+<status status="PASS" start="2024-09-27T15:19:49.406486" elapsed="4.177851"/>
+</kw>
+<test id="s1-t1" name="5.1.4 การใช้ Certificate ในการ Login" line="33">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-27T10:22:29.606563" level="INFO">Opening browser 'ie' to base url 'https://bahtnet-iwt.xtest-bot.or.th/EFSExternalWebUI/faces/home.jsp'.</msg>
+<msg time="2024-09-27T15:19:53.594332" level="INFO">Opening browser 'ie' to base url 'https://bahtnet-iwt.xtest-bot.or.th/EFSExternalWebUI/faces/home.jsp'.</msg>
 <arg>${URL}</arg>
 <arg>ie</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-27T10:22:29.606563" elapsed="22.416867"/>
+<status status="PASS" start="2024-09-27T15:19:53.594332" elapsed="66.108918"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-09-27T10:22:52.024430" elapsed="0.231003"/>
+<status status="PASS" start="2024-09-27T15:20:59.718881" elapsed="0.051610"/>
 </kw>
 <kw name="Click download file">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-27T10:22:52.307431" level="INFO">Clicking element 'id=main2'.</msg>
+<msg time="2024-09-27T15:20:59.807486" level="INFO">Clicking element 'id=main2'.</msg>
 <arg>id=main2</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-27T10:22:52.306432" elapsed="4.589428"/>
+<status status="PASS" start="2024-09-27T15:20:59.806489" elapsed="8.585868"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//span[contains(text(), 'Report')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-27T10:22:56.895860" elapsed="1.127989"/>
+<status status="PASS" start="2024-09-27T15:21:08.392357" elapsed="0.967476"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-27T10:22:58.023849" level="INFO">Clicking element 'xpath=//span[contains(text(), 'Report')]'.</msg>
+<msg time="2024-09-27T15:21:09.359833" level="INFO">Clicking element 'xpath=//span[contains(text(), 'Report')]'.</msg>
 <arg>xpath=//span[contains(text(), 'Report')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-27T10:22:58.023849" elapsed="1.450967"/>
+<status status="PASS" start="2024-09-27T15:21:09.359833" elapsed="2.797268"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//a[contains(text(), 'BAHTNET Report')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-27T10:22:59.474816" elapsed="0.890047"/>
+<status status="PASS" start="2024-09-27T15:21:12.157101" elapsed="0.484152"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-27T10:23:00.364863" level="INFO">Clicking element 'xpath=//a[contains(text(), 'BAHTNET Report')]'.</msg>
+<msg time="2024-09-27T15:21:12.641253" level="INFO">Clicking element 'xpath=//a[contains(text(), 'BAHTNET Report')]'.</msg>
 <arg>xpath=//a[contains(text(), 'BAHTNET Report')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-27T10:23:00.364863" elapsed="6.562385"/>
+<status status="PASS" start="2024-09-27T15:21:12.641253" elapsed="5.000053"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>30 seconds</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2024-09-27T10:23:06.927248" elapsed="0.015621"/>
+<status status="PASS" start="2024-09-27T15:21:17.641306" elapsed="0.015621"/>
 </kw>
 <kw name="Select Frame" owner="SeleniumLibrary">
-<msg time="2024-09-27T10:23:06.942869" level="INFO">Selecting frame '//iframe[@name="iframeDetail"]'.</msg>
+<msg time="2024-09-27T15:21:17.656927" level="INFO">Selecting frame '//iframe[@name="iframeDetail"]'.</msg>
 <arg>//iframe[@name="iframeDetail"]</arg>
 <doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="PASS" start="2024-09-27T10:23:06.942869" elapsed="0.984387"/>
+<status status="PASS" start="2024-09-27T15:21:17.656927" elapsed="0.718778"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//img[@id="staticRptInrMenuForm:j_id_jsp_474309668_3:project:0::j_id_jsp_474309668_5:handle:img:collapsed"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-27T10:23:07.927256" elapsed="0.906254"/>
+<status status="PASS" start="2024-09-27T15:21:18.375705" elapsed="0.785732"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-27T10:23:08.833510" level="INFO">Clicking element 'xpath=//img[@id="staticRptInrMenuForm:j_id_jsp_474309668_3:project:0::j_id_jsp_474309668_5:handle:img:collapsed"]'.</msg>
+<msg time="2024-09-27T15:21:19.161437" level="INFO">Clicking element 'xpath=//img[@id="staticRptInrMenuForm:j_id_jsp_474309668_3:project:0::j_id_jsp_474309668_5:handle:img:collapsed"]'.</msg>
 <arg>xpath=//img[@id="staticRptInrMenuForm:j_id_jsp_474309668_3:project:0::j_id_jsp_474309668_5:handle:img:collapsed"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-27T10:23:08.833510" elapsed="1.606130"/>
+<status status="PASS" start="2024-09-27T15:21:19.161437" elapsed="2.074372"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>30 seconds</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2024-09-27T10:23:10.439640" elapsed="0.019178"/>
+<status status="PASS" start="2024-09-27T15:21:21.235809" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//a[contains(text(), 'หนังสือยืนยันรายการโอนเงินผ่านบาทเนต')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-27T10:23:10.458818" elapsed="0.321965"/>
+<status status="PASS" start="2024-09-27T15:21:21.235809" elapsed="1.019508"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-27T10:23:10.780783" level="INFO">Clicking element 'xpath=//a[contains(text(), 'หนังสือยืนยันรายการโอนเงินผ่านบาทเนต')]'.</msg>
+<msg time="2024-09-27T15:21:22.255317" level="INFO">Clicking element 'xpath=//a[contains(text(), 'หนังสือยืนยันรายการโอนเงินผ่านบาทเนต')]'.</msg>
 <arg>xpath=//a[contains(text(), 'หนังสือยืนยันรายการโอนเงินผ่านบาทเนต')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-27T10:23:10.780783" elapsed="2.787125"/>
+<status status="PASS" start="2024-09-27T15:21:22.255317" elapsed="3.714422"/>
 </kw>
 <kw name="Select Frame" owner="SeleniumLibrary">
-<msg time="2024-09-27T10:23:13.567908" level="INFO">Selecting frame '//iframe[@name="iframeBrowseReport"]'.</msg>
+<msg time="2024-09-27T15:21:25.969739" level="INFO">Selecting frame '//iframe[@name="iframeBrowseReport"]'.</msg>
 <arg>//iframe[@name="iframeBrowseReport"]</arg>
 <doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="PASS" start="2024-09-27T10:23:13.567908" elapsed="0.078127"/>
+<status status="PASS" start="2024-09-27T15:21:25.969739" elapsed="0.843999"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${XPATH}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-27T10:23:13.646035" elapsed="0.281299"/>
+<status status="PASS" start="2024-09-27T15:21:26.813738" elapsed="0.156047"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-27T10:23:13.927334" level="INFO">Clicking element '//a[@id="downloadStaticRptInrForm:taskList:0:exPDFBtn"]'.</msg>
+<msg time="2024-09-27T15:21:26.969785" level="INFO">Clicking element '//a[@id="downloadStaticRptInrForm:taskList:0:exPDFBtn"]'.</msg>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-09-27T10:28:15.086933" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-27T15:26:29.825731" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-09-27T10:28:15.027074" elapsed="0.059859"/>
+<status status="PASS" start="2024-09-27T15:26:29.542352" elapsed="0.283379"/>
 </kw>
-<msg time="2024-09-27T10:28:15.086933" level="FAIL">TimeoutException: Message: Timed out waiting for page to load.
+<msg time="2024-09-27T15:26:29.825731" level="FAIL">TimeoutException: Message: Timed out waiting for page to load.
 </msg>
 <arg>${XPATH}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-09-27T10:23:13.927334" elapsed="301.159599">TimeoutException: Message: Timed out waiting for page to load.
+<status status="FAIL" start="2024-09-27T15:21:26.969785" elapsed="303.260145">TimeoutException: Message: Timed out waiting for page to load.
 </status>
 </kw>
-<msg time="2024-09-27T10:28:15.086933" level="INFO">${result} = False</msg>
+<msg time="2024-09-27T15:26:30.229930" level="INFO">${result} = False</msg>
 <var>${result}</var>
 <arg>Click Element</arg>
 <arg>${XPATH}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2024-09-27T10:23:13.927334" elapsed="301.159599"/>
+<status status="PASS" start="2024-09-27T15:21:26.969785" elapsed="303.260145"/>
 </kw>
 <if>
 <branch type="IF" condition="${result} == ${FALSE}">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-27T10:28:17.087011" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-09-27T15:26:32.231516" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-27T10:28:15.086933" elapsed="2.000078"/>
+<status status="PASS" start="2024-09-27T15:26:30.229930" elapsed="2.001586"/>
 </kw>
 <kw name="Run Process" owner="Process">
-<msg time="2024-09-27T10:28:17.087011" level="INFO">Starting process:
+<msg time="2024-09-27T15:26:32.231516" level="INFO">Starting process:
 "C:/Program Files (x86)/AutoIt3/SciTE/download_bahtnet_file.exe"</msg>
-<msg time="2024-09-27T10:28:22.508969" level="INFO">Waiting for process to complete.</msg>
-<msg time="2024-09-27T10:28:34.281862" level="INFO">Process completed.</msg>
+<msg time="2024-09-27T15:26:36.792616" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-09-27T15:26:50.634458" level="INFO">Process completed.</msg>
 <arg>C:/Program Files (x86)/AutoIt3/SciTE/download_bahtnet_file.exe</arg>
 <doc>Runs a process and waits for it to complete.</doc>
-<status status="PASS" start="2024-09-27T10:28:17.087011" elapsed="17.194851"/>
+<status status="PASS" start="2024-09-27T15:26:32.231516" elapsed="18.402942"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-27T10:28:39.282479" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-09-27T15:26:55.638189" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-27T10:28:34.281862" elapsed="5.000617"/>
+<status status="PASS" start="2024-09-27T15:26:50.634458" elapsed="5.003731"/>
 </kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="File Should Exist" owner="OperatingSystem">
-<msg time="2024-09-27T10:28:39.282479" level="INFO" html="true">File '&lt;a href="file://C:\Users\AtiwitK\Downloads\CF1202409260000.pdf"&gt;C:\Users\AtiwitK\Downloads\CF1202409260000.pdf&lt;/a&gt;' exists.</msg>
+<msg time="2024-09-27T15:26:55.638189" level="INFO" html="true">File '&lt;a href="file://C:\Users\AtiwitK\Downloads\CF1202409260000.pdf"&gt;C:\Users\AtiwitK\Downloads\CF1202409260000.pdf&lt;/a&gt;' exists.</msg>
 <arg>${DOWNLOADED_FILE_PATH}</arg>
 <doc>Fails unless the given ``path`` points to an existing file.</doc>
-<status status="PASS" start="2024-09-27T10:28:39.282479" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-27T15:26:55.638189" elapsed="0.000000"/>
+</kw>
+<msg time="2024-09-27T15:26:55.638189" level="INFO">${result_found_file} = True</msg>
+<var>${result_found_file}</var>
+<arg>File Should Exist</arg>
+<arg>${DOWNLOADED_FILE_PATH}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-09-27T15:26:55.638189" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${result_found_file} == ${FALSE}">
+<kw name="Run Process" owner="Process">
+<arg>C:/Program Files (x86)/AutoIt3/SciTE/download_bahtnet_file.exe</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="NOT RUN" start="2024-09-27T15:26:55.638189" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-09-27T15:26:55.638189" elapsed="0.000000"/>
+</kw>
+<kw name="File Should Exist" owner="OperatingSystem">
+<arg>${DOWNLOADED_FILE_PATH}</arg>
+<doc>Fails unless the given ``path`` points to an existing file.</doc>
+<status status="NOT RUN" start="2024-09-27T15:26:55.638189" elapsed="0.000000"/>
 </kw>
 <kw name="List Files In Directory" owner="OperatingSystem">
-<msg time="2024-09-27T10:28:39.282479" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\Users\AtiwitK\Downloads"&gt;C:\Users\AtiwitK\Downloads&lt;/a&gt;'.</msg>
-<msg time="2024-09-27T10:28:39.282479" level="INFO">7 files:
+<var>${files}</var>
+<arg>${DOWNLOAD_PATH}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<status status="NOT RUN" start="2024-09-27T15:26:55.638189" elapsed="0.000000"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<var>${file_name}</var>
+<arg>${files}</arg>
+<arg>0</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="NOT RUN" start="2024-09-27T15:26:55.638189" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${file_name}</arg>
+<arg>${EXPECTED_FILE}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2024-09-27T15:26:55.638189" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T15:26:55.638189" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="List Files In Directory" owner="OperatingSystem">
+<msg time="2024-09-27T15:26:55.638189" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\Users\AtiwitK\Downloads"&gt;C:\Users\AtiwitK\Downloads&lt;/a&gt;'.</msg>
+<msg time="2024-09-27T15:26:55.638189" level="INFO">7 files:
 CF1202409260000.pdf
 Git-2.46.0-64-bit.exe
 GitHubDesktopSetup-x64.exe
@@ -152,45 +214,70 @@ IEDriverServer_Win32_4.14.0.zip
 Win64OpenSSL_Light-3_2_3.exe
 desktop.ini
 rustup-init.exe</msg>
-<msg time="2024-09-27T10:28:39.282479" level="INFO">${files} = ['CF1202409260000.pdf', 'Git-2.46.0-64-bit.exe', 'GitHubDesktopSetup-x64.exe', 'IEDriverServer_Win32_4.14.0.zip', 'Win64OpenSSL_Light-3_2_3.exe', 'desktop.ini', 'rustup-init.exe']</msg>
+<msg time="2024-09-27T15:26:55.638189" level="INFO">${files} = ['CF1202409260000.pdf', 'Git-2.46.0-64-bit.exe', 'GitHubDesktopSetup-x64.exe', 'IEDriverServer_Win32_4.14.0.zip', 'Win64OpenSSL_Light-3_2_3.exe', 'desktop.ini', 'rustup-init.exe']</msg>
 <var>${files}</var>
 <arg>${DOWNLOAD_PATH}</arg>
 <doc>Wrapper for `List Directory` that returns only files.</doc>
-<status status="PASS" start="2024-09-27T10:28:39.282479" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-27T15:26:55.638189" elapsed="0.000000"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2024-09-27T10:28:39.282479" level="INFO">${file_name} = CF1202409260000.pdf</msg>
+<msg time="2024-09-27T15:26:55.638189" level="INFO">${file_name} = CF1202409260000.pdf</msg>
 <var>${file_name}</var>
 <arg>${files}</arg>
 <arg>0</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2024-09-27T10:28:39.282479" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-27T15:26:55.638189" elapsed="0.000000"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${file_name}</arg>
 <arg>${EXPECTED_FILE}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-09-27T10:28:39.282479" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-27T15:26:55.638189" elapsed="0.000000"/>
 </kw>
+<status status="PASS" start="2024-09-27T15:26:55.638189" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T15:26:55.638189" elapsed="0.000000"/>
+</if>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>30 seconds</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2024-09-27T10:28:39.282479" elapsed="0.023172"/>
+<status status="PASS" start="2024-09-27T15:26:55.638189" elapsed="0.030174"/>
 </kw>
-<status status="PASS" start="2024-09-27T10:28:15.086933" elapsed="24.218718"/>
+<status status="PASS" start="2024-09-27T15:26:30.229930" elapsed="25.438433"/>
 </branch>
-<status status="PASS" start="2024-09-27T10:28:15.086933" elapsed="24.218718"/>
+<status status="PASS" start="2024-09-27T15:26:30.229930" elapsed="25.438433"/>
 </if>
+<kw name="Remove File" owner="OperatingSystem">
+<msg time="2024-09-27T15:26:57.293616" level="INFO" html="true">Removed file '&lt;a href="file://C:\Users\AtiwitK\Downloads\CF1202409260000.pdf"&gt;C:\Users\AtiwitK\Downloads\CF1202409260000.pdf&lt;/a&gt;'.</msg>
+<arg>${DOWNLOADED_FILE_PATH}</arg>
+<doc>Removes a file with the given path.</doc>
+<status status="PASS" start="2024-09-27T15:26:55.668363" elapsed="1.625253"/>
+</kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-09-27T10:28:39.305651" elapsed="23.781539"/>
+<status status="PASS" start="2024-09-27T15:26:57.293616" elapsed="26.711258"/>
 </kw>
-<status status="PASS" start="2024-09-27T10:22:52.306432" elapsed="370.780758"/>
+<status status="PASS" start="2024-09-27T15:20:59.806489" elapsed="384.198385"/>
 </kw>
 <doc>Test case to open Google Thailand in IE mode on Edge</doc>
-<status status="PASS" start="2024-09-27T10:22:29.606563" elapsed="393.480627"/>
+<status status="PASS" start="2024-09-27T15:19:53.584337" elapsed="450.420537"/>
 </test>
-<status status="PASS" start="2024-09-27T10:22:29.083140" elapsed="394.004050"/>
+<kw name="Remove SCB-1 Certificate" type="TEARDOWN">
+<kw name="Run Process" owner="Process">
+<msg time="2024-09-27T15:27:24.012943" level="INFO">Starting process:
+powershell.exe -Command "Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"Set-Location Cert:/CurrentUser/My; Get-ChildItem | Where-Object {$_.Thumbprint -eq ''E47BD149C8655112D11C48F242E3856FF4D536CF''} | Remove-Item -Verbose;\"' -Verb RunAs"</msg>
+<msg time="2024-09-27T15:27:24.012943" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-09-27T15:27:26.450498" level="INFO">Process completed.</msg>
+<arg>powershell.exe</arg>
+<arg>-Command</arg>
+<arg>Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command "Set-Location Cert:/CurrentUser/My; Get-ChildItem | Where-Object {$_.Thumbprint -eq ''${THUMBPRINT}''} | Remove-Item -Verbose;"' -Verb RunAs</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-09-27T15:27:24.012943" elapsed="2.437555"/>
+</kw>
+<doc>Remove a certificate using its thumbprint</doc>
+<status status="PASS" start="2024-09-27T15:27:24.004874" elapsed="2.445624"/>
+</kw>
+<status status="PASS" start="2024-09-27T15:19:46.903955" elapsed="459.546543"/>
 </suite>
 <statistics>
 <total>

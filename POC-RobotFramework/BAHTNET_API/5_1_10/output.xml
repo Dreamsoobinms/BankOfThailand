@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-27T15:06:40.907441" rpa="false" schemaversion="5">
+<suite id="s1" name="POC 5 1 10" source="C:\Users\AtiwitK\Documents\GitHub\BankOfThailand\poc-robotframework\bahtnet_api\5_1_10\POC_5_1_10.robot">
+<test id="s1-t1" name="Add Certificate" line="13">
+<kw name="Run Process" owner="Process">
+<msg time="2024-09-27T15:06:41.406293" level="INFO">Starting process:
+powershell.exe -Command "Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"$password = ConvertTo-SecureString -String ''1234zZ'' -AsPlainText -Force; Import-PfxCertificate -FilePath ''//bot.or.th/cfs/FILESERV/QMDataFile/FIN1/SCB Cert/SCB-1.p12'' -CertStoreLocation Cert:/CurrentUser/My -Password $password -Verbose;\"' -Verb RunAs"</msg>
+<msg time="2024-09-27T15:06:41.431655" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-09-27T15:06:43.812478" level="INFO">Process completed.</msg>
+<arg>powershell.exe</arg>
+<arg>-Command</arg>
+<arg>Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command "$password \= ConvertTo-SecureString -String ''${PASSWORD}'' -AsPlainText -Force; Import-PfxCertificate -FilePath ''${CERT_PATH}'' -CertStoreLocation Cert:/CurrentUser/My -Password $password -Verbose;"' -Verb RunAs</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-09-27T15:06:41.406293" elapsed="2.406185"/>
+</kw>
+<doc>Add a certificate with a passphrase</doc>
+<status status="PASS" start="2024-09-27T15:06:41.404291" elapsed="2.425341"/>
+</test>
+<test id="s1-t2" name="Remove Certificate" line="17">
+<kw name="Run Process" owner="Process">
+<msg time="2024-09-27T15:06:44.652071" level="INFO">Starting process:
+powershell.exe -Command "Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command \"Set-Location Cert:/CurrentUser/My; Get-ChildItem | Where-Object {$_.Thumbprint -eq ''E47BD149C8655112D11C48F242E3856FF4D536CF''} | Remove-Item -Verbose;\"' -Verb RunAs"</msg>
+<msg time="2024-09-27T15:06:44.671070" level="INFO">Waiting for process to complete.</msg>
+<msg time="2024-09-27T15:06:49.100239" level="INFO">Process completed.</msg>
+<arg>powershell.exe</arg>
+<arg>-Command</arg>
+<arg>Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command "Set-Location Cert:/CurrentUser/My; Get-ChildItem | Where-Object {$_.Thumbprint -eq ''${THUMBPRINT}''} | Remove-Item -Verbose;"' -Verb RunAs</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2024-09-27T15:06:44.652071" elapsed="4.448168"/>
+</kw>
+<doc>Remove a certificate using its thumbprint</doc>
+<status status="PASS" start="2024-09-27T15:06:44.634946" elapsed="4.520772"/>
+</test>
+<status status="PASS" start="2024-09-27T15:06:40.907441" elapsed="8.852300"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="POC 5 1 10">POC 5 1 10</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

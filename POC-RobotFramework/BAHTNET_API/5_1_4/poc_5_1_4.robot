@@ -5,6 +5,9 @@ Library     OperatingSystem
 # Library     AutoItLibrary
 Library     Process
 
+Suite Setup         Add SCB-1 Certificate
+Suite Teardown      Remove SCB-1 Certificate
+
 *** Variables ***
 ${URL}          https://bahtnet-iwt.xtest-bot.or.th/EFSExternalWebUI/faces/home.jsp
 # ${chrome_options}   add_argument("--user-data-dir=C:/Users/test/AppData/Local/Google/Chrome/User Data/Profile 1")
@@ -20,6 +23,11 @@ ${FALSE}                    False
 ${EXPECTED_FILE}            CF1202409260000.pdf
 ${DOWNLOADED_FILE_PATH}     C:/Users/AtiwitK/Downloads/${EXPECTED_FILE}
 ${DOWNLOAD_PATH}            C:/Users/AtiwitK/Downloads/
+
+# certificate variable
+${CERT_PATH}                //bot.or.th/cfs/FILESERV/QMDataFile/FIN1/SCB Cert/SCB-1.p12
+${PASSWORD}                 1234zZ
+${THUMBPRINT}               E47BD149C8655112D11C48F242E3856FF4D536CF
 
 *** Test Cases ***
 5.1.4 การใช้ Certificate ในการ Login
@@ -38,12 +46,9 @@ ${DOWNLOAD_PATH}            C:/Users/AtiwitK/Downloads/
         # 2.3 Click Custom level.. --> Scroll and find 'Don't prompt for client certificate session when only one certifiicate exists'
         # 2.4 Click Enable --> ok
         # 2.5 repeat it from Internet, Local Intranet, Trusted sites and Restricted sites --> Apply --> ok
-
     Open Browser    ${URL}    ie  
     Maximize Browser Window 
-    # Seacrh Credit BIC
     Click download file
-    # Click download button
 
 *** Keywords ***
 Seacrh Credit BIC
@@ -95,12 +100,31 @@ Click download file
         Run Process    C:/Program Files (x86)/AutoIt3/SciTE/download_bahtnet_file.exe
         Sleep    5s  # Wait for the download to complete
         # Verify downloading PDF file is exist
-        File Should Exist    ${DOWNLOADED_FILE_PATH}
-        # Verify PDF file is correct
-        ${files}=    List Files in Directory    ${DOWNLOAD_PATH}
-        ${file_name}=    Get From List    ${files}    0  # Assuming the downloaded file is the first in the list
-        Should Be Equal As Strings    ${file_name}    ${EXPECTED_FILE}
+        ${result_found_file}=    Run Keyword And Return Status     File Should Exist    ${DOWNLOADED_FILE_PATH}
+        # Try and Error If file not exist assume the click is not working try again
+        IF      ${result_found_file} == ${FALSE} 
+            Run Process    C:/Program Files (x86)/AutoIt3/SciTE/download_bahtnet_file.exe
+            Sleep    5s  # Wait for the download to complete
+            File Should Exist    ${DOWNLOADED_FILE_PATH}
+            # Verify PDF file is correct
+            ${files}=    List Files in Directory    ${DOWNLOAD_PATH}
+            ${file_name}=    Get From List    ${files}    0  # Assuming the downloaded file is the first in the list
+            Should Be Equal As Strings    ${file_name}    ${EXPECTED_FILE}
+        ELSE
+            # Verify PDF file is correct
+            ${files}=    List Files in Directory    ${DOWNLOAD_PATH}
+            ${file_name}=    Get From List    ${files}    0  # Assuming the downloaded file is the first in the list
+            Should Be Equal As Strings    ${file_name}    ${EXPECTED_FILE}
+        END
         Set Selenium Timeout    30 seconds
     END
-    # Remove File    ${file_path}
+    Remove File    ${DOWNLOADED_FILE_PATH}
     Close All Browsers
+
+Remove SCB-1 Certificate
+    [Documentation]    Remove a certificate using its thumbprint
+    Run Process    powershell.exe    -Command    Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command "Set-Location Cert:/CurrentUser/My; Get-ChildItem | Where-Object {$_.Thumbprint -eq ''${THUMBPRINT}''} | Remove-Item -Verbose;"' -Verb RunAs
+
+Add SCB-1 Certificate
+    [Documentation]    Add a certificate with a passphrase
+    Run Process    powershell.exe    -Command    Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -Command "$password \= ConvertTo-SecureString -String ''${PASSWORD}'' -AsPlainText -Force; Import-PfxCertificate -FilePath ''${CERT_PATH}'' -CertStoreLocation Cert:/CurrentUser/My -Password $password -Verbose;"' -Verb RunAs
